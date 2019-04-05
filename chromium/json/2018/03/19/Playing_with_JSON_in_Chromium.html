@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Playing with JSON in Chromium</title>
+  <meta name="description" content="다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 ..." />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@thnam_" />
+    <meta name="twitter:title" content="Playing with JSON in Chromium" />
+    <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+    
+    <meta name="twitter:description"  content="다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 ..." />
+    
+  
+  
+  <meta property="og:site_name" content="evening(code)" />
+  <meta property="og:title" content="Playing with JSON in Chromium"/>
+  
+  <meta property="og:description" content="다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 ..." />
+  
+  <meta property="og:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  <meta property="og:url" content="http://baek9.github.io/chromium/json/2018/03/19/Playing_with_JSON_in_Chromium.html" >
+  <meta property="og:type" content="blog" />
+  <meta property="article:published_time" content="2018-03-19T06:50:45+09:00">
+
+  <link rel="canonical" href="http://baek9.github.io/chromium/json/2018/03/19/Playing_with_JSON_in_Chromium.html"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+
+  <a href="http://baek9.github.io" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+        <div class="noarticleimage">
+          <div class="post-meta">
+            <h1 class="post-title">Playing with JSON in Chromium</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
+              on
+              <time datetime="2018-03-19T06:50:45+09:00">19 Mar 2018</time>
+              <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p>다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, <code class="highlighter-rouge">Thread</code>, <code class="highlighter-rouge">GURL</code> 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 <code class="highlighter-rouge">base</code> 네임스페이스에 존재한다.</p>
+
+<p>크로미움은 웹 브라우저이므로 당연히 JSON(JavaScript Object Notation)을 처리하기 위한 모듈이 존재할 것이다. 아니, 존재하여야만 한다. 실제로, <code class="highlighter-rouge">base</code> 네임스페이스 아래에 <code class="highlighter-rouge">JSONReader</code> 클래스가 존재한다. 물론, <code class="highlighter-rouge">libjson-c</code>나 <code class="highlighter-rouge">libjsoncpp</code>와 같은 라이브러리를 활용하는 옵션도 있겠지만, 크로미움 개발자라면 굳이 이를 활용할 필요가 없겠다. 본 포스트에는 크로미움 내에서 JSON을 다루는 방법을 담았다.</p>
+
+<h2 id="open-and-read-file">Open and read file</h2>
+
+<p>처리하고자 하는 대상은 파일 형태로 존재할 수도 있고, 네트워크로 받아와 바이트 스트림 형태로 존재할 수도 있다. 파일 형태도 결국은 처리를 위해서 바이트 스트림 형태로 변환해야 하므로 전자의 경우를 보겠다.</p>
+
+<p>크로미움은 심지어 파일 경로를 처리하는 클래스까지 갖고 있다. 해당 클래스는 <code class="highlighter-rouge">FilePath</code>이다. 굳이 파일 경로를 처리하는 클래스가 필요한 지 의문이 들 수 있지만, 플랫폼마다 파일 경로를 구성하는 규칙이 다르기 때문에라도 매우 유용하고 중요한, 생각보다 복잡한 클래스이다. 처리하고자 하는 파일이 test.json이고, 파일 경로가 “/path/to/file/test.json”이라면 다음과 같이 <code class="highlighter-rouge">FilePath</code> 객체를 생성할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::FilePath json_path("/path/to/file/test.json");
+</code></pre></div></div>
+
+<p>위 코드로 json_path라는 <code class="highlighter-rouge">FilePath</code> 객체가 생성된다. 이제 이 객체를 이용하여 test.json을 읽고, 그 내용을 바이트 스트림 형태로 가져와야 한다. 이 작업은 <code class="highlighter-rouge">ReadFileToString()</code> 함수를 이용하여 아래와 같이 수행할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::string json_string;
+base::ReadFileToString(json_path, &amp;json_string);
+</code></pre></div></div>
+
+<p>위 코드로 test.json의 내용이 문자열 객체인 json_string에 저장된다.</p>
+
+<h2 id="parse-json-and-ready-to-play-with-it">Parse JSON and Ready to play with it</h2>
+
+<p>json_string은 test.json의 내용을 바이트 스트림으로 저장하고 있을 뿐인 문자열 객체에 불과하다. 이 문자열을 JSON 문법에 맞추어 취급하기 쉬운 형태로 파싱하여야 한다. 생각만해도 번거로운 이 작업은 <code class="highlighter-rouge">base</code> 네임스페이스 내 <code class="highlighter-rouge">JSONReader</code> 클래스의 멤버 함수인 <code class="highlighter-rouge">Read()</code>로 쉽게 처리할 수 있다. static 함수이므로 다음과 같이 활용할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::unique_ptr&lt;base::Value&gt; json_structure;
+json_structure = base::JSONReader::Read(json_str);
+</code></pre></div></div>
+
+<p>위 코드로 json_structure라는 <code class="highlighter-rouge">Value</code> 객체가 생성된다. 이를 이용하여 test.json 내의 모든 키 값들을 추출할 수 있다.</p>
+
+<h2 id="getting-a-dictionary-from-a-json">Getting a dictionary from a JSON</h2>
+
+<p>JSON은 다음의 두 개의 구조를 바탕으로 구성된다. <a href="https://www.json.org">JSON 공식 홈페이지</a>에 두 구조에 대한 간략한 설명이 존재한다.</p>
+
+<ul>
+  <li>Collection
+    <ul>
+      <li>name/value pairs. In various languages this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.</li>
+    </ul>
+  </li>
+  <li>Ordered list of values
+    <ul>
+      <li>realized as an array, vector, list, or sequence.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>JSON은 <code class="highlighter-rouge">Collection</code>과 <code class="highlighter-rouge">Ordered list</code>로 구성된다. 따라서, JSON으로부터 이 두 구조를 얻어낼 수 있다는 것은 곧, JSON을 완벽하게 활용할 수 있다는 것이다. <code class="highlighter-rouge">Collection</code>과 <code class="highlighter-rouge">Ordered list</code>를 구현하는 방법은 언어에 따라 다르다. 크로미움에서는 각각 <code class="highlighter-rouge">Dictionary</code>와 <code class="highlighter-rouge">List</code>로 표현한다. 그리고, <code class="highlighter-rouge">base</code> 네임스페이스에는 <code class="highlighter-rouge">Value</code> 클래스를 상속받는 <code class="highlighter-rouge">DictionaryValue</code>와 <code class="highlighter-rouge">ListValue</code>라는 클래스가 존재한다. 뭔가 감이 오기 시작한다. 더 진행하기에 앞서서, test.json의 내용이 다음과 같다고 가정하자.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "key1" : {
+      "key11" : "value11",
+      "key12" : [ "element121",
+                  "element122"
+                ]
+}
+</code></pre></div></div>
+
+<p>JSON 전쳬가 하나의 <code class="highlighter-rouge">Collection</code>, 즉, <code class="highlighter-rouge">Dictionary</code>이다. 따라서 앞서 파싱하여 얻어낸 <code class="highlighter-rouge">Value</code> 객체인 json_structure로부터 <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어내야 한다. 그래야만 key11의 값인 “value11”과 <code class="highlighter-rouge">Ordered list</code>인 key12가 포함하는 값들인 “element121”, “element122”를 추출할 수 있을 것이다. <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어내기 위해서는 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">From()</code> 함수를 이용하면 된다. static 함수이므로 다음과 같이 활용할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::unique_ptr&lt;base::DictionaryValue&gt; json_dictionary;
+json_dictionary = base::DictionaryValue::From(json_structure);
+</code></pre></div></div>
+
+<p>위 코드로 json_dictionary라는 <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어낼 수 있다.</p>
+
+<h2 id="getting-a-value-which-type-is-string-from-a-dictionary">Getting a value which type is “string” from a dictionary</h2>
+
+<p>크로미움에서만 그런지는 모르겠지만 “.”을 이용하여 특정 키의 경로를 표현할 수 있다. 예를 들어, Key11의 주소는 “key1.key11”이다. 이 경로를 이용하여 해당 키의 값을 추출할 수 있다. key11에 대응되는 값의 타입은 문자열이므로 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">GetString()</code> 함수를 아래와 같이 활용할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::string key11_value;
+json_dictionary-&gt;GetString("key1.key11", &amp;key11_value);
+</code></pre></div></div>
+
+<h2 id="getting-a-list-from-a-dictionary">Getting a list from a dictionary</h2>
+
+<p>key12는 대괄호로 둘러쌓인 Ordered list, 즉, List이다. 따라서 이번에는 <code class="highlighter-rouge">DictionaryValue</code> 객체로부터 <code class="highlighter-rouge">std::string</code>이 아닌, <code class="highlighter-rouge">ListValue</code>객체를 추출해야 한다. 이를 위해 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">GetList()</code> 함수를 아래와 같이 활용할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::ListValue* key12_list;
+json_dictionary-&gt;GetList("key1.key12", &amp;key12_list);
+</code></pre></div></div>
+
+<h2 id="iterate-and-getting-a-value-which-type-is-string-from-a-list">Iterate and getting a value which type is “string” from a list</h2>
+
+<p>앞서 얻어낸 <code class="highlighter-rouge">ListValue</code> 객체인 key12_list의 원소들을 순회하여 Ordered list인 key12의 모든 원소들을 추출할 수 있다. <code class="highlighter-rouge">DictionaryValue</code>, <code class="highlighter-rouge">ListValue</code> 클래스는 <code class="highlighter-rouge">Value</code> 클래스를 상속받는다. <code class="highlighter-rouge">ListValue</code>의 경우에는 원소들이 부모 클래스인 <code class="highlighter-rouge">Value</code>가 정의하는 멤버 변수, <code class="highlighter-rouge">ListStorage</code>에 저장된다. 아래와 같은 연쇄 대입 체인에 따르면,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// base/values.h
+// https://cs.chromium.org/chromium/src/base/values.h?rcl=029daddc376494ee36c5d81cc51a5ade45002fb6&amp;l=589
+class ListValue : public Value {
+using const_iterator = ListStorage::const_iterator;
+
+}
+// base/values.h
+// https://cs.chromium.org/chromium/src/base/values.h?rcl=029daddc376494ee36c5d81cc51a5ade45002fb6&amp;l=85
+ListStorage = std::vector&lt;Value&gt;;
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">ListStorage</code>는 결국 <code class="highlighter-rouge">std::vector</code> 객체이다. 즉, <code class="highlighter-rouge">std::vector</code> 객체를 순회하는 방법을 그대로 활용하여 원소들을 순회할 수 있다.</p>
+
+<p><code class="highlighter-rouge">ListValue::const_iterator == std::vector&lt;Value&gt;::const_iterator</code></p>
+
+<p>순회 중에 방문한 원소들의 타입은 무엇일까? 타입을 알아야 값을 추출할 수 있다. 위 등식에서도 알 수 있듯이, <code class="highlighter-rouge">iterator</code> 또는 <code class="highlighter-rouge">const_iterator</code>에 의해 참조하는 각 원소들은 base::Value* 또는 const base::Value*이다. 한편, <code class="highlighter-rouge">Value</code> 객체의 값은 멤버 함수인 <code class="highlighter-rouge">GetString()</code>으로 얻어낼 수 있다.(키 값의 타입이 문자열인 경우라면) 아래가 그 예제다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for(base::ListValue::const_iterator it = key12_list-&gt;begin(); 
+     it != key12_list-&gt;end(); ++it) {
+   std::string key12_string() it-&gt;GetString();
+}
+</code></pre></div></div>
+
+<h2 id="full-example">Full example</h2>
+
+<p>test.json으로부터 모든 값을 추출하는 전체 예제 코드는 다음과 같다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::FilePath json_path("/path/to/file/test.json");
+std::string json_string;
+std::unique_ptr&lt;base::Value&gt; json_structure;
+std::unique_ptr&lt;base::DictionaryValue&gt; json_dictionary;
+std::string key11_value;
+base::ListValue* key12_list;
+
+base::ReadFileToString(json_path, &amp;json_string);
+json_structure = base::JSONReader::Read(json_str);
+json_dictionary = base::DictionaryValue::From(json_structure);
+json_dictionary-&gt;GetString("key1.key11", &amp;key11_value);
+json_dictionary-&gt;GetList("key1.key12", &amp;key12_list);
+for(base::ListValue::const_iterator it = key12_list-&gt;begin(); 
+     it != key12_list-&gt;end(); ++it) {
+   std::string key12_string() it-&gt;GetString();
+}
+</code></pre></div></div>
+
+
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+            
+              
+                <a class="icon-twitter" href="http://twitter.com/share?text=Playing+with+JSON+in+Chromium&amp;url=http://baek9.github.io/chromium/json/2018/03/19/Playing_with_JSON_in_Chromium"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+                <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
+                </a>
+              
+            
+              
+            
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
+              <h4>Taeho Nam</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="2018-03-19 06:50">19 Mar 2018</time></p>
+            </section>
+          </div>
+          
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="/">Taeho Nam</a> &copy; 2019<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+        
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'evening-code'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </article>
+    </main>
+    <div class="bottom-closer">
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    
+      $window.on('scroll', function() {
+        var top = $window.scrollTop();
+
+        if (top < 0 || top > 1500) { return; }
+        $image
+          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+          .css('opacity', 1-Math.max(top/700, 0));
+      });
+      $window.trigger('scroll');
+
+      var height = $('.article-image').height();
+      $('.post-content').css('padding-top', height + 'px');
+
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({ scrollTop: target.offset().top }, 500);
+            return false;
+          }
+        }
+      });
+
+  });
+}(jQuery));
+</script>
+
+
+  </body>
+</html>

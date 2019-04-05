@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Integer Overflow in V8</title>
+  <meta name="description" content="최근 취약점들을 살펴보면 순수하게 V8과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 Blink나 Chrome에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. V8 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제..." />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@thnam_" />
+    <meta name="twitter:title" content="Integer Overflow in V8" />
+    <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+    
+    <meta name="twitter:description"  content="최근 취약점들을 살펴보면 순수하게 V8과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 Blink나 Chrome에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. V8 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제..." />
+    
+  
+  
+  <meta property="og:site_name" content="evening(code)" />
+  <meta property="og:title" content="Integer Overflow in V8"/>
+  
+  <meta property="og:description" content="최근 취약점들을 살펴보면 순수하게 V8과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 Blink나 Chrome에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. V8 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제..." />
+  
+  <meta property="og:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  <meta property="og:url" content="http://baek9.github.io/javascript%20&%20v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html" >
+  <meta property="og:type" content="blog" />
+  <meta property="article:published_time" content="2018-04-03T07:14:52+09:00">
+
+  <link rel="canonical" href="http://baek9.github.io/javascript%20&%20v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+</head>
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <!-- header start -->
+
+
+  <a href="http://baek9.github.io" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
+
+<!-- header end -->
+
+    <main class="content" role="main">
+      <article class="post">
+        <div class="noarticleimage">
+          <div class="post-meta">
+            <h1 class="post-title">Integer Overflow in V8</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
+              on
+              <time datetime="2018-04-03T07:14:52+09:00">03 Apr 2018</time>
+              <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          <p>최근 취약점들을 살펴보면 순수하게 <code class="highlighter-rouge">V8</code>과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 <code class="highlighter-rouge">Blink</code>나 <code class="highlighter-rouge">Chrome</code>에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. <code class="highlighter-rouge">V8</code> 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제시하고 있었다. 대략적인 <code class="highlighter-rouge">V8</code>의 구조와 정수 오버플로우가 어떤 것인지 알게된 의미있는 분석이었다.</p>
+
+<h2 id="regexpprototypereplace">RegExp.prototype[@@replace]</h2>
+
+<p>해당 PoC는 결국에 C++ 함수인 <code class="highlighter-rouge">Runtime_RegExpReplace()</code>에서 발현된다.(이하 RegExpReplace) 이 함수는 자바스크립트 레벨에서 <code class="highlighter-rouge">RegExp.prototype[@@replace]</code> 메소드(이하 replace)에 대응되는 함수이다. <code class="highlighter-rouge">RegExp</code>는 무엇일까? 정규표현식을 표현하고 처리하기 위한 객체로 이해하면 된다. 다음 코드를 예로 들면,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var re = /-/g; 
+</code></pre></div></div>
+
+<p>re는 <code class="highlighter-rouge">RegExp</code> 객체이다. re에 대입한 “/-/g”의 의미는 임의의 문장에서 “-“와 일치하는 모든 부분을 의미한다. 뒤에 붙은 ‘g’는 “global”의 약자로서 일치하는 부분을 모두 식별하겠다는 의미이다. 한편, MDN(Mozilla Developers Network)에서 제시하는 <code class="highlighter-rouge">replace()</code> 메소드의 용법과 예제는 다음과 같다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var str = '2016-01-01';
+// regexp[Symbol.replace](str, newSubStr|function)
+var newstr = re[Symbol.replace](str, '.');
+console.log(newstr);  // 2016.01.01
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">replace()</code> 메소드는 <code class="highlighter-rouge">RegExp</code> 객체의 메소드이다. 이 메소드는 <code class="highlighter-rouge">Symbol</code> 타입으로 정의되어 있다. 이 타입은 최신 ECMA Script에 새로 추가된 것으로서, 잘 모르기도 하지만 본 포스트의 주제와 맞지 않으므로 생략한다. 어쨌든, <code class="highlighter-rouge">replace()</code> 메소드는 두 개의 인자를 받는다. 첫 번째 인자는 원본 문자열이고, 두 번째 인자는 원본 문자열에서 정규표현식과 일치하는 부분을 치환하고자 하는 치환 문자열이다. 위 예에서 “2016-01-01“이라는 원본 문자열은 ‘-‘이 ‘.’으로 모두 치환된다.</p>
+
+<h2 id="regexpprototypeexec">RegExp.prototype.exec()</h2>
+
+<p><code class="highlighter-rouge">RegExp</code> 객체의 <code class="highlighter-rouge">exec()</code> 메소드는 원본 문자열에서 정규표현식과 일치하는 부분을 객체 형태로 반환한다. 아래 예제를 보자.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var re = /foo/g;
+var result = re.exec('___foo___foo');
+</code></pre></div></div>
+
+<p>객체 result는 원본 문자열에서 주어진 정규표현식과 일치하는 부분들에 대한 정보를 담는다. 아래는 해당 객체의 내용을 출력해 본 것이다.원본 문자열인 “__<em>foo</em>__foo”를 input 프로퍼티에, 정규표현식과 일치하는 부분 문자열인 “foo”를 0 프로퍼티에 담고 있다. 두 번 일치하지만 “foo”는 하나이므로 length가 1인 것으로 생각된다. 또, 원본 문자열에서 정규표현식과 일치하는 첫 번째 문자열이 시작하는 위치가 4이므로, index 프로퍼티에 4가 저장된 것으로 생각된다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result = {
+  0:"foo"
+  index:3
+  input:"___foo___foo"
+  length:1
+  __proto__:Array(0)
+}
+</code></pre></div></div>
+
+<h2 id="regexputilsregexpexec">RegExpUtils::RegExpExec()</h2>
+
+<p><code class="highlighter-rouge">RegExp.prototype.exec()</code> 함수는 <code class="highlighter-rouge">V8</code> 내부에서 <code class="highlighter-rouge">RegExpExec()</code> 함수를 호출하는 것으로 생각된다. 당연한 말이지만, 정규표현식과 일치하는 부분을 찾아서 치환하기 위해서는 먼저 “찾아야” 한다. 따라서, <code class="highlighter-rouge">RegExpReplace()</code> 함수는 ECMA Script에 기술된 대로 <code class="highlighter-rouge">RegExpExec()</code> 함수를 호출한다. 해당 함수는 <code class="highlighter-rouge">Object</code> 클래스의 객체인 result를 반환한다. 아래는 해당 객체에 대하여, <code class="highlighter-rouge">Object</code> 클래스의 <code class="highlighter-rouge">Print()</code> 멤버함수를 실행시킨 결과이다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0x24c761393899: [JSArray]
+ - map: 0x3288b1786611 &lt;Map(HOLEY_ELEMENTS)&gt; [FastProperties]
+ - prototype: 0x39681e485539 &lt;JSArray[0]&gt;
+ - elements: 0x24c7613938d1 &lt;FixedArray[1]&gt; [HOLEY_ELEMENTS]
+ - length: 1
+ - properties: 0x17db08a02251 &lt;FixedArray[0]&gt; {
+    #length: 0x17db08a4ff89 &lt;AccessorInfo&gt; (const accessor descriptor)
+    #index: 3 (data field 0)
+    #input: 0x39681e4aa699 &lt;String[12]: ___foo___foo&gt; (data field 1)
+    #groups: 0x17db08a022e1 &lt;undefined&gt; (data field 2)
+ }
+ - elements: 0x24c7613938d1 &lt;FixedArray[1]&gt; {
+           0: 0x24c761393879 &lt;String[3]: foo&gt;
+ }
+</code></pre></div></div>
+
+<p>객체 result의 정보가 출력되는데, 이를 통해 대략 알 수 있는 것은 다음과 같다.</p>
+
+<ol>
+  <li><code class="highlighter-rouge">JSArray</code> 클래스의 객체이다. (JSArray 클래스는 Object 클래스를 상속 받음)</li>
+  <li>elements와 properties라는 FixedArray 객체를 갖는다.</li>
+  <li>elements 객체의 엔트리 0에는 문자열 “foo”가 저장되어 있다.</li>
+  <li>length는 1이다. 객체 elements의 엔트리 개수를 의미한다.</li>
+  <li>properties 객체는 index, input, group이라는 엔트리를 가진다.</li>
+</ol>
+
+<p>앞서, 자바스크립트 계층에서 result 객체를 출력한 내용과, C++ 레이어에서 result 객체를 출력한 내용이 동일한 것으로 생각된다. <code class="highlighter-rouge">JSArray</code>나 <code class="highlighter-rouge">Object</code> 클래스에 대해서는 추후에 별도로 살펴보아야 할 것 같다.</p>
+
+<h2 id="flow-of-runtime_regexpreplace">Flow of <code class="highlighter-rouge">Runtime_RegExpReplace</code></h2>
+
+<p>동일한 방법으로 해당 PoC에 대하여 C++ 레이어에서 객체 result의 정보를 출력해보면 다음과 같다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0x2bea81a10e31: [JS_OBJECT_TYPE]
+ - map: 0x98850a8cf41 &lt;Map(HOLEY_ELEMENTS)&gt; [FastProperties]
+ - prototype: 0x22efc2684649 &lt;Object map = 0x98850a822b1&gt;
+ - elements: 0x7268cc02251 &lt;FixedArray[0]&gt; [HOLEY_ELEMENTS]
+ - properties: 0x7268cc02251 &lt;FixedArray[0]&gt; {
+    #length: &lt;unboxed double&gt; 4.29497e+09 (data field 0)
+ }
+</code></pre></div></div>
+
+<p>해당 PoC는 <code class="highlighter-rouge">exec()</code> 메소드를 임의의 함수로 대체한다. 대체한 함수는 0xfffffffe를 반환한다. 한편, 위 결과를 보면 FixedArray 객체인 properties의 엔트리 length가 double 타입의 4.29497e+09 값임을 알 수 있다. 이 값은 0xfffffffe와 동일한 값이다. 즉, <code class="highlighter-rouge">exec()</code> 메소드가 반환하는 double 타입의 값이 length 프로퍼티에 저장된다.</p>
+
+<p>length는 원본 문자열에서 정규표현식과 일치하는 부분의 개수이다. 따라서, <code class="highlighter-rouge">RegExpReplace()</code> 함수는 본연의 목적을 위해 length 만큼 루프를 돌면서 정규표현식과 일치하는 모든 부분들을 치환하여야 한다. 이러한 루프는 코드 상에서는 물론, ECMA Script 명세에서도 확인할 수 있다. <code class="highlighter-rouge">RegExpReplace()</code> 함수는 객체 result의 length 프로퍼티의 값을 int 타입의 변수인 captures_length에 저장한다.</p>
+
+<h2 id="integer-overflow-by-explicit-type-conversion">Integer overflow by explicit type conversion</h2>
+
+<p>정수 오버플로우가 발현되는 부분은 이 <a href="https://cs.chromium.org/chromium/src/v8/src/runtime/runtime-regexp.cc?type=cs&amp;rcl=365bb5bb4a1dd62908baf0fad9d075fbcab695ed&amp;l=1797">link</a> 부분이다. 변수 captures_length는  <code class="highlighter-rouge">PositiveNumberToUint32()</code> 함수를 통해 객체 result의 length 프로퍼티의 값을 받는다. 함수의 이름에서부터 감이 오기 시작한다. 해당 함수는 length 프로퍼티의 값을 받아와 uint 타입으로 변환하여 반환한다. 문제는 이 반환 값을 받는 변수인 captures_length가 int 타입이라는 점이다. 결국, length 프로퍼티의 값이 4,294,967,295 값임에도 변수 captures_length의 값은 -2가 된다.</p>
+
+<h2 id="crashing">Crashing</h2>
+
+<p>이후의 코드를 따라가다 보면, int 타입의 변수 argc가 contents_length + 2로 계산이 되어 결국 0이 된다. 만약, PoC가 변조한 <code class="highlighter-rouge">exec()</code> 메소드를 0xfffffffd가 반환하도록 수정하면 argc의 값은 -1이 된다. 결국, 이후에 <code class="highlighter-rouge">RegExpReplace()</code> 함수는 0 이하의 <code class="highlighter-rouge">Handle&lt;Object&gt;</code> 배열을 동적할당 시도하는데, 이 과정에서 크로미움은 강제로 OOM(Out of Memory) 에러를 발생시키고 렌더러 프로세스는 종료된다.</p>
+
+
+        </section>
+        <footer class="post-footer">
+          <section class="share">
+            
+              
+                <a class="icon-twitter" href="http://twitter.com/share?text=Integer+Overflow+in+V8&amp;url=http://baek9.github.io/javascript%20&%20v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+                <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
+                </a>
+              
+            
+              
+            
+          </section>
+        </footer>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"><span>Written by</span></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
+              <h4>Taeho Nam</h4>
+              <p class="bio"></p>
+              <hr>
+              <p class="published">Published <time datetime="2018-04-03 07:14">03 Apr 2018</time></p>
+            </section>
+          </div>
+          
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="/">Taeho Nam</a> &copy; 2019<br>All rights reserved.</section>
+              </div>
+            </footer>
+          </div>
+        </div>
+        
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'evening-code'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </article>
+    </main>
+    <div class="bottom-closer">
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    
+      $window.on('scroll', function() {
+        var top = $window.scrollTop();
+
+        if (top < 0 || top > 1500) { return; }
+        $image
+          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+          .css('opacity', 1-Math.max(top/700, 0));
+      });
+      $window.trigger('scroll');
+
+      var height = $('.article-image').height();
+      $('.post-content').css('padding-top', height + 'px');
+
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({ scrollTop: target.offset().top }, 500);
+            return false;
+          }
+        }
+      });
+
+  });
+}(jQuery));
+</script>
+
+
+  </body>
+</html>

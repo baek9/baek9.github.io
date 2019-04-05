@@ -7,8 +7,8 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je..." />
+  <title>VS Code를 이용한 원격 개발 환경 구성</title>
+  <meta name="description" content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -17,24 +17,24 @@
   
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@thnam_" />
-    <meta name="twitter:title" content="Welcome to Jekyll!" />
+    <meta name="twitter:title" content="VS Code를 이용한 원격 개발 환경 구성" />
     <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
     
-    <meta name="twitter:description"  content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je..." />
+    <meta name="twitter:description"  content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
     
   
   
   <meta property="og:site_name" content="evening(code)" />
-  <meta property="og:title" content="Welcome to Jekyll!"/>
+  <meta property="og:title" content="VS Code를 이용한 원격 개발 환경 구성"/>
   
-  <meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je..." />
+  <meta property="og:description" content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
   
-  <meta property="og:image" content="http://baek9.github.io/assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG" />
-  <meta property="og:url" content="http://baek9.github.io/jekyll/update/2014/08/29/welcome-to-jekyll.html" >
+  <meta property="og:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  <meta property="og:url" content="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html" >
   <meta property="og:type" content="blog" />
-  <meta property="article:published_time" content="2014-08-29T23:34:25+09:00">
+  <meta property="article:published_time" content="2018-01-20T07:09:26+09:00">
 
-  <link rel="canonical" href="http://baek9.github.io/jekyll/update/2014/08/29/welcome-to-jekyll.html"/>
+  <link rel="canonical" href="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html"/>
   <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -55,12 +55,12 @@
       <article class="post">
         <div class="noarticleimage">
           <div class="post-meta">
-            <h1 class="post-title">Welcome to Jekyll!</h1>
+            <h1 class="post-title">VS Code를 이용한 원격 개발 환경 구성</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
-              <time datetime="2014-08-29T23:34:25+09:00">29 Aug 2014</time>
+              <time datetime="2018-01-20T07:09:26+09:00">20 Jan 2018</time>
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -73,35 +73,24 @@
             <span class="post-reading-time"></span> read
           </div>
           <a name="topofpage"></a>
-          <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve --watch</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+          <p>커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다.</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>보통, 리눅스를 이용한 개발은 가상머신에서 진행한다. 우분투 같은 배포판은 가상머신에 설치해도 가상머신 창의 크기에 따라 자동적으로 해상도가 조정된다. 하지만 GNOME이나 KDE와 같은 GUI 데스크톱 환경이 제공되지 않는 환경에서의 개발은 매우 불편하다. 가상머신 창의 크기를 키워도 800x600의 해상도로 고정되기 때문이다.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<h2 id="putty--vs-code">putty + VS Code</h2>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>putty를 이용하면 호스트에서 원격으로 가상머신 상에 접속하여 개발이 가능하다. 심지어 <code class="highlighter-rouge">DISPLAY</code> 환경변수의 값을 “:0”으로 설정하면 원격으로 리눅스 그래픽스 스택을 테스트할 수 있다! 물론, 디버깅 용도로 출력되는 메세지는 별도로 putty를 통해 확인할 수 있다는 점도 큰 장점이다. 한편, 코드 분석하기 위해서는 VS Code를 주로 사용하는데, 개발은 putty, 테스트는 가상머신, 분석은 VS Code에서 수행하니 매우 정신이 없었다. 물론, vi + ctags를 활용하면 putty에서 개발과 분석을 통합할 수 있지만 VS Code가 매우 좋은 도구라서 다른 방법을 찾기 시작했다.(<del>vi와 친하지 않다…</del>)</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<h2 id="remote-vs-code">Remote VS Code</h2>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">footer</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"site-footer"</span><span class="o">&gt;</span>
- <span class="o">&lt;</span><span class="nx">a</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"subscribe"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"/feed.xml"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">span</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"tooltip"</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">i</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"fa fa-rss"</span><span class="o">&gt;&lt;</span><span class="sr">/i&gt; Subscribe!&lt;/</span><span class="nx">span</span><span class="o">&gt;&lt;</span><span class="sr">/a</span><span class="err">&gt;
-</span>  <span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"inner"</span><span class="o">&gt;</span><span class="nx">a</span>
-   <span class="o">&lt;</span><span class="nx">section</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"copyright"</span><span class="o">&gt;</span><span class="nx">All</span> <span class="nx">content</span> <span class="nx">copyright</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"mailto:thn7440@gmail.com"</span><span class="o">&gt;</span><span class="nx">Taeho</span> <span class="nx">Nam</span><span class="o">&lt;</span><span class="sr">/a&gt; &amp;copy; 2019 &amp;bull; All rights reserved.&lt;/</span><span class="nx">section</span><span class="o">&gt;</span>
-   <span class="o">&lt;</span><span class="nx">section</span> <span class="kd">class</span><span class="o">=</span><span class="s2">"poweredby"</span><span class="o">&gt;</span><span class="nx">Made</span> <span class="kd">with</span> <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"http://jekyllrb.com"</span><span class="o">&gt;</span> <span class="nx">Jekyll</span><span class="o">&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">section</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
-</span><span class="o">&lt;</span><span class="sr">/footer&gt;</span></code></pre></figure>
-
+<p>VS Code는 Remote VS Code라는 플러그인을 제공한다. 이 플러그인은 이런거다. 우선, 가상머신에 rmate라는 바이너리와 ssh를 설치한다.(ssh는 putty를 사용하기 위해서도 필요하다) ssh를 설치했으므로 VS Code가 제공하는 쉘 상에서 역 터널링(reverse tunneling) 방법으로 가상머신에 접속한다. 이후, 쉘에서 “rmate [파일 경로]”를 입력하면 해당 파일을 VS Code에서 편집할 수 있다.</p>
 
         </section>
         <footer class="post-footer">
           <section class="share">
             
               
-                <a class="icon-twitter" href="http://twitter.com/share?text=Welcome+to+Jekyll%21&amp;url=http://baek9.github.io/jekyll/update/2014/08/29/welcome-to-jekyll"
+                <a class="icon-twitter" href="http://twitter.com/share?text=VS+Code%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EC%9B%90%EA%B2%A9+%EA%B0%9C%EB%B0%9C+%ED%99%98%EA%B2%BD+%EA%B5%AC%EC%84%B1&amp;url=http://baek9.github.io/devtools/2018/01/20/VS_Code를_이용한_원격_개발_환경_구성"
                   onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
                 <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
                 </a>
@@ -119,7 +108,7 @@
               <h4>Taeho Nam</h4>
               <p class="bio"></p>
               <hr>
-              <p class="published">Published <time datetime="2014-08-29 23:34">29 Aug 2014</time></p>
+              <p class="published">Published <time datetime="2018-01-20 07:09">20 Jan 2018</time></p>
             </section>
           </div>
           
