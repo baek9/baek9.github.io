@@ -1,6 +1,7 @@
 /**
  * Syntax highlighting styles
  */
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
 .highlight pre {
   background-color: #272822; }
 
@@ -262,7 +263,7 @@ main {
   display: block; }
 
 body {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
@@ -453,7 +454,7 @@ body {
   letter-spacing: -0.02em;
   font-weight: 400;
   font-style: normal;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   z-index: 999; }
 
 .tag-articleimage .post-reading {
@@ -515,7 +516,7 @@ body {
     left: 30%;
     right: 30%;
     z-index: 9;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -553,7 +554,7 @@ body {
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 0px 0px 1px rgba(0, 0, 0, 0.5);
     font-size: 14px;
     overflow: hidden;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
     white-space: nowrap;
     text-overflow: ellipsis; }
     .post .article-image .post-meta-text a {
@@ -569,7 +570,7 @@ body {
   .post .article-image .topofpage {
     text-decoration: underline; }
 .post .noarticleimage .post-meta {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   padding-top: 60px; }
 .post .noarticleimage .post-title {
   font-weight: 700;
@@ -599,15 +600,15 @@ body {
   font-style: normal;
   font-size: 14px;
   overflow: hidden;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis; }
 .post .post-content {
   width: 100%;
-  font-family: Linux Libertine;
+  font-family: "Nanum Barun Gothic", Linux Libertine;
   color: #aaa; }
   .post .post-content h1, .post .post-content h2, .post .post-content h3 {
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+    font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
   .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
     letter-spacing: -0.02em;
     font-weight: 700;
@@ -615,7 +616,7 @@ body {
     font-size: 24px;
     line-height: 1.3;
     margin: 0;
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin-bottom: 4px; }
   .post .post-content h2, .post .post-content h1 {
     letter-spacing: -0.02em;
@@ -631,7 +632,8 @@ body {
     font-size: 22px;
     line-height: 30px;
     margin: 0;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -693,7 +695,7 @@ body {
     list-style-type: decimal; }
 .post .bottom-teaser {
   padding: 50px 0;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  font-family: "Nanum Barun Gothic", Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
   .post .bottom-teaser hr {
     border: 0;
     padding: 0;
@@ -745,6 +747,23 @@ body {
       padding-left: 100px; }
       .post .bottom-teaser .isLeft p.published {
         color: #999; }
+    .post .bottom-teaser .isLeft .site-footer {
+      margin: 0;
+      padding: 0;
+      color: #aaa;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.3; }
+      .post .bottom-teaser .isLeft .site-footer a {
+        color: white;
+        text-decoration: none; }
+        .post .bottom-teaser .isLeft .site-footer a:hover {
+          text-decoration: underline; }
+      .post .bottom-teaser .isLeft .site-footer .poweredby {
+        display: block;
+        padding-bottom: 18px;
+        font-weight: 700;
+        color: white; }
   .post .bottom-teaser .isRight {
     float: right;
     width: 47%;

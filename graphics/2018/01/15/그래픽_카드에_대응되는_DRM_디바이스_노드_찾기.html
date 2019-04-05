@@ -61,6 +61,7 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
               <time datetime="2018-01-15T06:07:36+09:00">15 Jan 2018</time>
+              
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -82,64 +83,64 @@
 
 <p><code class="highlighter-rouge">udevadm</code>은 <code class="highlighter-rouge">udev</code>에 의해 생성된 디바이스 노드에 대응되는 장치의 속성들을 출력한다. 주 그래픽 카드는 <code class="highlighter-rouge">boot_vga</code> 속성의 값으로 1을 갖는다. 따라서, <code class="highlighter-rouge">udevadm</code>으로 출력한 특정 디바이스 노드의 속성 중에 <code class="highlighter-rouge">boot_vga</code> 속성의 값이 1이라면, 해당 노드는 주 그래픽 카드에 대응된다. 만약, “/dev/dri/card0”에 대응되는 그래픽 카드의 속성들을 보기 위해서는 아래와 같이 명령어를 입력하면 된다. “/dev/dri/card0”는 <code class="highlighter-rouge">udev</code> 관련 용어로 <code class="highlighter-rouge">DEVNAME</code>이라고 부르는 듯 하다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ udevadm info --query=all --name=/dev/dri/card0
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="nv">$ </span>udevadm info <span class="nt">--query</span><span class="o">=</span>all <span class="nt">--name</span><span class="o">=</span>/dev/dri/card0
 	
 	P: /devices/pci0000:00/0000:00:0f.0/drm/card0
 	N: dri/card0
-	E: DEVNAME=/dev/dri/card0
-	E: DEVPATH=/devices/pci0000:00/0000:00:0f.0/drm/card0
-	E: DEVTYPE=drm_minor
-	E: ID_FOR_SEAT=drm-pci-0000_00_0f_0
-	E: ID_PATH=pci-0000:00:0f.0
-	E: ID_PATH_TAG=pci-0000_00_0f_0
-	E: MAJOR=226
-	E: MINOR=0
-	E: SUBSYSTEM=drm
-	E: TAGS=:master-of-seat:uaccess:seat:
-	E: USEC_INITIALIZED=8444405
+	E: <span class="nv">DEVNAME</span><span class="o">=</span>/dev/dri/card0
+	E: <span class="nv">DEVPATH</span><span class="o">=</span>/devices/pci0000:00/0000:00:0f.0/drm/card0
+	E: <span class="nv">DEVTYPE</span><span class="o">=</span>drm_minor
+	E: <span class="nv">ID_FOR_SEAT</span><span class="o">=</span>drm-pci-0000_00_0f_0
+	E: <span class="nv">ID_PATH</span><span class="o">=</span>pci-0000:00:0f.0
+	E: <span class="nv">ID_PATH_TAG</span><span class="o">=</span>pci-0000_00_0f_0
+	E: <span class="nv">MAJOR</span><span class="o">=</span>226
+	E: <span class="nv">MINOR</span><span class="o">=</span>0
+	E: <span class="nv">SUBSYSTEM</span><span class="o">=</span>drm
+	E: <span class="nv">TAGS</span><span class="o">=</span>:master-of-seat:uaccess:seat:
+	E: <span class="nv">USEC_INITIALIZED</span><span class="o">=</span>8444405
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">udev</code>는 핫플러그(Hotplug) 방식으로 연결된 장치들에 대해 “/dev” 아래에 디바이스 노드들을 생성한다. 사실, <code class="highlighter-rouge">udev</code>는 <code class="highlighter-rouge">sysfs</code>가 제공하는 장치들의 정보를 가지고 “/dev”를 구성한다고 한다. 장치들의 정보는 “/sys” 아래에 계층적으로 제공되며, 이 경로는 <code class="highlighter-rouge">udev</code> 관련 용어로 <code class="highlighter-rouge">DEVPATH</code>라고 한다. 위 결과를 통해서, <code class="highlighter-rouge">DEVNAME</code>인 “/dev/dri/card0”에 대응되는 <code class="highlighter-rouge">DEVPATH</code>는 “/devices/pci0000:00/0000:00:0f.0/drm/card0”임을 알 수 있다. <code class="highlighter-rouge">DEVPATH</code>를 가지고도 아래와 같이 장치의 정보를 조회할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	$ udevadm info -a -p /sys/devices/pci0000:00/0000:00:0f.0/drm/card0
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="nv">$ </span>udevadm info <span class="nt">-a</span> <span class="nt">-p</span> /sys/devices/pci0000:00/0000:00:0f.0/drm/card0
 	
-	Udevadm info starts with the device specified by the devpath and then
-	walks up the chain of parent devices. It prints for every device
-	found, all possible attributes in the udev rules key format.
+	Udevadm info starts with the device specified by the devpath and <span class="k">then
+	</span>walks up the chain of parent devices. It prints <span class="k">for </span>every device
+	found, all possible attributes <span class="k">in </span>the udev rules key format.
 	A rule to match, can be composed by the attributes of the device
 	and the attributes from one single parent device.
 	
-	  looking at device '/devices/pci0000:00/0000:00:0f.0/drm/card0':
-	    KERNEL=="card0"
-	    SUBSYSTEM=="drm"
-	    DRIVER==""
+	  looking at device <span class="s1">'/devices/pci0000:00/0000:00:0f.0/drm/card0'</span>:
+	    <span class="nv">KERNEL</span><span class="o">==</span><span class="s2">"card0"</span>
+	    <span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">"drm"</span>
+	    <span class="nv">DRIVER</span><span class="o">==</span><span class="s2">""</span>
 	
-	  looking at parent device '/devices/pci0000:00/0000:00:0f.0':
-	    KERNELS=="0000:00:0f.0"
-	    SUBSYSTEMS=="pci"
-	    DRIVERS=="vmwgfx"
-	    ATTRS{boot_vga}=="1"
-	    ATTRS{broken_parity_status}=="0"
-	    ATTRS{class}=="0x030000"
-	    ATTRS{consistent_dma_mask_bits}=="32"
-	    ATTRS{d3cold_allowed}=="0"
-	    ATTRS{device}=="0x0405"
-	    ATTRS{dma_mask_bits}=="32"
-	    ATTRS{driver_override}=="(null)"
-	    ATTRS{enable}=="1"
-	    ATTRS{irq}=="16"
-	    ATTRS{local_cpulist}=="0-1"
-	    ATTRS{local_cpus}=="00000000,00000000,00000000,00000003"
-	    ATTRS{msi_bus}=="1"
-	    ATTRS{numa_node}=="-1"
-	    ATTRS{subsystem_device}=="0x0405"
-	    ATTRS{subsystem_vendor}=="0x15ad"
-	    ATTRS{vendor}=="0x15ad"
+	  looking at parent device <span class="s1">'/devices/pci0000:00/0000:00:0f.0'</span>:
+	    <span class="nv">KERNELS</span><span class="o">==</span><span class="s2">"0000:00:0f.0"</span>
+	    <span class="nv">SUBSYSTEMS</span><span class="o">==</span><span class="s2">"pci"</span>
+	    <span class="nv">DRIVERS</span><span class="o">==</span><span class="s2">"vmwgfx"</span>
+	    ATTRS<span class="o">{</span>boot_vga<span class="o">}==</span><span class="s2">"1"</span>
+	    ATTRS<span class="o">{</span>broken_parity_status<span class="o">}==</span><span class="s2">"0"</span>
+	    ATTRS<span class="o">{</span>class<span class="o">}==</span><span class="s2">"0x030000"</span>
+	    ATTRS<span class="o">{</span>consistent_dma_mask_bits<span class="o">}==</span><span class="s2">"32"</span>
+	    ATTRS<span class="o">{</span>d3cold_allowed<span class="o">}==</span><span class="s2">"0"</span>
+	    ATTRS<span class="o">{</span>device<span class="o">}==</span><span class="s2">"0x0405"</span>
+	    ATTRS<span class="o">{</span>dma_mask_bits<span class="o">}==</span><span class="s2">"32"</span>
+	    ATTRS<span class="o">{</span>driver_override<span class="o">}==</span><span class="s2">"(null)"</span>
+	    ATTRS<span class="o">{</span><span class="nb">enable</span><span class="o">}==</span><span class="s2">"1"</span>
+	    ATTRS<span class="o">{</span>irq<span class="o">}==</span><span class="s2">"16"</span>
+	    ATTRS<span class="o">{</span>local_cpulist<span class="o">}==</span><span class="s2">"0-1"</span>
+	    ATTRS<span class="o">{</span>local_cpus<span class="o">}==</span><span class="s2">"00000000,00000000,00000000,00000003"</span>
+	    ATTRS<span class="o">{</span>msi_bus<span class="o">}==</span><span class="s2">"1"</span>
+	    ATTRS<span class="o">{</span>numa_node<span class="o">}==</span><span class="s2">"-1"</span>
+	    ATTRS<span class="o">{</span>subsystem_device<span class="o">}==</span><span class="s2">"0x0405"</span>
+	    ATTRS<span class="o">{</span>subsystem_vendor<span class="o">}==</span><span class="s2">"0x15ad"</span>
+	    ATTRS<span class="o">{</span>vendor<span class="o">}==</span><span class="s2">"0x15ad"</span>
 	
-	  looking at parent device '/devices/pci0000:00':
-	    KERNELS=="pci0000:00"
-	    SUBSYSTEMS==""
-	    DRIVERS==""
+	  looking at parent device <span class="s1">'/devices/pci0000:00'</span>:
+	    <span class="nv">KERNELS</span><span class="o">==</span><span class="s2">"pci0000:00"</span>
+	    <span class="nv">SUBSYSTEMS</span><span class="o">==</span><span class="s2">""</span>
+	    <span class="nv">DRIVERS</span><span class="o">==</span><span class="s2">""</span>
 </code></pre></div></div>
 
 <h2 id="libudev를-이용한-방법">libudev를 이용한 방법</h2>
@@ -162,39 +163,27 @@
 
 <h2 id="참고-weston_load_module">참고, <code class="highlighter-rouge">weston_load_module()</code>
 </h2>
+<p>두 문자열 “name”과 “entrypoint”를 입력받는다. 우선 “name”을 이용하여 “.libs/[name]”에 위치한 라이브러리를 동적으로 로딩한다. “name”은 로딩하려는 라이브러리의 파일 이름을 말한다. <code class="highlighter-rouge">weston</code>은 백엔드(backend)마다 로딩할 라이브러리의 파일 이름을 하드코딩으로 매핑하고 있다. “libweston/compositor.c”의 <code class="highlighter-rouge">backend_map[]</code>이라는 문자열 배열이 그것이다. “[drm|fbdev|headless|rdp|wayland|x11]-backend.so”가 배열에 존재하고, 배열 참조를 위한 인덱스는 “libweston/compositor.h” 의 enum 타입인 “weston_compositor_backend”를 이용한다. 즉, “backend_map[WESTON_BACKEND_DRM]”은 “drm-backend.so”라는 문자열로 매핑된다. 이 문자열이 <code class="highlighter-rouge">weston_load_moudle()</code> 함수의 첫 번째 인자인 “name”으로 전달되는 것이다. 백엔드의 종류와 각각에 매핑되는 문자열은 아래와 같다.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>두 문자열 “name”과 “entrypoint”를 입력받는다. 우선 “name”을 이용하여 “.libs/[name]”에 위치한 라이브러리를 동적으로 로딩한다. “name”은 로딩하려는 라이브러리의 파일 이름을 말한다. <code class="highlighter-rouge">weston</code>은 백엔드(backend)마다 로딩할 라이브러리의 파일 이름을 하드코딩으로 매핑하고 있다. “libweston/compositor.c”의 <code class="highlighter-rouge">backend_map[]</code>이라는 문자열 배열이 그것이다. “[drm</td>
-      <td>fbdev</td>
-      <td>headless</td>
-      <td>rdp</td>
-      <td>wayland</td>
-      <td>x11]-backend.so”가 배열에 존재하고, 배열 참조를 위한 인덱스는 “libweston/compositor.h” 의 enum 타입인 “weston_compositor_backend”를 이용한다. 즉, “backend_map[WESTON_BACKEND_DRM]”은 “drm-backend.so”라는 문자열로 매핑된다. 이 문자열이 <code class="highlighter-rouge">weston_load_moudle()</code> 함수의 첫 번째 인자인 “name”으로 전달되는 것이다. 백엔드의 종류와 각각에 매핑되는 문자열은 아래와 같다.</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/// libweston/compositor.h
-enum weston_compositor_backend {
-	WESTON_BACKEND_DRM,
-	WESTON_BACKEND_FBDEV,
-	WESTON_BACKEND_HEADLESS,
-	WESTON_BACKEND_RDP,
-	WESTON_BACKEND_WAYLAND,
-	WESTON_BACKEND_X11,
-};
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">/// libweston/compositor.h
+</span><span class="k">enum</span> <span class="n">weston_compositor_backend</span> <span class="p">{</span>
+	<span class="n">WESTON_BACKEND_DRM</span><span class="p">,</span>
+	<span class="n">WESTON_BACKEND_FBDEV</span><span class="p">,</span>
+	<span class="n">WESTON_BACKEND_HEADLESS</span><span class="p">,</span>
+	<span class="n">WESTON_BACKEND_RDP</span><span class="p">,</span>
+	<span class="n">WESTON_BACKEND_WAYLAND</span><span class="p">,</span>
+	<span class="n">WESTON_BACKEND_X11</span><span class="p">,</span>
+<span class="p">};</span>
 			
-// libweston/compositor.c
-static const char * const backend_map[] = {
-	[WESTON_BACKEND_DRM] =		"drm-backend.so",
-	[WESTON_BACKEND_FBDEV] =	"fbdev-backend.so",
-	[WESTON_BACKEND_HEADLESS] =	"headless-backend.so",
-	[WESTON_BACKEND_RDP] =		"rdp-backend.so",
-	[WESTON_BACKEND_WAYLAND] =	"wayland-backend.so",
-	[WESTON_BACKEND_X11] =		"x11-backend.so",
-};
+<span class="c1">// libweston/compositor.c
+</span><span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="k">const</span> <span class="n">backend_map</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_DRM</span><span class="p">]</span> <span class="o">=</span>		<span class="s">"drm-backend.so"</span><span class="p">,</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_FBDEV</span><span class="p">]</span> <span class="o">=</span>	<span class="s">"fbdev-backend.so"</span><span class="p">,</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_HEADLESS</span><span class="p">]</span> <span class="o">=</span>	<span class="s">"headless-backend.so"</span><span class="p">,</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_RDP</span><span class="p">]</span> <span class="o">=</span>		<span class="s">"rdp-backend.so"</span><span class="p">,</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_WAYLAND</span><span class="p">]</span> <span class="o">=</span>	<span class="s">"wayland-backend.so"</span><span class="p">,</span>
+	<span class="p">[</span><span class="n">WESTON_BACKEND_X11</span><span class="p">]</span> <span class="o">=</span>		<span class="s">"x11-backend.so"</span><span class="p">,</span>
+<span class="p">};</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">weston_load_module()</code>은 인자로 받은 첫 번째 문자열인 “name”에 위치한 라이브러리를 함수 <code class="highlighter-rouge">dlopen()</code>으로 로딩한다. 인자로 받은 두 번째 문자열인 “entrypoint”는 로딩한 라이브러리 내에서 호출할 함수의 이름을 의미한다. 즉, <code class="highlighter-rouge">dlsym</code>을 이용하여 “entrypoint”, 즉, 함수 <code class="highlighter-rouge">weston_backend_init()</code>의 주소를 찾아 호출한다. <code class="highlighter-rouge">libdl</code>은 이처럼 런타임에 라이브러리를 로딩하고 해당 라이브러리의 심볼들에 접근할 수 있게끔 도와준다. <code class="highlighter-rouge">weston_load_module()</code>에 도달하기까지의 콜 스택은 다음과 같다.</p>

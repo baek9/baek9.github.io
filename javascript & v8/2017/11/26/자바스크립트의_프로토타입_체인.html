@@ -61,6 +61,7 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
               <time datetime="2017-11-26T07:12:24+09:00">26 Nov 2017</time>
+              
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -79,11 +80,13 @@
 
 <p>자바스크립트에서는 정의된 모든 함수(function)를 객체를 생성하기 위한 생성자로 활용할 수 있다. C++에서 클래스 이름과 동일한 이름을 가진 멤버 함수가 생성자로 지정되는 것과는 상당히 다른 부분이다. 자바스트립트에서는 기본적으로 <code class="highlighter-rouge">Object()</code>라는 함수를 제공하고 있으며, <code class="highlighter-rouge">new</code>라는 연산자를 이용하여 다음과 같이 객체를 생성할 수 있다.</p>
 
-<p><code class="highlighter-rouge">var a = new Object();</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+</code></pre></div></div>
 
 <p>또한, 이러한 방법말고도 객체 리터럴 표기법(Object literal notation)을 이용하여 객체를 생성할 수도 있다. JSON(JavaScript Object Notation)과 유사하지만 차이점이 존재한다. 객체 리터럴 표기법을 이용하여 다음과 같이 객체를 생성할 수 있으며, 바로 위의 코드와 동일하다.</p>
 
-<p><code class="highlighter-rouge">var a = {}</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{}</span>
+</code></pre></div></div>
 
 <h2 id="객체">객체</h2>
 
@@ -97,20 +100,22 @@
 
 <p>앞서 설명했듯이 객체는 프로퍼티와 값의 쌍으로 구성되며, 자바스크립트의 모든 자료형이 값에 대입될 수 있다. 따라서 객체인 함수, 즉, 함수 객체도 속성과 값의 쌍을 여럿 가질 수 있다. 함수 객체는 특별히 <code class="highlighter-rouge">prototype</code> 이라는 속성을 가지는데, 이는 해당 객체의 프로토타입 객체를 가리킨다. 앞서도 언급했둣이 자바스크립트의 모든 객체는 프로토타입 객체와 한 쌍을 이룬다. 즉, 아래와 같이 함수를 정의하는 순간,</p>
 
-<p><code class="highlighter-rouge">function funcA () {}</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">funcA</span> <span class="p">()</span> <span class="p">{}</span>
+</code></pre></div></div>
 
 <p>object 타입인 함수 객체 <code class="highlighter-rouge">funcA</code>가 생성되며, 이 객체는 함수 객체의 특징 상 <code class="highlighter-rouge">prototype</code>이라는 속성을 갖는다. 특정 객체의 속성을 참조하려면 <code class="highlighter-rouge">.</code>을 이용하면 된다. 즉, 아래와 같이 함수 객체의 프로토타입 객체를 참조할 수 있다.</p>
 
-<p><code class="highlighter-rouge">funcA.prototype</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span>
+</code></pre></div></div>
 
 <h2 id="프로토타입-객체">프로토타입 객체</h2>
 
 <p>함수 객체가 생성되는 순간에 프로토타입 객체가 함께 생성된다. 이는 <code class="highlighter-rouge">prototype</code> 속성으로 참조할 수 있다. 프로토타입 객체도 객체이므로 <code class="highlighter-rouge">Object()</code> 함수 또는 객체 리터럴 표기법으로 생성하는 것과 그 원리는 다를 바 없다. 다만, 일반적인 객체들과 다른 점은 개발자가 모르는 사이에 생성된다는 점이다. 따라서, 앞서 함수 객체 <code class="highlighter-rouge">funcA</code>를 생성하는 순간 아래의 코드가 암묵적으로 수행되는 것으로 이해해 볼 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var p = new Object();
-p.constructor = funcA;
-funcA.prototype = p;
-p.__proto__ = Object.prototype;
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">p</span><span class="p">.</span><span class="kd">constructor</span> <span class="o">=</span> <span class="nx">funcA</span><span class="p">;</span>
+<span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">p</span><span class="p">;</span>
+<span class="nx">p</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>위 코드로 이해를 해보면, 함수 객체 <code class="highlighter-rouge">funcA</code>가 생성될 때 프로토타입 객체가 생성된다. 함수 객체 입장에서는 <code class="highlighter-rouge">prototype</code>이라는 속성으로 프로토타입 객체를 참조할 수 있다. 한편, 프로토타입 객체는 두 가지 속성, <code class="highlighter-rouge">constructor</code>와 <code class="highlighter-rouge">__proto__</code>를 가진다. 전자는 다시 역으로 함수 객체 <code class="highlighter-rouge">funcA</code>를 가리킨다. 여기까지가 함수 객체와 생성되는 프로토타입 객체의 생성 과정과 실체에 대한 내용이다.</p>
@@ -119,20 +124,23 @@ p.__proto__ = Object.prototype;
 
 <p>프로토타입 객체에 대하여 한 가지 설명하지 않은 것은, 프로토타입 객체가 가진 두 가지 속성 중 하나인 <code class="highlighter-rouge">__proto__</code> 속성이다. 이 속성은 함수 객체를 제외한 나머지, 그러니까, 프로토타입 객체를 포함한 일반 객체들이 생성될 때, 생성의 원인이 되는 객체의 프로토타입을 참조하기 위한 속성이다. 바로 앞 예제에서 프로토타입 객체 생성의 ‘원인’인 객체는 함수 객체 <code class="highlighter-rouge">Object()</code>이므로, 바로 이 함수 객체와 쌍을 이루는 프로토타입 객체를 참조한다는 것이다. 결국, 다음의 등식은 참이다.</p>
 
-<p><code class="highlighter-rouge">funcA.prototype.__proto__ === Object.prototype</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span>
+</code></pre></div></div>
 
 <p>앞서, 모든 함수는 일반 객체를 생성하기 위한 생성자로서 활용할 수 있다고 했다. 따라서 함수 객체 <code class="highlighter-rouge">Object()</code>를 이용해서 또다른 객체를 만들 수 있는 것처럼, 함수 객체 <code class="highlighter-rouge">funcA()</code>를 이용해서 다음과 같이 또다른 객체를 생성할 수 있다.</p>
 
-<p><code class="highlighter-rouge">var objA = new funcA()</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">objA</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">funcA</span><span class="p">()</span>
+</code></pre></div></div>
 
 <p>앞서 설명한 것처럼 일반 객체인 <code class="highlighter-rouge">objA</code>는 <code class="highlighter-rouge">__proto__</code>라는 속성을 가진다. 해당 객체의 생성은 함수 객체 <code class="highlighter-rouge">funcA()</code>이 원인이므로 다음의 등식은 참이다.</p>
 
-<p><code class="highlighter-rouge">objA.__proto__ === funcA.prototype</code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">objA</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">===</span> <span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span>
+</code></pre></div></div>
 
 <p>두 등식을 나란히 놓고보면,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>objA.__proto__ === funcA.prototype
-funcA.prototype.__proto__ === Object.prototype
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">objA</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">===</span> <span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span>
+<span class="nx">funcA</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">__proto__</code> 속성으로 인해 일반 객체를 시작으로 두 개의 프로토타입 객체까지 연달아 연결된 것이다. 바로 이것을 프로토타입 체인이라고 한다. 이러한 이유로 자바스크립트 체인을 이용하면 OOP의 중요한 개념 중의 하나인 상속을 구현할 수 있다. 같은 방법으로 <code class="highlighter-rouge">objB</code> 객체를 만든다면, ‘objA`와 다른 객체이지만 동일한 프로토타입 객체를 참조한다. 이러한 특징을 이용하면 프로토타입 객체에 임의의 속성을 생성하여 C++에서의 클래스 변수처럼 사용할 수 있다.</p>

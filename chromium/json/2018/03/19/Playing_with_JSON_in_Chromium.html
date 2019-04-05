@@ -61,6 +61,7 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
               <time datetime="2018-03-19T06:50:45+09:00">19 Mar 2018</time>
+              
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -83,13 +84,13 @@
 
 <p>크로미움은 심지어 파일 경로를 처리하는 클래스까지 갖고 있다. 해당 클래스는 <code class="highlighter-rouge">FilePath</code>이다. 굳이 파일 경로를 처리하는 클래스가 필요한 지 의문이 들 수 있지만, 플랫폼마다 파일 경로를 구성하는 규칙이 다르기 때문에라도 매우 유용하고 중요한, 생각보다 복잡한 클래스이다. 처리하고자 하는 파일이 test.json이고, 파일 경로가 “/path/to/file/test.json”이라면 다음과 같이 <code class="highlighter-rouge">FilePath</code> 객체를 생성할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::FilePath json_path("/path/to/file/test.json");
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">base</span><span class="o">::</span><span class="n">FilePath</span> <span class="n">json_path</span><span class="p">(</span><span class="s">"/path/to/file/test.json"</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>위 코드로 json_path라는 <code class="highlighter-rouge">FilePath</code> 객체가 생성된다. 이제 이 객체를 이용하여 test.json을 읽고, 그 내용을 바이트 스트림 형태로 가져와야 한다. 이 작업은 <code class="highlighter-rouge">ReadFileToString()</code> 함수를 이용하여 아래와 같이 수행할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::string json_string;
-base::ReadFileToString(json_path, &amp;json_string);
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">json_string</span><span class="p">;</span>
+<span class="n">base</span><span class="o">::</span><span class="n">ReadFileToString</span><span class="p">(</span><span class="n">json_path</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">json_string</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>위 코드로 test.json의 내용이 문자열 객체인 json_string에 저장된다.</p>
@@ -98,8 +99,8 @@ base::ReadFileToString(json_path, &amp;json_string);
 
 <p>json_string은 test.json의 내용을 바이트 스트림으로 저장하고 있을 뿐인 문자열 객체에 불과하다. 이 문자열을 JSON 문법에 맞추어 취급하기 쉬운 형태로 파싱하여야 한다. 생각만해도 번거로운 이 작업은 <code class="highlighter-rouge">base</code> 네임스페이스 내 <code class="highlighter-rouge">JSONReader</code> 클래스의 멤버 함수인 <code class="highlighter-rouge">Read()</code>로 쉽게 처리할 수 있다. static 함수이므로 다음과 같이 활용할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::unique_ptr&lt;base::Value&gt; json_structure;
-json_structure = base::JSONReader::Read(json_str);
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">base</span><span class="o">::</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">json_structure</span><span class="p">;</span>
+<span class="n">json_structure</span> <span class="o">=</span> <span class="n">base</span><span class="o">::</span><span class="n">JSONReader</span><span class="o">::</span><span class="n">Read</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>위 코드로 json_structure라는 <code class="highlighter-rouge">Value</code> 객체가 생성된다. 이를 이용하여 test.json 내의 모든 키 값들을 추출할 수 있다.</p>
@@ -123,19 +124,19 @@ json_structure = base::JSONReader::Read(json_str);
 
 <p>JSON은 <code class="highlighter-rouge">Collection</code>과 <code class="highlighter-rouge">Ordered list</code>로 구성된다. 따라서, JSON으로부터 이 두 구조를 얻어낼 수 있다는 것은 곧, JSON을 완벽하게 활용할 수 있다는 것이다. <code class="highlighter-rouge">Collection</code>과 <code class="highlighter-rouge">Ordered list</code>를 구현하는 방법은 언어에 따라 다르다. 크로미움에서는 각각 <code class="highlighter-rouge">Dictionary</code>와 <code class="highlighter-rouge">List</code>로 표현한다. 그리고, <code class="highlighter-rouge">base</code> 네임스페이스에는 <code class="highlighter-rouge">Value</code> 클래스를 상속받는 <code class="highlighter-rouge">DictionaryValue</code>와 <code class="highlighter-rouge">ListValue</code>라는 클래스가 존재한다. 뭔가 감이 오기 시작한다. 더 진행하기에 앞서서, test.json의 내용이 다음과 같다고 가정하자.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-   "key1" : {
-      "key11" : "value11",
-      "key12" : [ "element121",
-                  "element122"
-                ]
-}
-</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"key1"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"key11"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"value11"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"key12"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"element121"</span><span class="p">,</span><span class="w">
+                  </span><span class="s2">"element122"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <p>JSON 전쳬가 하나의 <code class="highlighter-rouge">Collection</code>, 즉, <code class="highlighter-rouge">Dictionary</code>이다. 따라서 앞서 파싱하여 얻어낸 <code class="highlighter-rouge">Value</code> 객체인 json_structure로부터 <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어내야 한다. 그래야만 key11의 값인 “value11”과 <code class="highlighter-rouge">Ordered list</code>인 key12가 포함하는 값들인 “element121”, “element122”를 추출할 수 있을 것이다. <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어내기 위해서는 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">From()</code> 함수를 이용하면 된다. static 함수이므로 다음과 같이 활용할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::unique_ptr&lt;base::DictionaryValue&gt; json_dictionary;
-json_dictionary = base::DictionaryValue::From(json_structure);
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">base</span><span class="o">::</span><span class="n">DictionaryValue</span><span class="o">&gt;</span> <span class="n">json_dictionary</span><span class="p">;</span>
+<span class="n">json_dictionary</span> <span class="o">=</span> <span class="n">base</span><span class="o">::</span><span class="n">DictionaryValue</span><span class="o">::</span><span class="n">From</span><span class="p">(</span><span class="n">json_structure</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>위 코드로 json_dictionary라는 <code class="highlighter-rouge">DictionaryValue</code> 객체를 얻어낼 수 있다.</p>
@@ -144,65 +145,66 @@ json_dictionary = base::DictionaryValue::From(json_structure);
 
 <p>크로미움에서만 그런지는 모르겠지만 “.”을 이용하여 특정 키의 경로를 표현할 수 있다. 예를 들어, Key11의 주소는 “key1.key11”이다. 이 경로를 이용하여 해당 키의 값을 추출할 수 있다. key11에 대응되는 값의 타입은 문자열이므로 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">GetString()</code> 함수를 아래와 같이 활용할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>std::string key11_value;
-json_dictionary-&gt;GetString("key1.key11", &amp;key11_value);
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">key11_value</span><span class="p">;</span>
+<span class="n">json_dictionary</span><span class="o">-&gt;</span><span class="n">GetString</span><span class="p">(</span><span class="s">"key1.key11"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">key11_value</span><span class="p">);</span>
 </code></pre></div></div>
 
 <h2 id="getting-a-list-from-a-dictionary">Getting a list from a dictionary</h2>
 
 <p>key12는 대괄호로 둘러쌓인 Ordered list, 즉, List이다. 따라서 이번에는 <code class="highlighter-rouge">DictionaryValue</code> 객체로부터 <code class="highlighter-rouge">std::string</code>이 아닌, <code class="highlighter-rouge">ListValue</code>객체를 추출해야 한다. 이를 위해 <code class="highlighter-rouge">DictionaryValue</code> 클래스의 <code class="highlighter-rouge">GetList()</code> 함수를 아래와 같이 활용할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::ListValue* key12_list;
-json_dictionary-&gt;GetList("key1.key12", &amp;key12_list);
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">base</span><span class="o">::</span><span class="n">ListValue</span><span class="o">*</span> <span class="n">key12_list</span><span class="p">;</span>
+<span class="n">json_dictionary</span><span class="o">-&gt;</span><span class="n">GetList</span><span class="p">(</span><span class="s">"key1.key12"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">key12_list</span><span class="p">);</span>
 </code></pre></div></div>
 
 <h2 id="iterate-and-getting-a-value-which-type-is-string-from-a-list">Iterate and getting a value which type is “string” from a list</h2>
 
 <p>앞서 얻어낸 <code class="highlighter-rouge">ListValue</code> 객체인 key12_list의 원소들을 순회하여 Ordered list인 key12의 모든 원소들을 추출할 수 있다. <code class="highlighter-rouge">DictionaryValue</code>, <code class="highlighter-rouge">ListValue</code> 클래스는 <code class="highlighter-rouge">Value</code> 클래스를 상속받는다. <code class="highlighter-rouge">ListValue</code>의 경우에는 원소들이 부모 클래스인 <code class="highlighter-rouge">Value</code>가 정의하는 멤버 변수, <code class="highlighter-rouge">ListStorage</code>에 저장된다. 아래와 같은 연쇄 대입 체인에 따르면,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// base/values.h
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// base/values.h
 // https://cs.chromium.org/chromium/src/base/values.h?rcl=029daddc376494ee36c5d81cc51a5ade45002fb6&amp;l=589
-class ListValue : public Value {
-using const_iterator = ListStorage::const_iterator;
+</span><span class="k">class</span> <span class="nc">ListValue</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Value</span> <span class="p">{</span>
+<span class="k">using</span> <span class="n">const_iterator</span> <span class="o">=</span> <span class="n">ListStorage</span><span class="o">::</span><span class="n">const_iterator</span><span class="p">;</span>
 
-}
-// base/values.h
+<span class="p">}</span>
+<span class="c1">// base/values.h
 // https://cs.chromium.org/chromium/src/base/values.h?rcl=029daddc376494ee36c5d81cc51a5ade45002fb6&amp;l=85
-ListStorage = std::vector&lt;Value&gt;;
+</span><span class="n">ListStorage</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">ListStorage</code>는 결국 <code class="highlighter-rouge">std::vector</code> 객체이다. 즉, <code class="highlighter-rouge">std::vector</code> 객체를 순회하는 방법을 그대로 활용하여 원소들을 순회할 수 있다.</p>
 
-<p><code class="highlighter-rouge">ListValue::const_iterator == std::vector&lt;Value&gt;::const_iterator</code></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ListValue</span><span class="o">::</span><span class="n">const_iterator</span> <span class="o">==</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;::</span><span class="n">const_iterator</span>
+</code></pre></div></div>
 
 <p>순회 중에 방문한 원소들의 타입은 무엇일까? 타입을 알아야 값을 추출할 수 있다. 위 등식에서도 알 수 있듯이, <code class="highlighter-rouge">iterator</code> 또는 <code class="highlighter-rouge">const_iterator</code>에 의해 참조하는 각 원소들은 base::Value* 또는 const base::Value*이다. 한편, <code class="highlighter-rouge">Value</code> 객체의 값은 멤버 함수인 <code class="highlighter-rouge">GetString()</code>으로 얻어낼 수 있다.(키 값의 타입이 문자열인 경우라면) 아래가 그 예제다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for(base::ListValue::const_iterator it = key12_list-&gt;begin(); 
-     it != key12_list-&gt;end(); ++it) {
-   std::string key12_string() it-&gt;GetString();
-}
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="n">base</span><span class="o">::</span><span class="n">ListValue</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">key12_list</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> 
+     <span class="n">it</span> <span class="o">!=</span> <span class="n">key12_list</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">key12_string</span><span class="p">()</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">GetString</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="full-example">Full example</h2>
 
 <p>test.json으로부터 모든 값을 추출하는 전체 예제 코드는 다음과 같다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>base::FilePath json_path("/path/to/file/test.json");
-std::string json_string;
-std::unique_ptr&lt;base::Value&gt; json_structure;
-std::unique_ptr&lt;base::DictionaryValue&gt; json_dictionary;
-std::string key11_value;
-base::ListValue* key12_list;
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">base</span><span class="o">::</span><span class="n">FilePath</span> <span class="n">json_path</span><span class="p">(</span><span class="s">"/path/to/file/test.json"</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">json_string</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">base</span><span class="o">::</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">json_structure</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">base</span><span class="o">::</span><span class="n">DictionaryValue</span><span class="o">&gt;</span> <span class="n">json_dictionary</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">key11_value</span><span class="p">;</span>
+<span class="n">base</span><span class="o">::</span><span class="n">ListValue</span><span class="o">*</span> <span class="n">key12_list</span><span class="p">;</span>
 
-base::ReadFileToString(json_path, &amp;json_string);
-json_structure = base::JSONReader::Read(json_str);
-json_dictionary = base::DictionaryValue::From(json_structure);
-json_dictionary-&gt;GetString("key1.key11", &amp;key11_value);
-json_dictionary-&gt;GetList("key1.key12", &amp;key12_list);
-for(base::ListValue::const_iterator it = key12_list-&gt;begin(); 
-     it != key12_list-&gt;end(); ++it) {
-   std::string key12_string() it-&gt;GetString();
-}
+<span class="n">base</span><span class="o">::</span><span class="n">ReadFileToString</span><span class="p">(</span><span class="n">json_path</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">json_string</span><span class="p">);</span>
+<span class="n">json_structure</span> <span class="o">=</span> <span class="n">base</span><span class="o">::</span><span class="n">JSONReader</span><span class="o">::</span><span class="n">Read</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+<span class="n">json_dictionary</span> <span class="o">=</span> <span class="n">base</span><span class="o">::</span><span class="n">DictionaryValue</span><span class="o">::</span><span class="n">From</span><span class="p">(</span><span class="n">json_structure</span><span class="p">);</span>
+<span class="n">json_dictionary</span><span class="o">-&gt;</span><span class="n">GetString</span><span class="p">(</span><span class="s">"key1.key11"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">key11_value</span><span class="p">);</span>
+<span class="n">json_dictionary</span><span class="o">-&gt;</span><span class="n">GetList</span><span class="p">(</span><span class="s">"key1.key12"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">key12_list</span><span class="p">);</span>
+<span class="k">for</span><span class="p">(</span><span class="n">base</span><span class="o">::</span><span class="n">ListValue</span><span class="o">::</span><span class="n">const_iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">key12_list</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">();</span> 
+     <span class="n">it</span> <span class="o">!=</span> <span class="n">key12_list</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span> <span class="o">++</span><span class="n">it</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">key12_string</span><span class="p">()</span> <span class="n">it</span><span class="o">-&gt;</span><span class="n">GetString</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 

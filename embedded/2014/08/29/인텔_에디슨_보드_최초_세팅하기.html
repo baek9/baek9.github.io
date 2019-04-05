@@ -61,6 +61,7 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
               on
               <time datetime="2014-08-29T23:34:25+09:00">29 Aug 2014</time>
+              
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
           </div>
@@ -87,8 +88,8 @@
 
 <p>우선, 에디슨 보드와 시리얼 통신을 하기 위해서는 상단 USB를 연결하여야 한다. 이후, 아래와 같은 절차를 밟는다. OSX에서는 터미널 상에서 다음과 같이 입력한다. 그러나, 결과적으로는 OSX에서의 플래싱은 실패하여 윈도우즈에서 플래싱을 수행했다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls /dev/cu.usbserial-*
-screen /dev/cu.usbserial-XXXXXXXX 115200 -L
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> /dev/cu.usbserial-<span class="k">*</span>
+screen /dev/cu.usbserial-XXXXXXXX 115200 <span class="nt">-L</span>
 </code></pre></div></div>
 
 <p>윈도우즈에서는 Putty라는 원격 터미널 접속용 도구를 이용하면 된다. 접속에 필요한 포트 번호는 장치관리자에서 확인할 수 있고, 전송 속도는 115200으로 설정하면 된다.</p>
