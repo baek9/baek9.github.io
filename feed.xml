@@ -6,8 +6,8 @@
 </description>
     <link>http://baek9.github.io/</link>
     <atom:link href="http://baek9.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Apr 2019 14:15:17 +0900</pubDate>
-    <lastBuildDate>Sat, 06 Apr 2019 14:15:17 +0900</lastBuildDate>
+    <pubDate>Sat, 06 Apr 2019 14:43:45 +0900</pubDate>
+    <lastBuildDate>Sat, 06 Apr 2019 14:43:45 +0900</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -109,15 +109,17 @@
 
 </description>
         <pubDate>Tue, 03 Apr 2018 07:14:52 +0900</pubDate>
-        <link>http://baek9.github.io/javascript%20&%20v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html</link>
-        <guid isPermaLink="true">http://baek9.github.io/javascript%20&%20v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html</guid>
+        <link>http://baek9.github.io/javascript/v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html</link>
+        <guid isPermaLink="true">http://baek9.github.io/javascript/v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html</guid>
         
         <category>Integer Overflow</category>
         
         <category>V8</category>
         
         
-        <category>JavaScript &amp; V8</category>
+        <category>JavaScript</category>
+        
+        <category>V8</category>
         
       </item>
     
@@ -571,15 +573,17 @@
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__proto__&lt;/code&gt; 속성으로 인해 일반 객체를 시작으로 두 개의 프로토타입 객체까지 연달아 연결된 것이다. 바로 이것을 프로토타입 체인이라고 한다. 이러한 이유로 자바스크립트 체인을 이용하면 OOP의 중요한 개념 중의 하나인 상속을 구현할 수 있다. 같은 방법으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;objB&lt;/code&gt; 객체를 만든다면, ‘objA`와 다른 객체이지만 동일한 프로토타입 객체를 참조한다. 이러한 특징을 이용하면 프로토타입 객체에 임의의 속성을 생성하여 C++에서의 클래스 변수처럼 사용할 수 있다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 26 Nov 2017 07:12:24 +0900</pubDate>
-        <link>http://baek9.github.io/javascript%20&%20v8/2017/11/26/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8.html</link>
-        <guid isPermaLink="true">http://baek9.github.io/javascript%20&%20v8/2017/11/26/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8.html</guid>
+        <link>http://baek9.github.io/javascript/v8/2017/11/26/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8.html</link>
+        <guid isPermaLink="true">http://baek9.github.io/javascript/v8/2017/11/26/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8.html</guid>
         
         <category>JavaScript</category>
         
         <category>Prototype</category>
         
         
-        <category>JavaScript &amp; V8</category>
+        <category>JavaScript</category>
+        
+        <category>V8</category>
         
       </item>
     
