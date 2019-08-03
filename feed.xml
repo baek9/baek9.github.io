@@ -6,9 +6,48 @@
 </description>
     <link>http://baek9.github.io/</link>
     <atom:link href="http://baek9.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 03 Aug 2019 21:47:17 +0900</pubDate>
-    <lastBuildDate>Sat, 03 Aug 2019 21:47:17 +0900</lastBuildDate>
+    <pubDate>Sat, 03 Aug 2019 21:53:23 +0900</pubDate>
+    <lastBuildDate>Sat, 03 Aug 2019 21:53:23 +0900</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>크롬OS 개발 및 디버깅 팁</title>
+        <description>&lt;p&gt;본 포스트에서는 크롬OS를 사용하면서 익힌 팁들을 기록한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;virtual-console&quot;&gt;Virtual console&lt;/h2&gt;
+
+&lt;p&gt;크롬 브라우저에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + T&lt;/code&gt;를 누르면 Crosh(Chrome shell)이 뜨고, Crosh 프롬프트에서 “shell”이라고 치면 심지어 bash 쉘이 실행된다. 그러나, 크롬 브라우저에서는 가끔 출력이 불완전한 경우가 많아서 가상 터미널로 진입하는 것이 편했다. &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + F3&lt;/code&gt;을 누르면 가상 터미널 화면으로 이동한다. 일반 리눅스에서와 마찬가지로 접속과 동시에 아이디를 입력해야 하는데, 기본 아이디는 “chronos”이고 비밀번호는 “chrome”이다. 이 비밀번호는 크로미움OS 컴파일 시에 수동으로 설정할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;partitions&quot;&gt;Partitions&lt;/h2&gt;
+
+&lt;p&gt;일반적으로 리눅스에서는 보통 swap과 / 파티션이 기본으로 설정된다. 크롬OS는 상당히 복잡한 형태로 파티션을 구성하는데 이 구성은 바꿀 수 없다. 크롬은 home, boot, kernel, / 각각에 대해 별도의 파티션을 구성한다. 이 때, kernel 및 / 파티션은 A/B 업데이트와 비상용으로 2쌍의 파티션을 더 생성한다. 이렇게 크롬OS 구동에 필수적으로 필요한 파티션은 총 8개로 보이며, 기타 자잘한 파티션들까지 합쳐 총 12개의 파티션이 디스크에 자동으로 설정된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mount&lt;/code&gt; 명령어로 파티션의 설정을 확인해보면 파티션마다 설정이 다름을 알 수 있다. 예를 들어, / 파티션은 읽기는 가능하지만 쓰기가 불가능하고, home 파티션은 읽고 쓰기가 가능하지만 실행이 불가능하다. 이런 식으로 보안 상 크롬OS는 파티션을 세분화하여 각 파티션의 필요로하는 최소의 권한만 부여하고 있다. 그러나, / 파티션에 쓰기가 불가능한 점은 개발이나 디버깅 시에 불편하다. 다음의 명령어로 간단하게 쓰기가 가능하도록 마운트가 가능하다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;mount &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; remount,rw /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;chrome-os-session&quot;&gt;Chrome OS session&lt;/h2&gt;
+
+&lt;p&gt;크롬OS는 session_manager라는 프로세스에서 시작된다. 따라서 session_manager 프로세스를 강제 종료하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + F1&lt;/code&gt;을 눌러도 크롬OS가 뜨지 않는다. 아래와 같은 명령어로 크롬OS를 복구할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;session_manager
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;daemons&quot;&gt;Daemons&lt;/h2&gt;
+
+&lt;p&gt;크롬OS를 구성하는 대부분의 서비스들이 데몬 형태로 동작하며, 대부분 minijail로 샌드박싱되어 동작한다. minijail은 컨테이너 + virtio 기능을 활용하는 샌드박싱 프로그램이다. 이름처럼 작지만 기능은 결코 작지 않다. 크롬OS에서 구동되는 리눅스용 어플리케이션들 역시 이 minijail안에서, 그리고 데비안 루트 파일시스템을 기반으로 동작한다.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Aug 2019 00:21:14 +0900</pubDate>
+        <link>http://baek9.github.io/chrome%20os/2019/08/03/%ED%81%AC%EB%A1%ACOS_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81.html</link>
+        <guid isPermaLink="true">http://baek9.github.io/chrome%20os/2019/08/03/%ED%81%AC%EB%A1%ACOS_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81.html</guid>
+        
+        <category>tips</category>
+        
+        
+        <category>Chrome OS</category>
+        
+      </item>
     
       <item>
         <title>https의 원리, 그리고 Self-signed SSL 까지</title>
