@@ -6,9 +6,116 @@
 </description>
     <link>http://baek9.github.io/</link>
     <atom:link href="http://baek9.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 11 Jan 2020 23:16:25 +0900</pubDate>
-    <lastBuildDate>Sat, 11 Jan 2020 23:16:25 +0900</lastBuildDate>
+    <pubDate>Sat, 11 Jan 2020 23:18:49 +0900</pubDate>
+    <lastBuildDate>Sat, 11 Jan 2020 23:18:49 +0900</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>크로미움에 기여하기</title>
+        <description>&lt;p&gt;크로미움에 처음 기여할 때 밟았던 절차와 내가 생각하는 주의 사항들을 기록한다. 크로미움은 큰 오픈소스 커뮤니티이기 때문에 관련 절차를 매우 상세하게 소개하고 있다. 검색해보면 참고해 볼 만한 제 3자의 포스트들도 많다. 나는 주로 아래 세 개의 자료를 참고하였다. 처음 두 개는 크로미움 커뮤니티에서 제공하는 공식 문서이다. 마지막은 제 3자가 작성한 것으로 좀 더 친근하고 쉽게 작성되어 기여 절차를 직관적이고 빠르게 이해하는 데 도움이 되었다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/docs/contributing.md&quot;&gt;Contributing to Chromium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/docs/commit_checklist.md&quot;&gt;Commit Checklist for Chromium Workflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://meowni.ca/posts/chromium-101/&quot;&gt;Contributing to Chromium: an illustrated guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;signing-the-clacontributer-license-agreement&quot;&gt;Signing the CLA(Contributer License Agreement)&lt;/h1&gt;
+
+&lt;p&gt;크로미움에 코드를 기여하기 위해서는 CLA라는 계약에 서명하여야 한다. 이는 기여하는 코드에 대한 각종 권리를 포기하겠다는 의미이다. 오픈소스 프로젝트 입장에서 법적 분쟁을 피하기 위한 장치이다. 서명하기 위해서는 구글 계정으로 로그인 한 후, &lt;a href=&quot;https://cla.developers.google.com/&quot;&gt;https://cla.developers.google.com/&lt;/a&gt;에서 안내하는 절차를 밟으면 된다.&lt;/p&gt;
+
+&lt;h1 id=&quot;git-settings&quot;&gt;Git settings&lt;/h1&gt;
+
+&lt;p&gt;크로미움의 코드 기여는 gerrit이라는 코드 리뷰 시스템에 의해 통제된다. 이 통제에 따르기 위해 아래의 명령어를 순서대로 실행하여 내 개발 머신의 git을 적절히 설정하여야 한다. 이름과 이메일 주소는 gerrit에 업로드한 코드의 기여자를 식별하고 해당 코드에 관련한 각종 알림을 기여자에게 송신하는 데 사용되므로 정확하게 입력하여야 한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.name &quot;내 이름&quot;
+git config --global user.email &quot;myemail@chromium.org&quot;
+git config --global core.autocrlf false
+git config --global core.filemode false
+git config --local gerrit.host true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;hunting-or-searching-bugs&quot;&gt;Hunting or Searching bugs&lt;/h1&gt;
+
+&lt;p&gt;크로미움에서 버그를 직접 찾아서 고친다면? 그렇다면 당신은 버그 헌터로서의 감각과 개발자로서의 실력을 동시에 겸비한 고수임이 틀림없다. 특히, 크로미움은 오랫동안 활발하게 개발 중이므로 버그를 찾기가 쉽지 않다. 물론, 새로운 기능을 제안하고 그것을 구현하는 것으로 기여할 수 있지만, 그 경우에는 메일링리스트(mailinglist)를 통하여 다른 개발자들을 설득하고 함께 기능을 설계 및 개발해야 하기에 더더욱 쉽지 않은 일일 것이다.&lt;/p&gt;
+
+&lt;p&gt;크로미움은 버그 추적 관리 시스템을 제공한다. &lt;a href=&quot;https://bug.chromium.org&quot;&gt;https://bugs.chromium.org&lt;/a&gt;에 접속하면 전 세계의 크로미움 사용자들이 제보한 버그들의 목록을 확인할 수 있다. “available” 상태의 버그는 얼마든지 도전해도 좋다. 특히, “GoodFirstBug” 라벨이 달린 버그는 크로미움에 막 입문한 개발자들이 도전하기 좋다고 한다. 필터 기능이 있으니 손쉽게 검색해 볼 수 있다.&lt;/p&gt;
+
+&lt;h1 id=&quot;building-chromium&quot;&gt;Building Chromium&lt;/h1&gt;
+
+&lt;p&gt;크로미움의 소스코드를 받아 빌드하고 버그를 재현한 뒤 그 원인을 분석하여야 한다. 관련 절차는 &lt;a href=&quot;https://www.chromium.org/developers/how-tos/get-the-code&quot;&gt;Get the Code: Checkout, Build, &amp;amp; Run Chromium&lt;/a&gt;에 플랫폼 별로 상세히 소개되어 있으니 참고하면 된다.&lt;/p&gt;
+
+&lt;p&gt;버그의 원인을 분석하거나 수정하기 위해 별도의 브랜치(branch)에서 작업하는 것이 권장된다. git이 제공하는 기능인 브랜치는 서로 간에 독립적이어서 협업에 주로 활용되는 기능이다. 여기서는 독립적인 여러 개의 버그를 동시에 위한 수정하기 위한 용도로 사용된다. 아래의 명령어는 “mychange”라는 브랜치를 생성함과 동시에 해당 브랜치로 전환하는 명령어이다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout -b mychange -t origin/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;fixing-the-bug&quot;&gt;Fixing the bug&lt;/h1&gt;
+
+&lt;p&gt;버그의 내용이 주석(comment)을 수정하는 류의 간단한 문제가 아니라 기능 수정 등을 요하는 문제일 경우에 유의해야 할 사항이 있다. 만약, 수정하고자 하는 기능을 테스트하기 위한 기능이 존재한다면 기여하려는 코드를 테스트하기 위한 코드도 기여하여야 한다는 것이다. 귀찮은 일이다. 하지만 미래에 해당 버그가 다시 발현되는 경우도 있기에 버그 추적이 필요하고, 이는 오픈소스 커뮤니티에서 매우 중요한 부분이라고 생각된다. 생략하더라도 추후에 리뷰어(reviewer)로부터 테스트 코드를 추가하도록 요구받을 수 있으니 미리 염두에 두는 것이 좋을 것 같다. 테스트와 관련하여서는 &lt;a href=&quot;https://www.chromium.org/developers/testing&quot;&gt;Testing and infrastructure
+&lt;/a&gt;을 참고하면 된다.&lt;/p&gt;
+
+&lt;p&gt;크로미움의 코드는 구글(google)이 정한 코딩 스타일 규칙에 따라 작성되어야 한다. 따라서 기여하기 위한 코드도 이 규칙에 따라 작성되어야 한다. 아래 명령어는 수정한 코드가 그 규칙에 맞는지를 자동으로 검사해준다. 어느 수준까지 검사해 주는 지는 모르겠으나 개인적으로 불 필요한 공백이 제거되는 것은 확인할 수 있었다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cl format --js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;또 한 가지, 크로미움에 처음 기여한다면 반드시 “AUTHOR”라는 파일에 본인의 이름과 이메일을 한 줄 추가하여야 한다. 추가할 때는 이 파일이 사전식 순서(lexicographical order)를 따른다는 점에 유의하여야 한다. 최종적으로 기여가 완료되면 컨트리뷰터(contributor)라는 칭호에 대한 확실한 근거가 생기는 셈이다.&lt;/p&gt;
+
+&lt;p&gt;기여하고 싶은 모든 수정 사항들은 gerrit에 업로드하기 위해 준비 상태로 전환하여야 한다. 수정된 코드를 일괄적으로 업로드 준비 상태로 만들기 위해서는 아래의 git 명령어를 사용한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+git commit -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;uploading-the-code&quot;&gt;Uploading the code&lt;/h1&gt;
+
+&lt;p&gt;준비된 코드를 아래의 명령어로 gerrit에 업로드 할 수 있다. 이 때, 수정한 내용에 대하여 간단한 요약문을 작성하도록 요구받는다. 이 요약문에 어떤 버그를 해결하려고 하는지, 어느 코드를 어떻게 수정했는지를 간결하게 작성해야 한다. 무엇보다 이 요약문은 공개되는 내용이기에 매우 신경써서 작성하여야 한다. 그만큼 작성하는 데 있어서 반드시 지켜야 하는 규칙들이 존재한다. 이 때문에 영어와 크로미움에 기여하는 것이 익숙치 않은 분은 미리 요약문을 준비해 두는 것이 좋다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git cl upload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;요약문은 제목과 본문의 두 부분으로 구성된다. &lt;a href=&quot;https://chris.beams.io/posts/git-commit/&quot;&gt;How to Write a Git Commit Message&lt;/a&gt;에 좋은 요약문을 쓰는 방법이 상세하게 소개되어 있다. 아래는 요약문 작성 시에 지켜야 할 규칙들을 나름대로 요약해 본 것 이다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;그런 분은 없겠지만 만국 공통어인 영어로 작성해야 한다.&lt;/li&gt;
+  &lt;li&gt;제목은 대문자로 시작하며 한 줄이어야 한다. 50자 내외로 작성하라고 하는데 조금 초과해도 괜찮을 것으로 생각된다.&lt;/li&gt;
+  &lt;li&gt;제목과 본문의 사이에는 1개의 빈 줄을 삽입해야 한다. gerrit은 이 빈 줄을 기준으로 요약문의 제목과 본문을 구분한다.&lt;/li&gt;
+  &lt;li&gt;크로미움의 소스코드와 마찬가지로 본문의 가로 길이는 72 byte를 초과하지 않아야 한다.&lt;/li&gt;
+  &lt;li&gt;해결하고자 하는 버그의 번호(issue number)를 기재한다. 기여가 이루어지면 버그 추적 관리 시스템 상의 해당 버그에 댓글의 형태로 기여 내용에 대한 정보가 자동으로 등록된다. 즉, 이를 통해 버그 추적 관리 시스템과 코드 리뷰 시스템이 연동된다.&lt;/li&gt;
+  &lt;li&gt;가능하면 해당 버그가 해결되었는지 확인할 수 있는 방법을 기재한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;아래는 크로미움 커뮤니티에서 제공하는 요약문의 작성 예시이다. 더 많은 예시를 확인하고 싶으면 &lt;a href=&quot;https://chomium-review.googlesorce.com&quot;&gt;https://chromium-review.googlesource.com&lt;/a&gt;에서 확인 가능하다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Summary of change (one line)
+
+Longer description of change addressing as appropriate: why the change
+is made, context if it is part of many changes, description of previous
+behavior and newly introduced differences, etc.
+
+Long lines should be wrapped to 72 columns for easier log message
+viewing in terminals.
+
+Bug: 123456
+Test: Load example.com/page.html and click the foo-button; see
+crbug.com/123456 for more details.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;code-review&quot;&gt;Code review&lt;/h1&gt;
+
+&lt;p&gt;업로드를 완료했고 앞서 git 설정 시에 이름과 이메일 주소를 잘 입력했다면, gerrit이 제공하는 웹 사이트인 &lt;a href=&quot;https://chromium-review.googlesource.com&quot;&gt;https://chromium-review.googlesource.com&lt;/a&gt;에서 업로드 된 내용을 확인할 수 있다. 그러나 아직 기여가 이루어진 것이 아니다. status가 “WIP(Work in progress)”임을 확인할 수 있을 텐데 이는 아직 작업 중이라는 의미이다. 이 상태에서는 이후에도 여러 번의 업로드를 통해 기여 내용을 수정하는 것이 가능하다. 만약, 기여하기에 완벽하다는 생각이 들면 리뷰어(reviewer)에게 리뷰, 즉, 첨삭을 받아야 한다. 리뷰어를 추가하는 것은 웹에서 이루어진다. 누구를 추가할 지는 아래의 git 명령어를 통해 추천받을 수 있다. 적당한 리뷰어를 2, 3명 정도 추가하면 된다. 최종적으로 2명 이상의 리뷰를 받으면 수정한 내용이 자동적으로 크로미움 코드 저장소인 &lt;a href=&quot;https://chromium.googlesource.com/chromium/src.git&quot;&gt;https://chromium.googlesource.com/chromium/src.git&lt;/a&gt;에 반영되며 이로써 기여의 모든 절차가 마무리된다.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Jan 2020 08:00:06 +0900</pubDate>
+        <link>http://baek9.github.io/chromium/2020/01/11/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0.html</link>
+        <guid isPermaLink="true">http://baek9.github.io/chromium/2020/01/11/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0.html</guid>
+        
+        <category>tips</category>
+        
+        
+        <category>Chromium</category>
+        
+      </item>
     
       <item>
         <title>Ash part 1</title>
@@ -888,50 +995,6 @@ DNS.1 = localhost
         <category>JavaScript</category>
         
         <category>V8</category>
-        
-      </item>
-    
-      <item>
-        <title>인텔 에디슨 보드 최초 세팅하기</title>
-        <description>&lt;p&gt;인텔 에디슨(edison) 보드는 현재는 단종된 제품이다. 후속인 줄(Joule) 보드 역시 단종되었다. 두 제품은 IoT(Internet of things)를 겨냥하여 만들어진 만큼, 인텔이 이 시장에서 발을 빼고 있다는 의견들이 많다. 어쨌든, 인텔은 IoT, 웨어러블(Wearable)에 부합하도록 에디슨 보드를 극도로 소형화 하였다. 더 이상 지원되지 않는 보드이지만 라즈베리파이(RPi : Raspberry Pi)보다도 작은 크기, 그러나 부족하지 않은 성능에 매력을 느껴 사용해 보았다. 에디슨 보드의 세팅 방법은 인텔의 홈페이지에 상세히 나와 있다. 본 글은 세팅 중에 마주쳤던 문제점, 특히 플래싱(flashing)에 대한 내용을 담았다.&lt;/p&gt;
-
-&lt;h2 id=&quot;breakout-board&quot;&gt;Breakout board&lt;/h2&gt;
-
-&lt;p&gt;에디슨 보드는 소형이므로 ‘Breakout board’에 결합하여야 개발을 진행할 수 있다. 결합의 도움으로 2개의 USB 포트를 통해 에디슨 보드를 제어할 수 있다. 에디슨 보드에 새겨진 인텔 로고가 바로 보이는 상태에서 하단 USB 포트는 5V의 전원 공급 및 플래시 저장소 마운트를 담당한다. 상단 USB 포트는 에디슨 보드와의 시리얼(Serial) 통신을 담당한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;setup-toolno-more-support&quot;&gt;Setup tool(NO MORE SUPPORT)&lt;/h2&gt;
-
-&lt;p&gt;대부분의 개발 보드가 그렇듯이 최초에는 커널과 루트 파일 시스템(rootfs)을 보드에 탑재하여야 한다. 이를 플래싱(flashing)이라고 한다. 인텔 홈페이지를 통해 커널 이미지와 함께 플래싱을 위한 GUI 도구인 ‘Setup tool’이 제공된다. 그런데 Setup tool은 최신 OSX 및 윈도우즈10을 지원하지 않는다. OSX에서는 플래싱은 되지만 슈퍼블록(Superblock)이 깨지어 온전히 플래싱되진 않는다. 따라서, 고전적인 방법대로 시리얼 통신을 통해 플래싱을 수행하여야 했다. 기존 보드들의 플래싱 방법에서 크게 벗어나진 않는다.&lt;/p&gt;
-
-&lt;h2 id=&quot;make-edison-ready-to-flashing&quot;&gt;Make edison ready to flashing&lt;/h2&gt;
-
-&lt;p&gt;우선, 에디슨 보드와 시리얼 통신을 하기 위해서는 상단 USB를 연결하여야 한다. 이후, 아래와 같은 절차를 밟는다. OSX에서는 터미널 상에서 다음과 같이 입력한다. 그러나, 결과적으로는 OSX에서의 플래싱은 실패하여 윈도우즈에서 플래싱을 수행했다.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; /dev/cu.usbserial-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-screen /dev/cu.usbserial-XXXXXXXX 115200 &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;윈도우즈에서는 Putty라는 원격 터미널 접속용 도구를 이용하면 된다. 접속에 필요한 포트 번호는 장치관리자에서 확인할 수 있고, 전송 속도는 115200으로 설정하면 된다.&lt;/p&gt;
-
-&lt;p&gt;시리얼 통신이 연결된 이후, 에디슨 보드를 재부팅하여 부팅 중에 아무 키나 입력하면 소형 부트로더인 &lt;code class=&quot;highlighter-rouge&quot;&gt;u-boot&lt;/code&gt;의 쉘을 획득할 수 있다. 이 쉘에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;run do_flash&lt;/code&gt;를 입력한다. 직후부터 에디슨 보드는 호스트로부터의 플래싱을 기다린다.&lt;/p&gt;
-
-&lt;h2 id=&quot;flashing&quot;&gt;Flashing&lt;/h2&gt;
-
-&lt;p&gt;앞서 다운로드 받은 커널 이미지의 압축을 풀면 이미지와 함께 몇 가지 실행 가능한 스크립트들을 확인할 수 있다. &lt;code class=&quot;highlighter-rouge&quot;&gt;flashall.sh&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;flashall.bat&lt;/code&gt;이다. 전자는 OSX 또는 리눅스를 위한, 후자는 윈도우즈를 위한 플래싱 스크립트이다. OSX에서는 이 스크립트가 잘 실행되지 않았던 반면, 윈도우즈에서는 잘 동작하였다. 단, 윈도우즈의 경우에 커널 이미지와 동일한 위치에 &lt;code class=&quot;highlighter-rouge&quot;&gt;dfu-util.exe&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;libusb-1.0.dll&lt;/code&gt;을 삽입해두어야 한다. 두 파일은 시리얼 통신을 통한 플래싱 방법을 자세히 소개한 아래의 글을 통해 다운로드 받을 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://software.intel.com/en-us/flashing-firmware-on-your-intel-edison-board-windows&quot;&gt;Flashing the OS Image on your Board with Windows&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;이후, 윈도우 쉘에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;flashall.bat&lt;/code&gt;를 실행하면 플래싱이 진행된다. 상당한 시간이 소요된다. 아래 그림은 플래싱이 진행된 최종 스크린 샷 이다.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 29 Aug 2014 23:34:25 +0900</pubDate>
-        <link>http://baek9.github.io/embedded/2014/08/29/%EC%9D%B8%ED%85%94_%EC%97%90%EB%94%94%EC%8A%A8_%EB%B3%B4%EB%93%9C_%EC%B5%9C%EC%B4%88_%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0.html</link>
-        <guid isPermaLink="true">http://baek9.github.io/embedded/2014/08/29/%EC%9D%B8%ED%85%94_%EC%97%90%EB%94%94%EC%8A%A8_%EB%B3%B4%EB%93%9C_%EC%B5%9C%EC%B4%88_%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0.html</guid>
-        
-        <category>edison board</category>
-        
-        
-        <category>embedded</category>
         
       </item>
     
