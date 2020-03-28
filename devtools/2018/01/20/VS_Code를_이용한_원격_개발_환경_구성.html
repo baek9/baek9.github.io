@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta name="google-site-verification" content="jxplsfLcADRts9fVC-PBsYD4NFNGHEMo08_Lj3HzSts" />
   <meta charset="utf-8">
   <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
@@ -9,72 +9,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>VS Code를 이용한 원격 개발 환경 구성</title>
-  <meta name="description" content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
 
+  <meta name="description"
+    content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@thnam_" />
-    <meta name="twitter:title" content="VS Code를 이용한 원격 개발 환경 구성" />
-    <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
-    
-    <meta name="twitter:description"  content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
-    
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@thnam_" />
+  <meta name="twitter:title" content="VS Code를 이용한 원격 개발 환경 구성" />
+  <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  
+  <meta name="twitter:description" content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
   
   
+
   <meta property="og:site_name" content="evening(code)" />
-  <meta property="og:title" content="VS Code를 이용한 원격 개발 환경 구성"/>
+  <meta property="og:title" content="VS Code를 이용한 원격 개발 환경 구성" />
   
   <meta property="og:description" content="커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다." />
   
-  <meta property="og:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
-  <meta property="og:url" content="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html" >
+  <meta property="og:image"
+    content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  <meta property="og:url"
+    content="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html">
   <meta property="og:type" content="blog" />
+  
   <meta property="article:published_time" content="2018-01-20T07:09:26+09:00">
 
-  <link rel="canonical" href="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html"/>
-  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
+  <link rel="canonical" href="http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html" />
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
   <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+<script id="dsq-count-scr" src="//evening-code.disqus.com/count.js" async></script>
+<body itemscope itemtype="http://schema.org/Article">
+  <!-- header start -->
 
-  <script id="dsq-count-scr" src="//evening-code.disqus.com/count.js" async></script>
-  <body itemscope itemtype="http://schema.org/Article">
-    <!-- header start -->
-
-
-  <a href="http://baek9.github.io" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
+<a href="http://baek9.github.io" class="logo-readium"><span class="logo"
+    style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
 
 <!-- header end -->
-
-    <main class="content" role="main">
-      <article class="post">
-        <div class="noarticleimage">
-          <div class="post-meta">
-            <h1 class="post-title">VS Code를 이용한 원격 개발 환경 구성</h1>
-            <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
-              on
-              <time datetime="2018-01-20T07:09:26+09:00">20 Jan 2018</time>
-              <section class="post-content"><div class="post-reading"><span class="post-reading-time"></span> read</div></section>
-              <a href="https://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html#disqus_thread">0 Comments</a>
-              <!-- tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
-            </div>
+  <main class="content" role="main">
+    <article class="post">
+      <div class="noarticleimage">
+        <div class="post-meta">
+          <h1 class="post-title">VS Code를 이용한 원격 개발 환경 구성</h1>
+          <div class="cf post-meta-text">
+            <div class="author-image" style="background-image: url(/assets/images/author.jpg)">
+              Blog Logo</div>
+            <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            </h4>
+            on
+            <time datetime="2018-01-20T07:09:26+09:00">20 Jan 2018</time>
+            <section class="post-content">
+              <div class="post-reading"><span class="post-reading-time"></span> read</div>
+            </section>
+            <a href="https://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html#disqus_thread">0
+              Comments</a>
+            <!-- tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <section class="post-content">
-          <a name="topofpage"></a>
-          <p>커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다.</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <section class="post-content">
+        <a name="topofpage"></a>
+        <p>커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다.</p>
 
 <p>보통, 리눅스를 이용한 개발은 가상머신에서 진행한다. 우분투 같은 배포판은 가상머신에 설치해도 가상머신 창의 크기에 따라 자동적으로 해상도가 조정된다. 하지만 GNOME이나 KDE와 같은 GUI 데스크톱 환경이 제공되지 않는 환경에서의 개발은 매우 불편하다. 가상머신 창의 크기를 키워도 800x600의 해상도로 고정되기 때문이다.</p>
 
@@ -86,104 +96,102 @@
 
 <p>VS Code는 Remote VS Code라는 플러그인을 제공한다. 이 플러그인은 이런거다. 우선, 가상머신에 rmate라는 바이너리와 ssh를 설치한다.(ssh는 putty를 사용하기 위해서도 필요하다) ssh를 설치했으므로 VS Code가 제공하는 쉘 상에서 역 터널링(reverse tunneling) 방법으로 가상머신에 접속한다. 이후, 쉘에서 “rmate [파일 경로]”를 입력하면 해당 파일을 VS Code에서 편집할 수 있다.</p>
 
-        </section>
-        <footer class="post-footer">
-          <section class="share">
-            
-              
-                <a class="icon-twitter" href="http://twitter.com/share?text=VS+Code%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EC%9B%90%EA%B2%A9+%EA%B0%9C%EB%B0%9C+%ED%99%98%EA%B2%BD+%EA%B5%AC%EC%84%B1&amp;url=http://baek9.github.io/devtools/2018/01/20/VS_Code를_이용한_원격_개발_환경_구성"
-                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
-                <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
-                </a>
-              
-            
-              
-            
-          </section>
-        </footer>
-        <div class="bottom-teaser cf">
-          <div class="isLeft">
-            <h5 class="index-headline featured"><span>Written by</span></h5>
-            <section class="author">
-              <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog Logo</div>
-              <h4>Taeho Nam</h4>
-              <p class="bio"></p>
-              <hr>
-              <p class="published">Published <time datetime="2018-01-20 07:09">20 Jan 2018</time></p>
-            </section>
-          </div>
+      </section>
+      <footer class="post-footer">
+        <section class="share">
           
-          <div class="isRight">
-            <h5 class="index-headline featured"><span>Supported by</span></h5>
-            <footer class="site-footer">
-              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-              <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
-              <div class="inner">
-                <section class="copyright">All content copyright <a href="/">Taeho Nam</a> &copy; 2020<br>All rights reserved.</section>
-              </div>
-            </footer>
-          </div>
+          
+          <a class="icon-twitter"
+            href="http://twitter.com/share?text=VS+Code%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EC%9B%90%EA%B2%A9+%EA%B0%9C%EB%B0%9C+%ED%99%98%EA%B2%BD+%EA%B5%AC%EC%84%B1&amp;url=http://baek9.github.io/devtools/2018/01/20/VS_Code를_이용한_원격_개발_환경_구성"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+            <i class="fa fa-twitter"></i><span class="hidden">twitter</span>
+          </a>
+          
+          
+          
+          
+        </section>
+      </footer>
+      <div class="bottom-teaser cf">
+        <div class="isLeft">
+          <h5 class="index-headline featured"><span>Written by</span></h5>
+          <section class="author">
+            <div class="author-image" style="background-image: url(/assets/images/author.jpg)">Blog
+              Logo</div>
+            <h4>Taeho Nam</h4>
+            <p class="bio"></p>
+            <hr>
+            <p class="published">Published <time
+                datetime="2018-01-20 07:09">20 Jan 2018</time></p>
+          </section>
         </div>
         
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'evening-code'; // required: replace example with your forum shortname
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
-      </article>
-    </main>
-    <div class="bottom-closer">
-    </div>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <div class="isRight">
+          <h5 class="index-headline featured"><span>Supported by</span></h5>
+          <footer class="site-footer">
+            <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
+            <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i
+                  class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+            <div class="inner">
+              <section class="copyright">All content copyright <a href="/">Taeho Nam</a> &copy;
+                2020<br>All rights reserved.</section>
+            </div>
+          </footer>
+        </div>
+      </div>
+      
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'evening-code'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      
+    </article>
+  </main>
+  <div class="bottom-closer">
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="/assets/js/index.js"></script>
 <script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
 <script>
-(function ($) {
-  "use strict";
-  $(document).ready(function(){
-
-    var $window = $(window),
-    $image = $('.post-image-image, .teaserimage-image');
-    
-      $window.on('scroll', function() {
+  (function ($) {
+    "use strict";
+    $(document).ready(function () {
+      var $window = $(window),
+        $image = $('.post-image-image, .teaserimage-image');
+      $window.on('scroll', function () {
         var top = $window.scrollTop();
-
         if (top < 0 || top > 1500) { return; }
         $image
-          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-          .css('opacity', 1-Math.max(top/700, 0));
+          .css('transform', 'translate3d(0px, ' + top / 3 + 'px, 0px)')
+          .css('opacity', 1 - Math.max(top / 700, 0));
       });
       $window.trigger('scroll');
-
       var height = $('.article-image').height();
       $('.post-content').css('padding-top', height + 'px');
-
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          && location.hostname == this.hostname) {
           var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
             $('html,body').animate({ scrollTop: target.offset().top }, 500);
             return false;
           }
         }
       });
-
-  });
-}(jQuery));
+    });
+  }(jQuery));
 </script>
 
-
-  </body>
+</body>
 </html>

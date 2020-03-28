@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta name="google-site-verification" content="jxplsfLcADRts9fVC-PBsYD4NFNGHEMo08_Lj3HzSts" />
   <meta charset="utf-8">
   <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
@@ -9,121 +9,142 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>About</title>
-  <meta name="description" content="늦은 밤 개발 일기
-" />
 
+  <meta name="description"
+    content="늦은 밤 개발 일기
+" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@thnam_" />
-    <meta name="twitter:title" content="About" />
-    <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
-    
-    <meta name="twitter:description" content="늦은 밤 개발 일기" />
-    
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@thnam_" />
+  <meta name="twitter:title" content="About" />
+  <meta name="twitter:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  
+  <meta name="twitter:description" content="늦은 밤 개발 일기" />
   
   
+
   <meta property="og:site_name" content="evening(code)" />
-  <meta property="og:title" content="About"/>
+  <meta property="og:title" content="About" />
   
   <meta property="og:description" content="늦은 밤 개발 일기" />
   
-  <meta property="og:image" content="http://baek9.github.io/assets/images/df_logo.jpg" />
-  <meta property="og:url" content="http://baek9.github.io/about/" >
+  <meta property="og:image"
+    content="http://baek9.github.io/assets/images/df_logo.jpg" />
+  <meta property="og:url"
+    content="http://baek9.github.io/about/">
   <meta property="og:type" content="blog" />
   
 
-  <link rel="canonical" href="http://baek9.github.io/about/"/>
-  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
+  <link rel="canonical" href="http://baek9.github.io/about/" />
+  <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
   <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+<body itemscope itemtype="http://schema.org/Article">
+  <!-- header start -->
 
-  <body itemscope itemtype="http://schema.org/Article">
-    <!-- header start -->
-
-
-  <a href="http://baek9.github.io" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
+<a href="http://baek9.github.io" class="logo-readium"><span class="logo"
+    style="background-image: url(/assets/images/back_btn.jpg)"></span></a>
 
 <!-- header end -->
-
-    <main class="content" role="main">
-      <article class="post">
-        
-        <div class="noarticleimage">
-          <div class="post-meta">
-            <h1 class="post-title">About</h1>
-            <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url()">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
-            </div>
+  <main class="content" role="main">
+    <article class="post">
+      
+      <div class="noarticleimage">
+        <div class="post-meta">
+          <h1 class="post-title">About</h1>
+          <div class="cf post-meta-text">
+            <div class="author-image" style="background-image: url()">Blog Logo</div>
+            <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            </h4>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        
-        <section class="post-content">
-          <a name="topofpage"></a>
-          <p>My name is Taeho Nam. I have both a BS and a MS degree in computer science from Kwangwoon University in Korea. During my BS degree, I was interested in hardware design and testing with Verilog/Quartus/Modelsim and Operating System architecture. Also, during my master’s degree, I mainly studied firmware design of NAND Flash controller and caching methods for improving web browser performance. I’m still working in computer science.</p>
+      </div>
+      
+      <section class="post-content">
+        <a name="topofpage"></a>
+        <p>My name is Taeho Nam. I have both a BS and a MS degree in computer science from Kwangwoon University in Korea. During my BS degree, I was interested in hardware design and testing with Verilog/Quartus/Modelsim and Operating System architecture. Also, during my master’s degree, I mainly studied firmware design of NAND Flash controller and caching methods for improving web browser performance. I’m still working in computer science.</p>
 
 <p>Nowadays, I’m especially interested in security, graphics and the Web that seem to be irrelevant. In this regard, I am interested in open source such as Chromium, Chromium OS and Wayland and trying to contribute to Chromium and W3C specifications by taking advantage of the spare time. The main computer languages ​​used are C, C++, and Python.</p>
 
-        </section>
-      </article>
-    </main>
-    <div class="bottom-closer">
-      <div class="background-closer-image" >
-        Image
-      </div>
+      </section>
+      
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'evening-code'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      
+    </article>
+  </main>
+  <div class="bottom-closer">
+    <div class="background-closer-image" >
+      Image
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  </div>
+  <!-- footer start -->
+<footer class="site-footer">
+  <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i
+        class="fa fa-rss"></i> Subscribe!</span></a>
+  <div class="inner">
+    <section class="copyright">All content copyright <a href="mailto:thn7440@gmail.com">Taeho Nam</a> &copy;
+      2020 &bull; All rights reserved.</section>
+    <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
+  </div>
+</footer>
+<!-- footer end -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="/assets/js/index.js"></script>
 <script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
 <script>
-(function ($) {
-  "use strict";
-  $(document).ready(function(){
-
-    var $window = $(window),
-    $image = $('.post-image-image, .teaserimage-image');
-    
-      $window.on('scroll', function() {
+  (function ($) {
+    "use strict";
+    $(document).ready(function () {
+      var $window = $(window),
+        $image = $('.post-image-image, .teaserimage-image');
+      $window.on('scroll', function () {
         var top = $window.scrollTop();
-
         if (top < 0 || top > 1500) { return; }
         $image
-          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-          .css('opacity', 1-Math.max(top/700, 0));
+          .css('transform', 'translate3d(0px, ' + top / 3 + 'px, 0px)')
+          .css('opacity', 1 - Math.max(top / 700, 0));
       });
       $window.trigger('scroll');
-
       var height = $('.article-image').height();
       $('.post-content').css('padding-top', height + 'px');
-
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          && location.hostname == this.hostname) {
           var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
             $('html,body').animate({ scrollTop: target.offset().top }, 500);
             return false;
           }
         }
       });
-
-  });
-}(jQuery));
+    });
+  }(jQuery));
 </script>
 
-
-  </body>
+</body>
 </html>
