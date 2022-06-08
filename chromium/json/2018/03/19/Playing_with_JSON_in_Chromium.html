@@ -85,7 +85,7 @@
       <br>
       <section class="post-content">
         <a name="topofpage"></a>
-        <a href="https://codevening.blogspot.com/2022/05/playing-with-json-in-chromium.html">원문 : https://codevening.blogspot.com/2022/05/playing-with-json-in-chromium.html</a>
+        <a href="https://codevening.blogspot.com/2022/05/playing-with-json-in-chromium.html" onmouseover="this.style.color='#ffc300'" onmouseout="this.style.color='#c99a00'" style="color: rgb(201, 154, 0);">원문 : https://codevening.blogspot.com/2022/05/playing-with-json-in-chromium.html</a>
         <p>다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, <code class="highlighter-rouge">Thread</code>, <code class="highlighter-rouge">GURL</code> 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 <code class="highlighter-rouge">base</code> 네임스페이스에 존재한다.</p>
 
 <p>크로미움은 웹 브라우저이므로 당연히 JSON(JavaScript Object Notation)을 처리하기 위한 모듈이 존재할 것이다. 아니, 존재하여야만 한다. 실제로, <code class="highlighter-rouge">base</code> 네임스페이스 아래에 <code class="highlighter-rouge">JSONReader</code> 클래스가 존재한다. 물론, <code class="highlighter-rouge">libjson-c</code>나 <code class="highlighter-rouge">libjsoncpp</code>와 같은 라이브러리를 활용하는 옵션도 있겠지만, 크로미움 개발자라면 굳이 이를 활용할 필요가 없겠다. 본 포스트에는 크로미움 내에서 JSON을 다루는 방법을 담았다.</p>
