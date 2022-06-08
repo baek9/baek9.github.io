@@ -85,7 +85,7 @@
       <br>
       <section class="post-content">
         <a name="topofpage"></a>
-        <a href="https://codevening.blogspot.com/2022/05/https-self-signed-ssl.html">원문 : https://codevening.blogspot.com/2022/05/https-self-signed-ssl.html</a>
+        <a href="https://codevening.blogspot.com/2022/05/https-self-signed-ssl.html" onmouseover="this.style.color='#ffc300'" onmouseout="this.style.color='#c99a00'" style="color: rgb(201, 154, 0);">원문 : https://codevening.blogspot.com/2022/05/https-self-signed-ssl.html</a>
         <p>크로미움 분석으로 알게 된 사실 중 한 가지는 http보다 https로 접속한 웹 페이지에서 더 많은 자바스크립트 메소드를 사용할 수 있다는 것이다. 즉, 크롬은 스킴(scheme)에 따라 차등화된 권한을 웹 페이지에 부여한다. ”http://“, ”https://“, “chrome://“ 순으로 더 강력한? 메소드를 호출할 수 있다. chrome 스킴이야 당연히 크롬의 설정 페이지(chrome://settings)처럼 크롬의 운영과 관련된 부분들을 다루므로 기능적으로나 보안적으로나 다른 스킴들과는 다르긴 하겠지…라며 쉽게 납득했지만, http와 https 스킴의 권한이 다른 것에는 꽤 놀랐었다.</p>
 
 <p>크롬이 http 스킴의 웹 페이지에 대해서 안전하지 않다고 경고하기 시작한 후부터 https 스킴이 아닌 웹 사이트를 찾아보기 힘들다. 그런데 웹 개발자 입장에서는 https로 개발 중인 웹 사이트를 테스트하는 것이 번거롭다. 웹 사이트가 안전한 사이트라고 증명해주는 인증서(certificate)를 구매하여야 하기 때문이다. 본 포스트 작성에 참고한 사이트들을 보면서 좀 더 쉽게 테스트 하고자 하는 개발자들이 이미 수두룩 했음을 알 수 있었다.</p>
