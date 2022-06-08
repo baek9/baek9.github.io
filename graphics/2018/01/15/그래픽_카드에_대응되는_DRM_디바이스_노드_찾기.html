@@ -85,6 +85,7 @@
       <br>
       <section class="post-content">
         <a name="topofpage"></a>
+	      <a href="https://codevening.blogspot.com/2022/05/drm.html">원문 : https://codevening.blogspot.com/2022/05/drm.html</a>
         <p>DRM(Direct Rendering Manager)는 DRI(Direct Rendering Infrastructure)를 지원하는 그래픽 카드를 위한 디바이스 드라이버를 말한다. DRM과 DRI에 대해서는 다음 기회에 정리해야 할 것 같다. 이 노트에서는 주 그래픽 카드에 대응되는 DRM의 디바이스 노드를 찾는 방법만 정리하였다.</p>
 
 <p>보통은 /dev/dri/card0를 주 그래픽 카드에 대응되는 디바이스 노드라고 봐도 무방하다. 단, 그래픽 카드가 DRI를 지원하지 않는 경우 또는 복수의 그래픽 카드를 사용하는 경우를 제외하고 말이다. 따라서, 좀 더 확실한 방법으로 주 그래픽 카드를 식별할 수 있는 방법이 필요하다.</p>
