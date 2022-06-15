@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chromium on code(evening);</title>
-    <link>http://example.org/categories/chromium/</link>
+    <link>http://baek9.github.io/categories/chromium/</link>
     <description>Recent content in Chromium on code(evening);</description>
     <image>
-      <url>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2020 23:00:06 +0000</lastBuildDate><atom:link href="http://example.org/categories/chromium/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jan 2020 23:00:06 +0000</lastBuildDate><atom:link href="http://baek9.github.io/categories/chromium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>크로미움에 기여하기</title>
-      <link>http://example.org/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</link>
+      <link>http://baek9.github.io/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</link>
       <pubDate>Fri, 10 Jan 2020 23:00:06 +0000</pubDate>
       
-      <guid>http://example.org/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
+      <guid>http://baek9.github.io/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
       <description>크로미움에 처음 기여할 때 밟았던 절차와 내가 생각하는 주의 사항들을 기록한다. 크로미움은 큰 오픈소스 커뮤니티이기 때문에 관련 절차를 매우 상세하게 소개하고 있다. 검색해보면 참고해 볼 만한 제 3자의 포스트들도 많다. 나는 주로 아래 세 개의 자료를 참고하였다. 처음 두 개는 크로미움 커뮤니티에서 제공하는 공식 문서이다. 마지막은 제 3자가 작성한 것으로 좀 더 친근하고 쉽게 작성되어 기여 절차를 직관적이고 빠르게 이해하는 데 도움이 되었다.
 Contributing to Chromium Commit Checklist for Chromium Workflow Contributing to Chromium: an illustrated guide Signing the CLA(Contributer License Agreement) 크로미움에 코드를 기여하기 위해서는 CLA라는 계약에 서명하여야 한다.</description>
     </item>
     
     <item>
       <title>Playing with JSON in Chromium</title>
-      <link>http://example.org/posts/2018-03-18-playing_with_json_in_chromium/</link>
+      <link>http://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</link>
       <pubDate>Sun, 18 Mar 2018 21:50:45 +0000</pubDate>
       
-      <guid>http://example.org/posts/2018-03-18-playing_with_json_in_chromium/</guid>
+      <guid>http://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</guid>
       <description>다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 base 네임스페이스에 존재한다.
 크로미움은 웹 브라우저이므로 당연히 JSON(JavaScript Object Notation)을 처리하기 위한 모듈이 존재할 것이다. 아니, 존재하여야만 한다. 실제로, base 네임스페이스 아래에 JSONReader 클래스가 존재한다. 물론, libjson-c나 libjsoncpp와 같은 라이브러리를 활용하는 옵션도 있겠지만, 크로미움 개발자라면 굳이 이를 활용할 필요가 없겠다.</description>
     </item>

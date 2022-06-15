@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Garbage Collection on code(evening);</title>
-    <link>http://example.org/tags/garbage-collection/</link>
+    <link>http://baek9.github.io/tags/garbage-collection/</link>
     <description>Recent content in Garbage Collection on code(evening);</description>
     <image>
-      <url>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 23:24:45 +0000</lastBuildDate><atom:link href="http://example.org/tags/garbage-collection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2017 23:24:45 +0000</lastBuildDate><atom:link href="http://baek9.github.io/tags/garbage-collection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>자바스크립트의 가비지컬렉션과 메모리 누수</title>
-      <link>http://example.org/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</link>
+      <link>http://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</link>
       <pubDate>Wed, 29 Nov 2017 23:24:45 +0000</pubDate>
       
-      <guid>http://example.org/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</guid>
+      <guid>http://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</guid>
       <description>크롬에 구현된 자바스크립트 엔진인 V8은 주기적인 가비지컬렉션을 수행한다고 알려져있다. 이와 관련한 정보를 검색하다가 Daniel Khan이 작성한 글을 그대로 따라해보고, 느낀 점을 정리해본다. 해당 글은 아래 링크에서 읽어볼 수 있다.
 Understanding Garbage Collection and Hunting Memory Leaks in Node.js
 Resident Set V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다. 이 부분에 대해서는 좀 더 알아볼 필요가 있다.</description>

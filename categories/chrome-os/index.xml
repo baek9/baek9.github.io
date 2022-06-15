@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chrome OS on code(evening);</title>
-    <link>http://example.org/categories/chrome-os/</link>
+    <link>http://baek9.github.io/categories/chrome-os/</link>
     <description>Recent content in Chrome OS on code(evening);</description>
     <image>
-      <url>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2019 15:21:14 +0000</lastBuildDate><atom:link href="http://example.org/categories/chrome-os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Aug 2019 15:21:14 +0000</lastBuildDate><atom:link href="http://baek9.github.io/categories/chrome-os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ash part 1</title>
-      <link>http://example.org/posts/2019-09-15-ash-part-1/</link>
+      <link>http://baek9.github.io/posts/2019-09-15-ash-part-1/</link>
       <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
       
-      <guid>http://example.org/posts/2019-09-15-ash-part-1/</guid>
+      <guid>http://baek9.github.io/posts/2019-09-15-ash-part-1/</guid>
       <description>Ash(Aura Shell)는 Aura를 기반으로 하는 쉘이다. Shell 클래스가 핵심적인 역할을 하는 것으로 보인다. Shell 객체는 싱글턴 객체이고 init 메소드를 통하여 컨트롤러라 불리우는 다른 객체를 여럿 생성하고 초기화한다. 아래는 배경화면에 관한 컨트롤러를 생성 및 초기화 하는 부분이다.
 Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;WallpaperControllerImpl&amp;gt;(local_state_); ... } 싱글턴 객체인 Shell 객체를 전역적으로 참조하기 위하여 Shell 클래스는 정적 메소드인 Get 메소드를 제공한다. WallpaperControllerImpl 객체는 Shell 객체에 대하여 자기 자신을 옵저버로 등록한다. 또한, WindowTreeHostManager 객체에 대해서도 자기 자신을 옵저버로 등록한다.</description>
     </item>
     
     <item>
       <title>크롬OS 개발 및 디버깅 팁</title>
-      <link>http://example.org/posts/2019-08-02-%ED%81%AC%EB%A1%ACos_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81/</link>
+      <link>http://baek9.github.io/posts/2019-08-02-%ED%81%AC%EB%A1%ACos_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81/</link>
       <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
       
-      <guid>http://example.org/posts/2019-08-02-%ED%81%AC%EB%A1%ACos_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81/</guid>
+      <guid>http://baek9.github.io/posts/2019-08-02-%ED%81%AC%EB%A1%ACos_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81/</guid>
       <description>본 포스트에서는 크롬OS를 사용하면서 익힌 팁들을 기록한다.
 Virtual console 크롬 브라우저에서 Ctrl + Alt + T를 누르면 Crosh(Chrome shell)이 뜨고, Crosh 프롬프트에서 &amp;ldquo;shell&amp;quot;이라고 치면 심지어 bash 쉘이 실행된다. 그러나, 크롬 브라우저에서는 가끔 출력이 불완전한 경우가 많아서 가상 터미널로 진입하는 것이 편했다. Ctrl + Alt + F3을 누르면 가상 터미널 화면으로 이동한다. 일반 리눅스에서와 마찬가지로 접속과 동시에 아이디를 입력해야 하는데, 기본 아이디는 &amp;ldquo;chronos&amp;quot;이고 비밀번호는 &amp;ldquo;chrome&amp;quot;이다. 이 비밀번호는 크로미움OS 컴파일 시에 수동으로 설정할 수 있다.</description>
     </item>
