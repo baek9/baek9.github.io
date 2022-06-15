@@ -1,1 +1,3 @@
-Sitemap: http://baek9.github.io/sitemap.xml
+User-agent: *
+Disallow:
+Sitemap: http://example.org/sitemap.xml

@@ -1,65 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://baek9.github.io/embedded/2014/08/29/%EC%9D%B8%ED%85%94_%EC%97%90%EB%94%94%EC%8A%A8_%EB%B3%B4%EB%93%9C_%EC%B5%9C%EC%B4%88_%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0.html</loc>
-<lastmod>2014-08-29T23:34:25+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/javascript/v8/2017/11/26/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8.html</loc>
-<lastmod>2017-11-26T07:12:24+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/javascript/v8/2017/11/30/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98.html</loc>
-<lastmod>2017-11-30T08:24:45+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/graphics/2018/01/15/%EA%B7%B8%EB%9E%98%ED%94%BD_%EC%B9%B4%EB%93%9C%EC%97%90_%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94_DRM_%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4_%EB%85%B8%EB%93%9C_%EC%B0%BE%EA%B8%B0.html</loc>
-<lastmod>2018-01-15T06:07:36+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/devtools/2018/01/20/VS_Code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1.html</loc>
-<lastmod>2018-01-20T07:09:26+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/chromium/json/2018/03/19/Playing_with_JSON_in_Chromium.html</loc>
-<lastmod>2018-03-19T06:50:45+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/javascript/v8/2018/04/03/Integer_Overflow_in_RegExp_of_V8.html</loc>
-<lastmod>2018-04-03T07:14:52+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/security/2019/04/10/https%EC%9D%98_%EC%9B%90%EB%A6%AC,_%EA%B7%B8%EB%A6%AC%EA%B3%A0_Self-signed-SSL_%EA%B9%8C%EC%A7%80.html</loc>
-<lastmod>2019-04-10T07:21:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/chrome%20os/2019/08/03/%ED%81%AC%EB%A1%ACOS_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81.html</loc>
-<lastmod>2019-08-03T00:21:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/chrome%20os/2019/08/03/Ash-part-1.html</loc>
-<lastmod>2019-08-03T00:21:14+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/chromium/2020/01/11/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0.html</loc>
-<lastmod>2020-01-11T08:00:06+09:00</lastmod>
-</url>
-<url>
-<loc>http://baek9.github.io/category/</loc>
-</url>
-<url>
-<loc>http://baek9.github.io/tag/</loc>
-</url>
-<url>
-<loc>http://baek9.github.io/about/</loc>
-</url>
-<url>
-<loc>http://baek9.github.io/</loc>
-</url>
-<url>
-<loc>http://baek9.github.io/page2/</loc>
-</url>
-<url>
-<loc>http://baek9.github.io/page3/</loc>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/chromium/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/tips/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2020-01-10T23:00:06+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2019-09-15-ash-part-1/</loc>
+    <lastmod>2019-08-02T15:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/chrome-os/</loc>
+    <lastmod>2019-08-02T15:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2019-08-02-%ED%81%AC%EB%A1%ACos_%EA%B0%9C%EB%B0%9C_%EB%B0%8F_%EB%94%94%EB%B2%84%EA%B9%85_%ED%8C%81/</loc>
+    <lastmod>2019-08-02T15:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/https/</loc>
+    <lastmod>2019-04-09T22:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2019-04-09-https%EC%9D%98_%EC%9B%90%EB%A6%AC_%EA%B7%B8%EB%A6%AC%EA%B3%A0_self-signed-ssl_%EA%B9%8C%EC%A7%80/</loc>
+    <lastmod>2019-04-09T22:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/pki/</loc>
+    <lastmod>2019-04-09T22:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/security/</loc>
+    <lastmod>2019-04-09T22:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/ssl/</loc>
+    <lastmod>2019-04-09T22:21:14+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/integer-overflow/</loc>
+    <lastmod>2018-04-02T22:14:52+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2018-04-02-integer_overflow_in_regexp_of_v8/</loc>
+    <lastmod>2018-04-02T22:14:52+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/javascript/</loc>
+    <lastmod>2018-04-02T22:14:52+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/v8/</loc>
+    <lastmod>2018-04-02T22:14:52+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/v8/</loc>
+    <lastmod>2018-04-02T22:14:52+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/chromium/</loc>
+    <lastmod>2018-03-18T21:50:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/json/</loc>
+    <lastmod>2018-03-18T21:50:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/json/</loc>
+    <lastmod>2018-03-18T21:50:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2018-03-18-playing_with_json_in_chromium/</loc>
+    <lastmod>2018-03-18T21:50:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/debugging/</loc>
+    <lastmod>2018-01-19T22:09:26+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/devtools/</loc>
+    <lastmod>2018-01-19T22:09:26+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/vs-code/</loc>
+    <lastmod>2018-01-19T22:09:26+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2018-01-19-vs_code%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_%EC%9B%90%EA%B2%A9_%EA%B0%9C%EB%B0%9C_%ED%99%98%EA%B2%BD_%EA%B5%AC%EC%84%B1/</loc>
+    <lastmod>2018-01-19T22:09:26+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/drm/</loc>
+    <lastmod>2018-01-14T21:07:36+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/graphics/</loc>
+    <lastmod>2018-01-14T21:07:36+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/linux/</loc>
+    <lastmod>2018-01-14T21:07:36+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/udev/</loc>
+    <lastmod>2018-01-14T21:07:36+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2018-01-14-%EA%B7%B8%EB%9E%98%ED%94%BD_%EC%B9%B4%EB%93%9C%EC%97%90_%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94_drm_%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4_%EB%85%B8%EB%93%9C_%EC%B0%BE%EA%B8%B0/</loc>
+    <lastmod>2018-01-14T21:07:36+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/garbage-collection/</loc>
+    <lastmod>2017-11-29T23:24:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/javascript/</loc>
+    <lastmod>2017-11-29T23:24:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</loc>
+    <lastmod>2017-11-29T23:24:45+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/prototype/</loc>
+    <lastmod>2017-11-25T22:12:24+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</loc>
+    <lastmod>2017-11-25T22:12:24+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/edison-board/</loc>
+    <lastmod>2014-08-29T14:34:25+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/embedded/</loc>
+    <lastmod>2014-08-29T14:34:25+00:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/2017-12-03-%EC%9D%B8%ED%85%94_%EC%97%90%EB%94%94%EC%8A%A8_%EB%B3%B4%EB%93%9C_%EC%B5%9C%EC%B4%88_%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2014-08-29T14:34:25+00:00</lastmod>
+  </url>
 </urlset>

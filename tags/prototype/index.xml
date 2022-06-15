@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prototype on code(evening);</title>
+    <link>http://example.org/tags/prototype/</link>
+    <description>Recent content in Prototype on code(evening);</description>
+    <image>
+      <url>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://example.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Nov 2017 22:12:24 +0000</lastBuildDate><atom:link href="http://example.org/tags/prototype/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자바스크립트의 프로토타입 체인</title>
+      <link>http://example.org/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</link>
+      <pubDate>Sat, 25 Nov 2017 22:12:24 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</guid>
+      <description>자바스크립트(JavaScript)는 흔히 프로토타입(prototype) 기반의 언어라고 불린다. 프로토타입은 직역하면 원형이라는 의미이다. 자바스크립트로 생성한 모든 객체는 원형, 즉, 프로토타입 객체와 함께 쌍을 이룬다. 이러한 구조를 활용하면 C++을 이용한 객체 지향 프로그래밍(OOP : Object-Oriented Programming)에서 중요한 개념 중의 하나인 상속(inheritance)을 자바스크립트에서도 손쉽게 구현할 수 있다. 자바스크립트에서는 이를 ‘프로토타입 체인(prototype chain)’ 이라고 부른다. 프로토타입 체인을 이해하기 위해서는 우선 프로토타입 객체에 대한 감을 잡을 필요가 있다.
+객체의 생성 자바스크립트에서는 정의된 모든 함수(function)를 객체를 생성하기 위한 생성자로 활용할 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>
