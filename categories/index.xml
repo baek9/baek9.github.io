@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on code(evening);</title>
-    <link>http://baek9.github.io/categories/</link>
+    <link>https://baek9.github.io/categories/</link>
     <description>Recent content in Categories on code(evening);</description>
     <image>
-      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jun 2022 22:12:24 +0000</lastBuildDate><atom:link href="http://baek9.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Jun 2022 22:12:24 +0000</lastBuildDate><atom:link href="https://baek9.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Containerd</title>
-      <link>http://baek9.github.io/categories/containerd/</link>
+      <link>https://baek9.github.io/categories/containerd/</link>
       <pubDate>Mon, 13 Jun 2022 22:12:24 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/containerd/</guid>
+      <guid>https://baek9.github.io/categories/containerd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>http://baek9.github.io/categories/blog/</link>
+      <link>https://baek9.github.io/categories/blog/</link>
       <pubDate>Wed, 08 Jun 2022 22:12:24 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/blog/</guid>
+      <guid>https://baek9.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chromium</title>
-      <link>http://baek9.github.io/categories/chromium/</link>
+      <link>https://baek9.github.io/categories/chromium/</link>
       <pubDate>Fri, 10 Jan 2020 23:00:06 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/chromium/</guid>
+      <guid>https://baek9.github.io/categories/chromium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chrome OS</title>
-      <link>http://baek9.github.io/categories/chrome-os/</link>
+      <link>https://baek9.github.io/categories/chrome-os/</link>
       <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/chrome-os/</guid>
+      <guid>https://baek9.github.io/categories/chrome-os/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security</title>
-      <link>http://baek9.github.io/categories/security/</link>
+      <link>https://baek9.github.io/categories/security/</link>
       <pubDate>Tue, 09 Apr 2019 22:21:14 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/security/</guid>
+      <guid>https://baek9.github.io/categories/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>http://baek9.github.io/categories/javascript/</link>
+      <link>https://baek9.github.io/categories/javascript/</link>
       <pubDate>Mon, 02 Apr 2018 22:14:52 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/javascript/</guid>
+      <guid>https://baek9.github.io/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>V8</title>
-      <link>http://baek9.github.io/categories/v8/</link>
+      <link>https://baek9.github.io/categories/v8/</link>
       <pubDate>Mon, 02 Apr 2018 22:14:52 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/v8/</guid>
+      <guid>https://baek9.github.io/categories/v8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JSON</title>
-      <link>http://baek9.github.io/categories/json/</link>
+      <link>https://baek9.github.io/categories/json/</link>
       <pubDate>Sun, 18 Mar 2018 21:50:45 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/json/</guid>
+      <guid>https://baek9.github.io/categories/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devtools</title>
-      <link>http://baek9.github.io/categories/devtools/</link>
+      <link>https://baek9.github.io/categories/devtools/</link>
       <pubDate>Fri, 19 Jan 2018 22:09:26 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/devtools/</guid>
+      <guid>https://baek9.github.io/categories/devtools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graphics</title>
-      <link>http://baek9.github.io/categories/graphics/</link>
+      <link>https://baek9.github.io/categories/graphics/</link>
       <pubDate>Sun, 14 Jan 2018 21:07:36 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/graphics/</guid>
+      <guid>https://baek9.github.io/categories/graphics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>embedded</title>
-      <link>http://baek9.github.io/categories/embedded/</link>
+      <link>https://baek9.github.io/categories/embedded/</link>
       <pubDate>Fri, 29 Aug 2014 14:34:25 +0000</pubDate>
       
-      <guid>http://baek9.github.io/categories/embedded/</guid>
+      <guid>https://baek9.github.io/categories/embedded/</guid>
       <description></description>
     </item>
     

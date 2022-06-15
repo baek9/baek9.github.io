@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>JavaScript on code(evening);</title>
-    <link>http://baek9.github.io/tags/javascript/</link>
+    <link>https://baek9.github.io/tags/javascript/</link>
     <description>Recent content in JavaScript on code(evening);</description>
     <image>
-      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 23:24:45 +0000</lastBuildDate><atom:link href="http://baek9.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2017 23:24:45 +0000</lastBuildDate><atom:link href="https://baek9.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>자바스크립트의 가비지컬렉션과 메모리 누수</title>
-      <link>http://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</link>
+      <link>https://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</link>
       <pubDate>Wed, 29 Nov 2017 23:24:45 +0000</pubDate>
       
-      <guid>http://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</guid>
+      <guid>https://baek9.github.io/posts/2017-11-29-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98/</guid>
       <description>크롬에 구현된 자바스크립트 엔진인 V8은 주기적인 가비지컬렉션을 수행한다고 알려져있다. 이와 관련한 정보를 검색하다가 Daniel Khan이 작성한 글을 그대로 따라해보고, 느낀 점을 정리해본다. 해당 글은 아래 링크에서 읽어볼 수 있다.
 Understanding Garbage Collection and Hunting Memory Leaks in Node.js
 Resident Set V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다. 이 부분에 대해서는 좀 더 알아볼 필요가 있다.</description>
@@ -24,10 +24,10 @@ Resident Set V8은 ‘Resident Set’이라는 구조로 메모리를 운용한�
     
     <item>
       <title>자바스크립트의 프로토타입 체인</title>
-      <link>http://baek9.github.io/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</link>
+      <link>https://baek9.github.io/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</link>
       <pubDate>Sat, 25 Nov 2017 22:12:24 +0000</pubDate>
       
-      <guid>http://baek9.github.io/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</guid>
+      <guid>https://baek9.github.io/posts/2017-11-25-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%B2%B4%EC%9D%B8/</guid>
       <description>자바스크립트(JavaScript)는 흔히 프로토타입(prototype) 기반의 언어라고 불린다. 프로토타입은 직역하면 원형이라는 의미이다. 자바스크립트로 생성한 모든 객체는 원형, 즉, 프로토타입 객체와 함께 쌍을 이룬다. 이러한 구조를 활용하면 C++을 이용한 객체 지향 프로그래밍(OOP : Object-Oriented Programming)에서 중요한 개념 중의 하나인 상속(inheritance)을 자바스크립트에서도 손쉽게 구현할 수 있다. 자바스크립트에서는 이를 ‘프로토타입 체인(prototype chain)’ 이라고 부른다. 프로토타입 체인을 이해하기 위해서는 우선 프로토타입 객체에 대한 감을 잡을 필요가 있다.
 객체의 생성 자바스크립트에서는 정의된 모든 함수(function)를 객체를 생성하기 위한 생성자로 활용할 수 있다.</description>
     </item>

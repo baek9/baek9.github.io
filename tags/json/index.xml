@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>JSON on code(evening);</title>
-    <link>http://baek9.github.io/tags/json/</link>
+    <link>https://baek9.github.io/tags/json/</link>
     <description>Recent content in JSON on code(evening);</description>
     <image>
-      <url>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://baek9.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Mar 2018 21:50:45 +0000</lastBuildDate><atom:link href="http://baek9.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Mar 2018 21:50:45 +0000</lastBuildDate><atom:link href="https://baek9.github.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Playing with JSON in Chromium</title>
-      <link>http://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</link>
+      <link>https://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</link>
       <pubDate>Sun, 18 Mar 2018 21:50:45 +0000</pubDate>
       
-      <guid>http://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</guid>
+      <guid>https://baek9.github.io/posts/2018-03-18-playing_with_json_in_chromium/</guid>
       <description>다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 base 네임스페이스에 존재한다.
 크로미움은 웹 브라우저이므로 당연히 JSON(JavaScript Object Notation)을 처리하기 위한 모듈이 존재할 것이다. 아니, 존재하여야만 한다. 실제로, base 네임스페이스 아래에 JSONReader 클래스가 존재한다. 물론, libjson-c나 libjsoncpp와 같은 라이브러리를 활용하는 옵션도 있겠지만, 크로미움 개발자라면 굳이 이를 활용할 필요가 없겠다.</description>
     </item>
