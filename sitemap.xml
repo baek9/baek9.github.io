@@ -23,9 +23,6 @@
     <loc>https://baek9.github.io/posts/</loc>
     <lastmod>2022-06-13T22:12:24+00:00</lastmod>
   </url><url>
-    <loc>https://baek9.github.io/tags/ssg/</loc>
-    <lastmod>2022-06-13T22:12:24+00:00</lastmod>
-  </url><url>
     <loc>https://baek9.github.io/tags/</loc>
     <lastmod>2022-06-13T22:12:24+00:00</lastmod>
   </url><url>
@@ -41,6 +38,9 @@
     <loc>https://baek9.github.io/tags/jekyll/</loc>
     <lastmod>2022-06-08T22:12:24+00:00</lastmod>
   </url><url>
+    <loc>https://baek9.github.io/tags/ssg/</loc>
+    <lastmod>2022-06-08T22:12:24+00:00</lastmod>
+  </url><url>
     <loc>https://baek9.github.io/posts/220608-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</loc>
     <lastmod>2022-06-08T22:12:24+00:00</lastmod>
   </url><url>
@@ -53,7 +53,7 @@
     <loc>https://baek9.github.io/posts/2020-01-11-%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90_%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-01-10T23:00:06+00:00</lastmod>
   </url><url>
-    <loc>https://baek9.github.io/posts/2/</loc>
+    <loc>https://baek9.github.io/posts/2019-09-15-ash-part-1/</loc>
     <lastmod>2019-08-02T15:21:14+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/categories/chrome-os/</loc>
