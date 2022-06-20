@@ -44,10 +44,10 @@ Contributing to Chromium Commit Checklist for Chromium Workflow Contributing to 
     
     <item>
       <title>Ash part 1</title>
-      <link>https://baek9.github.io/posts/2019-09-15-ash-part-1/</link>
+      <link>https://baek9.github.io/posts/2/</link>
       <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
       
-      <guid>https://baek9.github.io/posts/2019-09-15-ash-part-1/</guid>
+      <guid>https://baek9.github.io/posts/2/</guid>
       <description>Ash(Aura Shell)는 Aura를 기반으로 하는 쉘이다. Shell 클래스가 핵심적인 역할을 하는 것으로 보인다. Shell 객체는 싱글턴 객체이고 init 메소드를 통하여 컨트롤러라 불리우는 다른 객체를 여럿 생성하고 초기화한다. 아래는 배경화면에 관한 컨트롤러를 생성 및 초기화 하는 부분이다.
 Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;WallpaperControllerImpl&amp;gt;(local_state_); ... } 싱글턴 객체인 Shell 객체를 전역적으로 참조하기 위하여 Shell 클래스는 정적 메소드인 Get 메소드를 제공한다. WallpaperControllerImpl 객체는 Shell 객체에 대하여 자기 자신을 옵저버로 등록한다. 또한, WindowTreeHostManager 객체에 대해서도 자기 자신을 옵저버로 등록한다.</description>
     </item>
