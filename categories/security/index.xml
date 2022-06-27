@@ -10,15 +10,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Apr 2019 22:21:14 +0000</lastBuildDate><atom:link href="https://baek9.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Apr 2019 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>https의 원리, 그리고 Self-signed SSL 까지</title>
-      <link>https://baek9.github.io/posts/2019-04-09-https%EC%9D%98_%EC%9B%90%EB%A6%AC_%EA%B7%B8%EB%A6%AC%EA%B3%A0_self-signed-ssl_%EA%B9%8C%EC%A7%80/</link>
-      <pubDate>Tue, 09 Apr 2019 22:21:14 +0000</pubDate>
+      <title>HTTPS의 원리, 그리고 Self-signed SSL 까지</title>
+      <link>https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
       
-      <guid>https://baek9.github.io/posts/2019-04-09-https%EC%9D%98_%EC%9B%90%EB%A6%AC_%EA%B7%B8%EB%A6%AC%EA%B3%A0_self-signed-ssl_%EA%B9%8C%EC%A7%80/</guid>
-      <description>크로미움 분석으로 알게 된 사실 중 한 가지는 http보다 https로 접속한 웹 페이지에서 더 많은 자바스크립트 메소드를 사용할 수 있다는 것이다. 즉, 크롬은 스킴(scheme)에 따라 차등화된 권한을 웹 페이지에 부여한다. ”http://“, ”https://“, “chrome://“ 순으로 더 강력한? 메소드를 호출할 수 있다. chrome 스킴이야 당연히 크롬의 설정 페이지(chrome://settings)처럼 크롬의 운영과 관련된 부분들을 다루므로 기능적으로나 보안적으로나 다른 스킴들과는 다르긴 하겠지&amp;hellip;라며 쉽게 납득했지만, http와 https 스킴의 권한이 다른 것에는 꽤 놀랐었다.
-크롬이 http 스킴의 웹 페이지에 대해서 안전하지 않다고 경고하기 시작한 후부터 https 스킴이 아닌 웹 사이트를 찾아보기 힘들다.</description>
+      <guid>https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/</guid>
+      <description>#HTTPS #SSL #PKI
+크로미움 분석으로 알게 된 사실 중 한 가지는 http보다 https로 접속한 웹 페이지에서 더 많은 자바스크립트 메소드를 사용할 수 있다는 것이다. 즉, 크롬은 스킴(scheme)에 따라 차등화된 권한을 웹 페이지에 부여한다. ”http://“, ”https://“, “chrome://“ 순으로 더 강력한? 메소드를 호출할 수 있다. chrome 스킴이야 당연히 크롬의 설정 페이지(chrome://settings)처럼 크롬의 운영과 관련된 부분들을 다루므로 기능적으로나 보안적으로나 다른 스킴들과는 다르긴 하겠지&amp;hellip;라며 쉽게 납득했지만, http와 https 스킴의 권한이 다른 것에는 꽤 놀랐었다.</description>
     </item>
     
   </channel>
