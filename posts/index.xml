@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on code(evening);</title>
+    <link>https://baek9.github.io/posts/</link>
+    <description>Recent content in Posts on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>다시 정적 사이트 생성기(SSG: Static Site Generator)로...</title>
+      <link>https://baek9.github.io/2022/06/%EB%8B%A4%EC%8B%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator%EB%A1%9C.../</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/06/%EB%8B%A4%EC%8B%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator%EB%A1%9C.../</guid>
+      <description>(adsbygoogle = window.adsbygoogle || []).push({});   이전 블로그로의 회귀 ¶ 1편에서 필자는 지킬(Jekyll)이라는 유명한 도구와 깃허브 페이지(GitHub Pages)로 호스팅되는 기존 블로그를 오랫동안 방치운영하고 있었지만, 여러가지 이유로 구글의 블로거(Blogger)로 이동했다고 말했다. 그런데 기존 블로그를 계속 사용하기로 결정하였다. 여기에는 여러가지 이유가 작용했다.
+애드센스(Google Adsense)의 미승인 ¶ 구글이 제공하는 애드센스는 웹 사이트의 화면 상 일정 공간에 광고를 허락하고 그에 대한 보상을 받을 수 있는 서비스다. 구글이 지금과 같이 글로벌 기업으로 자리잡은 데에는 바로 이런 광고 모델 덕분이라고 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>정적 사이트 생성기(SSG: Static Site Generator), 휴고(Hugo)</title>
+      <link>https://baek9.github.io/2022/06/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/06/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo/</guid>
+      <description>기존에 사용했던 지킬(Jekyll)은 다소 생소한 언어인 루비(Ruby)로 구현되어 있어 개인적으로 설치와 커스터마이징, 유지보수에 어려움이 있었다. 그렇다보니 글쓰기에만 집중할 수 블로그 플랫폼을 찾아보기 시작했고, 여러 좋은 서비스들이 많이 있었지만 전통?의 블로거(Blogger)를 선택하였다. 실제로 블로거를 이용하여 새 블로그를 만들었으나 직후에 포기하고 다시 정적 사이트 생성기(SSG: Static Site Generator)를 이용하여 기존 블로그를 살려보기로 결정하였다.
+2편의 말미에 언급했듯이 다시 지킬을 쓰고 싶지 않았다. 지금은 당시에 비해 대안이 많기 때문에 하나하나 둘러보기 시작했고 결국, 휴고(Hugo)에 마음이 갔다.</description>
+    </item>
+    
+    <item>
+      <title>컨테이너(Container) 관련 기술들 간의 관계, 그리고 Containerd</title>
+      <link>https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/</guid>
+      <description>(adsbygoogle = window.adsbygoogle || []).push({});   &amp;ldquo;Dockershim deprecated with the release of Kubernetes 1.24&amp;rdquo; ¶ 위 문장은 더 레지스터(The register)에 실린 기사의 헤드라인이다. 문장을 보고 어떤 생각이 드는가? 나는 컨테이너가 구현하는 기술이 궁금할 뿐이지, 관련 기술로 먹고 사는 것은 아니라서 별 생각은 없었다. 그러나 관련 업계에서는 매우 큰 화두였었구나 하는 것을 최근 알게 되었다. 실제로 쿠버네티스(Kubernetes) 측에서 아래와 같은 글을 기고했을 정도로 말이다.
+&amp;ldquo;Don&amp;rsquo;t Panic: Kubernetes and Docker&amp;rdquo;, Kubernetes Blog</description>
+    </item>
+    
+    <item>
+      <title>블로그 플랫폼 선택기</title>
+      <link>https://baek9.github.io/2022/06/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</link>
+      <pubDate>Wed, 08 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/06/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</guid>
+      <description>(adsbygoogle = window.adsbygoogle || []).push({});   정적 사이트 생성기(SSG: Static Site Generator) ¶ 지킬(Jekyll)이라는 도구가 등장하면서 정적 사이트 생성기(SSG: Static Site Generator)가 각광받던 때가 있었다. 나도 지킬과 깃허브 페이지(GitHub Pages)를 이용하여 오래 전에 블로그를 구축했었다. 정적 사이트 생성기는 데이터베이스를 포함해 웹 페이지를 렌더링(Rendering) 하는 데 필요한 백엔드(Backend) 솔루션들을 구축하지 않아도, 잘 알지 못해도 훌륭한 사이트를 만들어 준다는 장점이 있다. 결과물인 정적 사이트는 오로지 HTML(Hyper-Text Markup Language), CSS(Cascading Style Sheet), JavaScript로만 구현되어 오로지 브라우저만 있으면 동작한다.</description>
+    </item>
+    
+    <item>
+      <title>크로미움에 기여하기</title>
+      <link>https://baek9.github.io/2020/01/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2020/01/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
+      <description>#Chromium
+크로미움에 처음 기여할 때 밟았던 절차와 내가 생각하는 주의 사항들을 기록한다. 크로미움은 큰 오픈소스 커뮤니티이기 때문에 관련 절차를 매우 상세하게 소개하고 있다. 검색해보면 참고해 볼 만한 제 3자의 포스트들도 많다. 나는 주로 아래 세 개의 자료를 참고하였다. 처음 두 개는 크로미움 커뮤니티에서 제공하는 공식 문서이다. 마지막은 제 3자가 작성한 것으로 좀 더 친근하고 쉽게 작성되어 기여 절차를 직관적이고 빠르게 이해하는 데 도움이 되었다.
+ Contributing to Chromium Commit Checklist for Chromium Workflow Contributing to Chromium: an illustrated guide     (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
+      <title>ChromeOS의 Ash Shell 분석 1</title>
+      <link>https://baek9.github.io/2019/08/chromeos%EC%9D%98-ash-shell-%EB%B6%84%EC%84%9D-1/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2019/08/chromeos%EC%9D%98-ash-shell-%EB%B6%84%EC%84%9D-1/</guid>
+      <description>#ChromeOS #Ash
+Ash(Aura Shell)는 Aura를 기반으로 하는 쉘이다. Shell 클래스가 핵심적인 역할을 하는 것으로 보인다. Shell 객체는 싱글턴 객체이고 init 메소드를 통하여 컨트롤러라 불리우는 다른 객체를 여럿 생성하고 초기화한다. 아래는 배경화면에 관한 컨트롤러를 생성 및 초기화 하는 부분이다.
+Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;WallpaperControllerImpl&amp;gt;(local_state_); ... } 싱글턴 객체인 Shell 객체를 전역적으로 참조하기 위하여 Shell 클래스는 정적 메소드인 Get 메소드를 제공한다. WallpaperControllerImpl 객체는 Shell 객체에 대하여 자기 자신을 옵저버로 등록한다. 또한, WindowTreeHostManager 객체에 대해서도 자기 자신을 옵저버로 등록한다.</description>
+    </item>
+    
+    <item>
+      <title>크롬OS 개발 및 디버깅 팁</title>
+      <link>https://baek9.github.io/2019/08/%ED%81%AC%EB%A1%ACos-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%94%94%EB%B2%84%EA%B9%85-%ED%8C%81/</link>
+      <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2019/08/%ED%81%AC%EB%A1%ACos-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%94%94%EB%B2%84%EA%B9%85-%ED%8C%81/</guid>
+      <description>#ChromeOS
+본 포스트에서는 크롬OS를 사용하면서 익힌 팁들을 기록한다.
+   (adsbygoogle = window.adsbygoogle || []).push({});   Virtual console ¶ 크롬 브라우저에서 Ctrl + Alt + T를 누르면 Crosh(Chrome shell)이 뜨고, Crosh 프롬프트에서 &amp;ldquo;shell&amp;quot;이라고 치면 심지어 bash 쉘이 실행된다. 그러나, 크롬 브라우저에서는 가끔 출력이 불완전한 경우가 많아서 가상 터미널로 진입하는 것이 편했다. Ctrl + Alt + F3을 누르면 가상 터미널 화면으로 이동한다. 일반 리눅스에서와 마찬가지로 접속과 동시에 아이디를 입력해야 하는데, 기본 아이디는 &amp;ldquo;chronos&amp;quot;이고 비밀번호는 &amp;ldquo;chrome&amp;quot;이다.</description>
+    </item>
+    
+    <item>
+      <title>HTTPS의 원리, 그리고 Self-signed SSL 까지</title>
+      <link>https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/</guid>
+      <description>#HTTPS #SSL #PKI
+크로미움 분석으로 알게 된 사실 중 한 가지는 http보다 https로 접속한 웹 페이지에서 더 많은 자바스크립트 메소드를 사용할 수 있다는 것이다. 즉, 크롬은 스킴(scheme)에 따라 차등화된 권한을 웹 페이지에 부여한다. ”http://“, ”https://“, “chrome://“ 순으로 더 강력한? 메소드를 호출할 수 있다. chrome 스킴이야 당연히 크롬의 설정 페이지(chrome://settings)처럼 크롬의 운영과 관련된 부분들을 다루므로 기능적으로나 보안적으로나 다른 스킴들과는 다르긴 하겠지&amp;hellip;라며 쉽게 납득했지만, http와 https 스킴의 권한이 다른 것에는 꽤 놀랐었다.</description>
+    </item>
+    
+    <item>
+      <title>Integer Overflow in V8</title>
+      <link>https://baek9.github.io/2018/10/integer-overflow-in-v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2018/10/integer-overflow-in-v8/</guid>
+      <description>#V8 #IntegerOverflow
+최근 취약점들을 살펴보면 순수하게 V8과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 Blink나 Chrome에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. V8 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제시하고 있었다. 대략적인 V8의 구조와 정수 오버플로우가 어떤 것인지 알게된 의미있는 분석이었다.
+   (adsbygoogle = window.adsbygoogle || []).push({});   RegExp.prototype[@@replace] ¶ 해당 PoC는 결국에 C++ 함수인 Runtime_RegExpReplace()에서 발현된다.(이하 RegExpReplace) 이 함수는 자바스크립트 레벨에서 RegExp.</description>
+    </item>
+    
+    <item>
+      <title>Playing with JSON in Chromium</title>
+      <link>https://baek9.github.io/2018/03/playing-with-json-in-chromium/</link>
+      <pubDate>Sun, 18 Mar 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2018/03/playing-with-json-in-chromium/</guid>
+      <description>#Chromium #JSON
+다른 포스트에서도 언급했거나 언급하겠지만, 크로미움은 그 자체로 매우 풍부한 라이브러리 집합이다. 예를 들면, Thread, GURL 클래스를 이용하면 손쉽게 스레드를 만들고 관리할 수 있으며, URL도 입맛대로 다룰 수 있다. (scheme만 따로 추출하려고 굳이 파싱하지 않아도 되는) 이 밖에도 유용한 클래스들이 많이 존재하며, 이들은 크로미움의 base 네임스페이스에 존재한다.
+크로미움은 웹 브라우저이므로 당연히 JSON(JavaScript Object Notation)을 처리하기 위한 모듈이 존재할 것이다. 아니, 존재하여야만 한다. 실제로, base 네임스페이스 아래에 JSONReader 클래스가 존재한다. 물론, libjson-c나 libjsoncpp와 같은 라이브러리를 활용하는 옵션도 있겠지만, 크로미움 개발자라면 굳이 이를 활용할 필요가 없겠다.</description>
+    </item>
+    
+    <item>
+      <title>VS Code를 이용한 원격 개발 환경 구성</title>
+      <link>https://baek9.github.io/2018/01/vs-code%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9B%90%EA%B2%A9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1/</link>
+      <pubDate>Sat, 20 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2018/01/vs-code%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9B%90%EA%B2%A9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1/</guid>
+      <description>#VSCode
+커널 개발 시에는 빌드, 테스트, 디버깅까지 이어지는 과정이 꽤나 번거롭다. 이 때문에 QEMU와 gdb를 연동하여 개발 환경을 구축하는 것을 보았다. 그에 비할 바인지는 모르겠지만 리눅스 그래픽스 스택과 관련한 개발에서도 몇 애로점이 있었다. 귀찮더라도 최초에 개발 환경을 구축하는 것이 낫다는 것이 정신 건강에 이로움을 나중에야 깨달았다.
+보통, 리눅스를 이용한 개발은 가상머신에서 진행한다. 우분투 같은 배포판은 가상머신에 설치해도 가상머신 창의 크기에 따라 자동적으로 해상도가 조정된다. 하지만 GNOME이나 KDE와 같은 GUI 데스크톱 환경이 제공되지 않는 환경에서의 개발은 매우 불편하다.</description>
+    </item>
+    
+    <item>
+      <title>그래픽 카드에 대응되는 DRM 디바이스 노드 찾기</title>
+      <link>https://baek9.github.io/2018/01/%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%B9%B4%EB%93%9C%EC%97%90-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-drm-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EB%85%B8%EB%93%9C-%EC%B0%BE%EA%B8%B0/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2018/01/%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%B9%B4%EB%93%9C%EC%97%90-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-drm-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EB%85%B8%EB%93%9C-%EC%B0%BE%EA%B8%B0/</guid>
+      <description>#DRM #DRI #udev
+DRM(Direct Rendering Manager)는 DRI(Direct Rendering Infrastructure)를 지원하는 그래픽 카드를 위한 디바이스 드라이버를 말한다. DRM과 DRI에 대해서는 다음 기회에 정리해야 할 것 같다. 이 노트에서는 주 그래픽 카드에 대응되는 DRM의 디바이스 노드를 찾는 방법만 정리하였다.
+보통은 /dev/dri/card0를 주 그래픽 카드에 대응되는 디바이스 노드라고 봐도 무방하다. 단, 그래픽 카드가 DRI를 지원하지 않는 경우 또는 복수의 그래픽 카드를 사용하는 경우를 제외하고 말이다. 따라서, 좀 더 확실한 방법으로 주 그래픽 카드를 식별할 수 있는 방법이 필요하다.</description>
+    </item>
+    
+    <item>
+      <title>자바스크립트의 가비지컬렉션과 메모리 누수</title>
+      <link>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%88%84%EC%88%98/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%88%84%EC%88%98/</guid>
+      <description>#JavaScript #V8 #GarbageCollection
+크롬에 구현된 자바스크립트 엔진인 V8은 주기적인 가비지컬렉션을 수행한다고 알려져있다. 이와 관련한 정보를 검색하다가 Daniel Khan이 작성한 글을 그대로 따라해보고, 느낀 점을 정리해본다. 해당 글은 아래 링크에서 읽어볼 수 있다.
+Understanding Garbage Collection and Hunting Memory Leaks in Node.js
+   (adsbygoogle = window.adsbygoogle || []).push({});   Resident Set ¶ V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다.</description>
+    </item>
+    
+    <item>
+      <title>자바스크립트의 프로토타입 체인</title>
+      <link>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%B2%B4%EC%9D%B8/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%B2%B4%EC%9D%B8/</guid>
+      <description>#JavaScript #Prototype
+자바스크립트(JavaScript)는 흔히 프로토타입(prototype) 기반의 언어라고 불린다. 프로토타입은 직역하면 원형이라는 의미이다. 자바스크립트로 생성한 모든 객체는 원형, 즉, 프로토타입 객체와 함께 쌍을 이룬다. 이러한 구조를 활용하면 C++을 이용한 객체 지향 프로그래밍(OOP : Object-Oriented Programming)에서 중요한 개념 중의 하나인 상속(inheritance)을 자바스크립트에서도 손쉽게 구현할 수 있다. 자바스크립트에서는 이를 ‘프로토타입 체인(prototype chain)’ 이라고 부른다. 프로토타입 체인을 이해하기 위해서는 우선 프로토타입 객체에 대한 감을 잡을 필요가 있다.
+   (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
+    <item>
+      <title>인텔 에디슨 보드 최초 세팅하기</title>
+      <link>https://baek9.github.io/2014/08/%EC%9D%B8%ED%85%94-%EC%97%90%EB%94%94%EC%8A%A8-%EB%B3%B4%EB%93%9C-%EC%B5%9C%EC%B4%88-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 29 Aug 2014 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2014/08/%EC%9D%B8%ED%85%94-%EC%97%90%EB%94%94%EC%8A%A8-%EB%B3%B4%EB%93%9C-%EC%B5%9C%EC%B4%88-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/</guid>
+      <description>#Intel #EdisonBoard
+인텔 에디슨(edison) 보드는 현재는 단종된 제품이다. 후속인 줄(Joule) 보드 역시 단종되었다. 두 제품은 IoT(Internet of things)를 겨냥하여 만들어진 만큼, 인텔이 이 시장에서 발을 빼고 있다는 의견들이 많다. 어쨌든, 인텔은 IoT, 웨어러블(Wearable)에 부합하도록 에디슨 보드를 극도로 소형화 하였다. 더 이상 지원되지 않는 보드이지만 라즈베리파이(RPi : Raspberry Pi)보다도 작은 크기, 그러나 부족하지 않은 성능에 매력을 느껴 사용해 보았다. 에디슨 보드의 세팅 방법은 인텔의 홈페이지에 상세히 나와 있다. 본 글은 세팅 중에 마주쳤던 문제점, 특히 플래싱(flashing)에 대한 내용을 담았다.</description>
+    </item>
+    
+  </channel>
+</rss>

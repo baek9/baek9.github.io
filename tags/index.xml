@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on code(evening);</title>
+    <link>https://baek9.github.io/tags/</link>
+    <description>Recent content in Tags on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adsense</title>
+      <link>https://baek9.github.io/tags/adsense/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/adsense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogger</title>
+      <link>https://baek9.github.io/tags/blogger/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/blogger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://baek9.github.io/tags/hugo/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://baek9.github.io/tags/jekyll/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSG</title>
+      <link>https://baek9.github.io/tags/ssg/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/ssg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containerd</title>
+      <link>https://baek9.github.io/tags/containerd/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/containerd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://baek9.github.io/tags/docker/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://baek9.github.io/tags/kubernetes/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chromium</title>
+      <link>https://baek9.github.io/tags/chromium/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/chromium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>https://baek9.github.io/tags/tips/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ash</title>
+      <link>https://baek9.github.io/tags/ash/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/ash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChromeOS</title>
+      <link>https://baek9.github.io/tags/chromeos/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/chromeos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTPS</title>
+      <link>https://baek9.github.io/tags/https/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PKI</title>
+      <link>https://baek9.github.io/tags/pki/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/pki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>https://baek9.github.io/tags/ssl/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IntegerOverflow</title>
+      <link>https://baek9.github.io/tags/integeroverflow/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/integeroverflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>V8</title>
+      <link>https://baek9.github.io/tags/v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/v8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>https://baek9.github.io/tags/json/</link>
+      <pubDate>Sun, 18 Mar 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSCode</title>
+      <link>https://baek9.github.io/tags/vscode/</link>
+      <pubDate>Sat, 20 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DRI</title>
+      <link>https://baek9.github.io/tags/dri/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/dri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DRM</title>
+      <link>https://baek9.github.io/tags/drm/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/drm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>udev</title>
+      <link>https://baek9.github.io/tags/udev/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/udev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GarbageCollection</title>
+      <link>https://baek9.github.io/tags/garbagecollection/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/garbagecollection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://baek9.github.io/tags/javascript/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prototype</title>
+      <link>https://baek9.github.io/tags/prototype/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/prototype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EdisonBoard</title>
+      <link>https://baek9.github.io/tags/edisonboard/</link>
+      <pubDate>Fri, 29 Aug 2014 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/edisonboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intel</title>
+      <link>https://baek9.github.io/tags/intel/</link>
+      <pubDate>Fri, 29 Aug 2014 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/tags/intel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
