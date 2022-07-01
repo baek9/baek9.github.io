@@ -19,7 +19,7 @@
       <guid>https://baek9.github.io/2018/10/integer-overflow-in-v8/</guid>
       <description>#V8 #IntegerOverflow
 최근 취약점들을 살펴보면 순수하게 V8과 관련된 취약점은 별로 없고, 그나마 JavaScript로 시작하되 최종적으로는 Blink나 Chrome에서 취약점이 발생하는 경우들이 많은 것 같다. 와중에 최근에 등록된 버그가 눈길을 끌었다. V8 내부에서 정수 오버플로우(Integer Overflow)를 유발하는 PoC(Proof of Concept)를 제시하고 있었다. 대략적인 V8의 구조와 정수 오버플로우가 어떤 것인지 알게된 의미있는 분석이었다.
-RegExp.prototype[@@replace] ¶해당 PoC는 결국에 C++ 함수인 Runtime_RegExpReplace()에서 발현된다.(이하 RegExpReplace) 이 함수는 자바스크립트 레벨에서 RegExp.prototype[@@replace] 메소드(이하 replace)에 대응되는 함수이다. RegExp는 무엇일까? 정규표현식을 표현하고 처리하기 위한 객체로 이해하면 된다.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});   RegExp.prototype[@@replace] ¶ 해당 PoC는 결국에 C++ 함수인 Runtime_RegExpReplace()에서 발현된다.(이하 RegExpReplace) 이 함수는 자바스크립트 레벨에서 RegExp.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@ RegExp.prototype[@@replace] ¶해당 PoC는 결국에 C++ 함수인 Runtime_RegE
       <description>#JavaScript #V8 #GarbageCollection
 크롬에 구현된 자바스크립트 엔진인 V8은 주기적인 가비지컬렉션을 수행한다고 알려져있다. 이와 관련한 정보를 검색하다가 Daniel Khan이 작성한 글을 그대로 따라해보고, 느낀 점을 정리해본다. 해당 글은 아래 링크에서 읽어볼 수 있다.
 Understanding Garbage Collection and Hunting Memory Leaks in Node.js
-Resident Set ¶V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다. 이 부분에 대해서는 좀 더 알아볼 필요가 있다.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});   Resident Set ¶ V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다.</description>
     </item>
     
   </channel>

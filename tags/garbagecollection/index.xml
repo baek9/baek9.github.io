@@ -20,7 +20,7 @@
       <description>#JavaScript #V8 #GarbageCollection
 크롬에 구현된 자바스크립트 엔진인 V8은 주기적인 가비지컬렉션을 수행한다고 알려져있다. 이와 관련한 정보를 검색하다가 Daniel Khan이 작성한 글을 그대로 따라해보고, 느낀 점을 정리해본다. 해당 글은 아래 링크에서 읽어볼 수 있다.
 Understanding Garbage Collection and Hunting Memory Leaks in Node.js
-Resident Set ¶V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다. 이 부분에 대해서는 좀 더 알아볼 필요가 있다.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});   Resident Set ¶ V8은 ‘Resident Set’이라는 구조로 메모리를 운용한다. JVM(Java Virtual Machine)이 메모리를 여러 세그먼트(Segment)로 나누는 것과 같이, Resident Set 구조에 의해 메모리는 Code, Stack, Heap 영역으로 나뉜다고 한다.</description>
     </item>
     
   </channel>

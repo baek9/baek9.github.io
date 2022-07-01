@@ -19,7 +19,7 @@
       <guid>https://baek9.github.io/2020/01/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
       <description>#Chromium
 크로미움에 처음 기여할 때 밟았던 절차와 내가 생각하는 주의 사항들을 기록한다. 크로미움은 큰 오픈소스 커뮤니티이기 때문에 관련 절차를 매우 상세하게 소개하고 있다. 검색해보면 참고해 볼 만한 제 3자의 포스트들도 많다. 나는 주로 아래 세 개의 자료를 참고하였다. 처음 두 개는 크로미움 커뮤니티에서 제공하는 공식 문서이다. 마지막은 제 3자가 작성한 것으로 좀 더 친근하고 쉽게 작성되어 기여 절차를 직관적이고 빠르게 이해하는 데 도움이 되었다.
-Contributing to Chromium Commit Checklist for Chromium Workflow Contributing to Chromium: an illustrated guide 1.</description>
+ Contributing to Chromium Commit Checklist for Chromium Workflow Contributing to Chromium: an illustrated guide     (adsbygoogle = window.</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@ Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;Wallpap
       <guid>https://baek9.github.io/2019/08/%ED%81%AC%EB%A1%ACos-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%94%94%EB%B2%84%EA%B9%85-%ED%8C%81/</guid>
       <description>#ChromeOS
 본 포스트에서는 크롬OS를 사용하면서 익힌 팁들을 기록한다.
-Virtual console ¶크롬 브라우저에서 Ctrl + Alt + T를 누르면 Crosh(Chrome shell)이 뜨고, Crosh 프롬프트에서 &amp;ldquo;shell&amp;quot;이라고 치면 심지어 bash 쉘이 실행된다. 그러나, 크롬 브라우저에서는 가끔 출력이 불완전한 경우가 많아서 가상 터미널로 진입하는 것이 편했다. Ctrl + Alt + F3을 누르면 가상 터미널 화면으로 이동한다. 일반 리눅스에서와 마찬가지로 접속과 동시에 아이디를 입력해야 하는데, 기본 아이디는 &amp;ldquo;chronos&amp;quot;이고 비밀번호는 &amp;ldquo;chrome&amp;quot;이다. 이 비밀번호는 크로미움OS 컴파일 시에 수동으로 설정할 수 있다.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});   Virtual console ¶ 크롬 브라우저에서 Ctrl + Alt + T를 누르면 Crosh(Chrome shell)이 뜨고, Crosh 프롬프트에서 &amp;ldquo;shell&amp;quot;이라고 치면 심지어 bash 쉘이 실행된다. 그러나, 크롬 브라우저에서는 가끔 출력이 불완전한 경우가 많아서 가상 터미널로 진입하는 것이 편했다. Ctrl + Alt + F3을 누르면 가상 터미널 화면으로 이동한다. 일반 리눅스에서와 마찬가지로 접속과 동시에 아이디를 입력해야 하는데, 기본 아이디는 &amp;ldquo;chronos&amp;quot;이고 비밀번호는 &amp;ldquo;chrome&amp;quot;이다.</description>
     </item>
     
   </channel>
