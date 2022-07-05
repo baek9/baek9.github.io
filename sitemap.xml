@@ -2,46 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://baek9.github.io/tags/adsense/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://baek9.github.io/categories/blog/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/categories/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/tags/github/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/tags/hugo/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/posts/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/series/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/tags/ssg/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/tags/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/2022/07/%ED%9C%B4%EA%B3%A0hugo%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%81%9C-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2022-07-02T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/tags/adsense/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/tags/blogger/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://baek9.github.io/categories/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://baek9.github.io/tags/jekyll/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/posts/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/series/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/tags/ssg/</loc>
-    <lastmod>2022-06-20T22:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://baek9.github.io/tags/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/2022/06/%EB%8B%A4%EC%8B%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator%EB%A1%9C.../</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://baek9.github.io/2022/06/%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo/</loc>
+    <loc>https://baek9.github.io/2022/06/%EB%B9%A0%EB%A5%B8-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo%EB%9E%80/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/tags/containerd/</loc>
@@ -59,7 +68,7 @@
     <loc>https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/</loc>
     <lastmod>2022-06-13T22:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://baek9.github.io/2022/06/%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</loc>
+    <loc>https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</loc>
     <lastmod>2022-06-08T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/tags/chromium/</loc>
