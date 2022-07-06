@@ -10,15 +10,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gRPC를 이용한 Containerd의 통신 과정</title>
       <link>https://baek9.github.io/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</link>
-      <pubDate>Fri, 10 Jun 2022 22:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Jun 2022 22:00:00 +0000</pubDate>
       
       <guid>https://baek9.github.io/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</guid>
-      <description>#gRPC #Containerd
-Containerd를 이용해 컨테이너 생성하기 ¶ 아래 코드는 Containerd를 이용하여 컨테이너를 생성하는 예이다. 우선 UNIX 도메인 소켓인 containerd.sock을 이용하여 Containerd에 연결한다. Containerd는 백그라운드(background)에서 항상 동작하는 데몬(daemon) 프로세스이다. 그 후, Client 객체를 통하여 Containerd로 하여금 최신 데비안(Debian) 리눅스 이미지를 받아 데비안 컨테이너를 생성한다생성하도록 한다. 매우 직관적이고 간단하지 않은가? 여기서 알 수 있는 것은 Client 객체를 통하여 해당 프로세스와 통신한다는 점이다. 이 짧은 코드에서는 확인할 수 없지만 Client와 Containerd 간의 통신 과정을 본 포스트에 정리한다.</description>
+      <description>Containerd를 이용해 컨테이너 생성하기 ¶ 아래 코드는 Containerd를 이용하여 컨테이너를 생성하는 예이다. 우선 UNIX 도메인 소켓인 containerd.sock을 이용하여 Containerd에 연결한다. Containerd는 백그라운드(background)에서 항상 동작하는 데몬(daemon) 프로세스이다. 그 후, Client 객체를 통하여 Containerd로 하여금 최신 데비안(Debian) 리눅스 이미지를 받아 데비안 컨테이너를 생성한다생성하도록 한다. 매우 직관적이고 간단하지 않은가? 여기서 알 수 있는 것은 Client 객체를 통하여 해당 프로세스와 통신한다는 점이다. 이 짧은 코드에서는 확인할 수 없지만 Client와 Containerd 간의 통신 과정을 본 포스트에 정리한다.</description>
     </item>
     
   </channel>
