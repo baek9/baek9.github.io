@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on code(evening);</title>
+    <link>https://baek9.github.io/en/posts/</link>
+    <description>Recent content in Posts on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jul 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>깃허브(GitHub) &#43; 휴고(Hugo), 블로그 효과적으로 관리하기</title>
+      <link>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Sun, 03 Jul 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</guid>
+      <description>In the previous part, we looked at how to create a blog and apply a theme using Hugo. In this part, I summarized the results of thinking about how to efficiently manage source code with a function called Submodule, assuming that GitHub is being used.
+Source code structure built with Hugo ¶ If you had previously built your blog with Hugo, the directory structure below would have been created. Rather than explaining everything, let&amp;rsquo;s look at a few necessary folders.</description>
+    </item>
+    
+    <item>
+      <title>gRPC를 이용한 Containerd의 통신 과정</title>
+      <link>https://baek9.github.io/en/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</link>
+      <pubDate>Tue, 14 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</guid>
+      <description>Creating a container using Containerd ¶ The code below is an example of creating a container using Containerd. First, connect to Containerd using the UNIX domain socket containerd.sock. Containerd is a daemon process that always runs in the background. After that, through the Client object, Containerd gets the latest Debian Linux image and creates a Debian container. Very intuitive and simple, isn&amp;rsquo;t it? What you can see here is that it communicates with the process through the Client object.</description>
+    </item>
+    
+  </channel>
+</rss>
