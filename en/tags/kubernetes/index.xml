@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kubernetes on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relationships between container-related technologies, and Containerd</title>
+      <link>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</guid>
+      <description>&amp;ldquo;Dockershim deprecated with the release of Kubernetes 1.24&amp;rdquo; ¶ The above sentence is the headline of an article published in The Register. What do you think of the sentence? I was just curious about the technology implemented by containers, but didn&amp;rsquo;t think much of it because I didn&amp;rsquo;t make a living using the related technology. However, I recently found out that it was a very big topic in the related industry.</description>
+    </item>
+    
+  </channel>
+</rss>

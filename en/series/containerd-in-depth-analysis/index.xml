@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Containerd in-depth analysis on code(evening);</title>
+    <link>https://baek9.github.io/en/series/containerd-in-depth-analysis/</link>
+    <description>Recent content in Containerd in-depth analysis on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/series/containerd-in-depth-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Containerd communication process using gRPC</title>
+      <link>https://baek9.github.io/en/2022/06/containerd-communication-process-using-grpc/</link>
+      <pubDate>Tue, 14 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/containerd-communication-process-using-grpc/</guid>
+      <description>Creating a container using Containerd ¶ The code below is an example of creating a container using Containerd. First, connect to Containerd using the UNIX domain socket containerd.sock. Containerd is a daemon process that always runs in the background. After that, through the Client object, Containerd gets the latest Debian Linux image and creates a Debian container. Very intuitive and simple, isn&amp;rsquo;t it? What you can see here is that it communicates with the process through the Client object.</description>
+    </item>
+    
+    <item>
+      <title>Relationships between container-related technologies, and Containerd</title>
+      <link>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</guid>
+      <description>&amp;ldquo;Dockershim deprecated with the release of Kubernetes 1.24&amp;rdquo; ¶ The above sentence is the headline of an article published in The Register. What do you think of the sentence? I was just curious about the technology implemented by containers, but didn&amp;rsquo;t think much of it because I didn&amp;rsquo;t make a living using the related technology. However, I recently found out that it was a very big topic in the related industry.</description>
+    </item>
+    
+  </channel>
+</rss>

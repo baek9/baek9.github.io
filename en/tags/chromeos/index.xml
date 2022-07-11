@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ChromeOS on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/chromeos/</link>
+    <description>Recent content in ChromeOS on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Aug 2019 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/chromeos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ash Shell Analysis on ChromeOS</title>
+      <link>https://baek9.github.io/en/2019/08/ash-shell-analysis-on-chromeos/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/08/ash-shell-analysis-on-chromeos/</guid>
+      <description>#ChromeOS #Ash
+Ash (Aura Shell) is a shell based on Aura. The Shell class seems to play a key role. Shell object is a singleton object, and several other objects called controllers are created and initialized through the init method. The following is the part that creates and initializes the controller for the background screen.
+Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;WallpaperControllerImpl&amp;gt;(local_state_); ... } In order to globally refer to the Shell object, which is a singleton object, the Shell class provides a static method, Get method.</description>
+    </item>
+    
+    <item>
+      <title>Chrome OS development and debugging tips</title>
+      <link>https://baek9.github.io/en/2019/08/chrome-os-development-and-debugging-tips/</link>
+      <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/08/chrome-os-development-and-debugging-tips/</guid>
+      <description>#ChromeOS
+In this post, I record the tips I learned while using Chrome OS.
+Virtual console ¶ If you press Ctrl + Alt + T in the Chrome browser, Crosh (Chrome shell) appears, and if you type &amp;ldquo;shell&amp;rdquo; at the Crosh prompt, even a bash shell is launched. However, in the Chrome browser, sometimes the output was incomplete, so it was convenient to enter the virtual terminal. Press Ctrl + Alt + F3 to move to the virtual terminal screen.</description>
+    </item>
+    
+  </channel>
+</rss>

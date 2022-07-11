@@ -12,22 +12,183 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jul 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>깃허브(GitHub) &#43; 휴고(Hugo), 블로그 효과적으로 관리하기</title>
-      <link>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</link>
+      <title>GitHub &#43; Hugo, Managing Your Blog Effectively</title>
+      <link>https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/</link>
       <pubDate>Sun, 03 Jul 2022 22:00:00 +0000</pubDate>
       
-      <guid>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/</guid>
       <description>In the previous part, we looked at how to create a blog and apply a theme using Hugo. In this part, I summarized the results of thinking about how to efficiently manage source code with a function called Submodule, assuming that GitHub is being used.
 Source code structure built with Hugo ¶ If you had previously built your blog with Hugo, the directory structure below would have been created. Rather than explaining everything, let&amp;rsquo;s look at a few necessary folders.</description>
     </item>
     
     <item>
-      <title>gRPC를 이용한 Containerd의 통신 과정</title>
-      <link>https://baek9.github.io/en/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</link>
+      <title>Applying a pretty theme to a blog created with Hugo</title>
+      <link>https://baek9.github.io/en/2022/07/applying-a-pretty-theme-to-a-blog-created-with-hugo/</link>
+      <pubDate>Sat, 02 Jul 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/07/applying-a-pretty-theme-to-a-blog-created-with-hugo/</guid>
+      <description>Usually, when looking at how to build a blog using Jekyll or Hugo, config.yml or config.toml will be explained. Jekyll even mentions how to use ruby on the official website, so it&amp;rsquo;s a situation where the belly button is bigger than the belly button. config.toml is an important and essential file that contains various settings related to the blog, but I have not seen a single line of documentation explaining config.</description>
+    </item>
+    
+    <item>
+      <title>Back to the Static Site Generator (SSG)...</title>
+      <link>https://baek9.github.io/en/2022/06/back-to-the-static-site-generator-ssg.../</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/back-to-the-static-site-generator-ssg.../</guid>
+      <description>Return to previous blog ¶ In the first part, I said that I had been running an old blog hosted by a famous tool called Jekyll and GitHub Pages for a long time, but I moved to Google&amp;rsquo;s Blogger for various reasons. However, I decided to continue using the existing blog. There were several reasons for this.
+Unapproved by Google Adsense ¶ AdSense, provided by Google, is a service that allows advertisements in a certain space on the screen of a website and receives compensation.</description>
+    </item>
+    
+    <item>
+      <title>The Fastest Static Site Generator (SSG), What is Hugo?</title>
+      <link>https://baek9.github.io/en/2022/06/the-fastest-static-site-generator-ssg-what-is-hugo/</link>
+      <pubDate>Mon, 20 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/the-fastest-static-site-generator-ssg-what-is-hugo/</guid>
+      <description>The previously used Jekyll was implemented in Ruby, a rather unfamiliar language, so I personally had difficulties in installation, customization, and maintenance. So I started looking for a blog platform where I could focus on writing, and although there were many good services, I chose a traditional blogger. In fact, I made a new blog using a blogger, but I gave up right away and decided to use the Static Site Generator (SSG) again to revive the existing blog.</description>
+    </item>
+    
+    <item>
+      <title>Containerd communication process using gRPC</title>
+      <link>https://baek9.github.io/en/2022/06/containerd-communication-process-using-grpc/</link>
       <pubDate>Tue, 14 Jun 2022 22:00:00 +0000</pubDate>
       
-      <guid>https://baek9.github.io/en/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/</guid>
+      <guid>https://baek9.github.io/en/2022/06/containerd-communication-process-using-grpc/</guid>
       <description>Creating a container using Containerd ¶ The code below is an example of creating a container using Containerd. First, connect to Containerd using the UNIX domain socket containerd.sock. Containerd is a daemon process that always runs in the background. After that, through the Client object, Containerd gets the latest Debian Linux image and creates a Debian container. Very intuitive and simple, isn&amp;rsquo;t it? What you can see here is that it communicates with the process through the Client object.</description>
+    </item>
+    
+    <item>
+      <title>Relationships between container-related technologies, and Containerd</title>
+      <link>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</link>
+      <pubDate>Mon, 13 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/</guid>
+      <description>&amp;ldquo;Dockershim deprecated with the release of Kubernetes 1.24&amp;rdquo; ¶ The above sentence is the headline of an article published in The Register. What do you think of the sentence? I was just curious about the technology implemented by containers, but didn&amp;rsquo;t think much of it because I didn&amp;rsquo;t make a living using the related technology. However, I recently found out that it was a very big topic in the related industry.</description>
+    </item>
+    
+    <item>
+      <title>Choosing a Blog Platform That Causes Headaches</title>
+      <link>https://baek9.github.io/en/2022/06/choosing-a-blog-platform-that-causes-headaches/</link>
+      <pubDate>Wed, 08 Jun 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/06/choosing-a-blog-platform-that-causes-headaches/</guid>
+      <description>Static Site Generator (SSG) ¶ There was a time when a static site generator (SSG) was in the spotlight with the advent of a tool called Jekyll. I also built a blog a long time ago using Jekyll and GitHub Pages. The static site generator has the advantage of creating a great site without having to build or know the backend solutions necessary for rendering web pages, including databases. The resulting static site is implemented only with HTML (Hyper-Text Markup Language), CSS (Cascading Style Sheet), and JavaScript, and operates only with a browser.</description>
+    </item>
+    
+    <item>
+      <title>Contribute to Chromium</title>
+      <link>https://baek9.github.io/en/2020/01/contribute-to-chromium/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2020/01/contribute-to-chromium/</guid>
+      <description>#Chromium
+I record the steps I took when I first contributed to Chromium and the precautions I took. Since Chromium is a large open source community, the related procedures are introduced in great detail. If you do a search, there are many third-party posts that you can refer to. I mainly referred to the following three sources. The first two are official documents provided by the Chromium community. The last one was written by a third party, and it was written more friendly and easy, helping to intuitively and quickly understand the contribution process.</description>
+    </item>
+    
+    <item>
+      <title>Ash Shell Analysis on ChromeOS</title>
+      <link>https://baek9.github.io/en/2019/08/ash-shell-analysis-on-chromeos/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/08/ash-shell-analysis-on-chromeos/</guid>
+      <description>#ChromeOS #Ash
+Ash (Aura Shell) is a shell based on Aura. The Shell class seems to play a key role. Shell object is a singleton object, and several other objects called controllers are created and initialized through the init method. The following is the part that creates and initializes the controller for the background screen.
+Ash::Shell::Init() { ... wallpaper_controller_ = std::make_unique&amp;lt;WallpaperControllerImpl&amp;gt;(local_state_); ... } In order to globally refer to the Shell object, which is a singleton object, the Shell class provides a static method, Get method.</description>
+    </item>
+    
+    <item>
+      <title>Chrome OS development and debugging tips</title>
+      <link>https://baek9.github.io/en/2019/08/chrome-os-development-and-debugging-tips/</link>
+      <pubDate>Fri, 02 Aug 2019 15:21:14 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/08/chrome-os-development-and-debugging-tips/</guid>
+      <description>#ChromeOS
+In this post, I record the tips I learned while using Chrome OS.
+Virtual console ¶ If you press Ctrl + Alt + T in the Chrome browser, Crosh (Chrome shell) appears, and if you type &amp;ldquo;shell&amp;rdquo; at the Crosh prompt, even a bash shell is launched. However, in the Chrome browser, sometimes the output was incomplete, so it was convenient to enter the virtual terminal. Press Ctrl + Alt + F3 to move to the virtual terminal screen.</description>
+    </item>
+    
+    <item>
+      <title>The principle of HTTPS and up to Self-signed SSL</title>
+      <link>https://baek9.github.io/en/2019/04/the-principle-of-https-and-up-to-self-signed-ssl/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/04/the-principle-of-https-and-up-to-self-signed-ssl/</guid>
+      <description>#HTTPS #SSL #PKI
+One of the things I learned from the Chromium analysis is that more JavaScript methods can be used in web pages accessed via https than http. That is, Chrome grants differentiated rights to web pages according to the scheme. ”http://“, ”https://“, “chrome://“ more powerful? method can be called. The chrome scheme is, of course, different from other schemes in terms of functionality and security because it deals with parts related to the operation of Chrome like the settings page of Chrome (chrome://settings)&amp;hellip; Others were quite surprised.</description>
+    </item>
+    
+    <item>
+      <title>Integer Overflow in V8</title>
+      <link>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</guid>
+      <description>#V8 #IntegerOverflow
+Looking at the recent vulnerabilities, there are not many vulnerabilities related to &amp;lsquo;V8&amp;rsquo;, and it seems that there are many cases where vulnerabilities occur in &amp;lsquo;Blink&amp;rsquo; or &amp;lsquo;Chrome&amp;rsquo; in the end, starting with JavaScript. In the meantime, a recently registered bug caught our attention. PoC (Proof of Concept) that causes integer overflow inside V8 was presented. It was a meaningful analysis to find out about the structure of V8 and what integer overflow is.</description>
+    </item>
+    
+    <item>
+      <title>Playing with JSON in Chromium</title>
+      <link>https://baek9.github.io/en/2018/03/playing-with-json-in-chromium/</link>
+      <pubDate>Sun, 18 Mar 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/03/playing-with-json-in-chromium/</guid>
+      <description>#Chromium #JSON
+As I&amp;rsquo;ve mentioned or will mention in other posts, Chromium itself is a very rich set of libraries. For example, if you use the Thread and GURL classes, you can easily create and manage threads, and you can also handle URLs as you like. There are many other useful classes (which do not need to be parsed to extract only the scheme), and they exist in Chromium&amp;rsquo;s base namespace.</description>
+    </item>
+    
+    <item>
+      <title>Configure remote development environment using VS Code</title>
+      <link>https://baek9.github.io/en/2018/01/configure-remote-development-environment-using-vs-code/</link>
+      <pubDate>Sat, 20 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/01/configure-remote-development-environment-using-vs-code/</guid>
+      <description>#VSCode
+During kernel development, the process from build to test to debugging is quite cumbersome. For this reason, we saw that QEMU and gdb were linked to build a development environment. I don&amp;rsquo;t know if it&amp;rsquo;s comparable to that, but there were some difficulties in development related to the Linux graphics stack. It was only later that I realized it was good for my mental health that it was better to set up a development environment in the first place, even if it bothered me.</description>
+    </item>
+    
+    <item>
+      <title>Finding the DRM device node corresponding to the graphics card</title>
+      <link>https://baek9.github.io/en/2018/01/finding-the-drm-device-node-corresponding-to-the-graphics-card/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/01/finding-the-drm-device-node-corresponding-to-the-graphics-card/</guid>
+      <description>#DRM #DRI #udev
+DRM (Direct Rendering Manager) refers to a device driver for a graphics card supporting DRI (Direct Rendering Infrastructure). I think DRM and DRI should be sorted out next time. In this note, only the method of finding the DRM device node corresponding to the main graphic card is summarized.
+In general, it is safe to say that /dev/dri/card0 is a device node corresponding to the main graphics card.</description>
+    </item>
+    
+    <item>
+      <title>Garbage collection and memory leaks in JavaScript</title>
+      <link>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</guid>
+      <description>#JavaScript #V8 #GarbageCollection
+V8, a JavaScript engine implemented in Chrome, is known to perform periodic garbage collection. While searching for information related to this, I will try to follow Daniel Khan&amp;rsquo;s writing and summarize my feelings. The article can be read at the link below.
+Understanding Garbage Collection and Hunting Memory Leaks in Node.js
+Resident Set ¶ V8 operates memory with a structure called ‘Resident Set’. Just as the Java Virtual Machine (JVM) divides memory into several segments, it is said that memory is divided into Code, Stack, and Heap areas by the Resident Set structure.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript&#39;s prototype chain</title>
+      <link>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</guid>
+      <description>#JavaScript #Prototype
+JavaScript is often referred to as a prototype-based language. Prototype literally means prototype. Every object you create with JavaScript is paired with a prototype, i.e. a prototype object. Using this structure, inheritance, one of the important concepts in Object-Oriented Programming (OOP) using C++, can be easily implemented in JavaScript as well. In JavaScript, this is called a ‘prototype chain’. To understand the prototype chain, you first need to get a feel for the prototype object.</description>
+    </item>
+    
+    <item>
+      <title>Setting up the Intel Edison Board for the first time</title>
+      <link>https://baek9.github.io/en/2014/08/setting-up-the-intel-edison-board-for-the-first-time/</link>
+      <pubDate>Fri, 29 Aug 2014 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2014/08/setting-up-the-intel-edison-board-for-the-first-time/</guid>
+      <description>#Intel #EdisonBoard
+Intel Edison boards are now discontinued. The successor, the Joule board, was also discontinued. As both products were made for the Internet of things (IoT), there are many opinions that Intel is withdrawing from this market. Anyway, Intel has extremely miniaturized the Edison board to meet IoT and wearables. Although it is a board that is no longer supported, it is smaller than the Raspberry Pi (RPi), but I tried it because I was attracted to the performance that was not lacking.</description>
     </item>
     
   </channel>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tools on code(evening);</title>
+    <link>https://baek9.github.io/en/categories/tools/</link>
+    <description>Recent content in Tools on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jan 2018 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure remote development environment using VS Code</title>
+      <link>https://baek9.github.io/en/2018/01/configure-remote-development-environment-using-vs-code/</link>
+      <pubDate>Sat, 20 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/01/configure-remote-development-environment-using-vs-code/</guid>
+      <description>#VSCode
+During kernel development, the process from build to test to debugging is quite cumbersome. For this reason, we saw that QEMU and gdb were linked to build a development environment. I don&amp;rsquo;t know if it&amp;rsquo;s comparable to that, but there were some difficulties in development related to the Linux graphics stack. It was only later that I realized it was good for my mental health that it was better to set up a development environment in the first place, even if it bothered me.</description>
+    </item>
+    
+  </channel>
+</rss>

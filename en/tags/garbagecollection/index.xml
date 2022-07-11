@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GarbageCollection on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/garbagecollection/</link>
+    <description>Recent content in GarbageCollection on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/garbagecollection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Garbage collection and memory leaks in JavaScript</title>
+      <link>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</guid>
+      <description>#JavaScript #V8 #GarbageCollection
+V8, a JavaScript engine implemented in Chrome, is known to perform periodic garbage collection. While searching for information related to this, I will try to follow Daniel Khan&amp;rsquo;s writing and summarize my feelings. The article can be read at the link below.
+Understanding Garbage Collection and Hunting Memory Leaks in Node.js
+Resident Set ¶ V8 operates memory with a structure called ‘Resident Set’. Just as the Java Virtual Machine (JVM) divides memory into several segments, it is said that memory is divided into Code, Stack, and Heap areas by the Resident Set structure.</description>
+    </item>
+    
+  </channel>
+</rss>

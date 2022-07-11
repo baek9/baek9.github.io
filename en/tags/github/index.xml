@@ -12,11 +12,11 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jul 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>깃허브(GitHub) &#43; 휴고(Hugo), 블로그 효과적으로 관리하기</title>
-      <link>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</link>
+      <title>GitHub &#43; Hugo, Managing Your Blog Effectively</title>
+      <link>https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/</link>
       <pubDate>Sun, 03 Jul 2022 22:00:00 +0000</pubDate>
       
-      <guid>https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/</guid>
       <description>In the previous part, we looked at how to create a blog and apply a theme using Hugo. In this part, I summarized the results of thinking about how to efficiently manage source code with a function called Submodule, assuming that GitHub is being used.
 Source code structure built with Hugo ¶ If you had previously built your blog with Hugo, the directory structure below would have been created. Rather than explaining everything, let&amp;rsquo;s look at a few necessary folders.</description>
     </item>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chromium on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/chromium/</link>
+    <description>Recent content in Chromium on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2020 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/chromium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contribute to Chromium</title>
+      <link>https://baek9.github.io/en/2020/01/contribute-to-chromium/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2020/01/contribute-to-chromium/</guid>
+      <description>#Chromium
+I record the steps I took when I first contributed to Chromium and the precautions I took. Since Chromium is a large open source community, the related procedures are introduced in great detail. If you do a search, there are many third-party posts that you can refer to. I mainly referred to the following three sources. The first two are official documents provided by the Chromium community. The last one was written by a third party, and it was written more friendly and easy, helping to intuitively and quickly understand the contribution process.</description>
+    </item>
+    
+    <item>
+      <title>Playing with JSON in Chromium</title>
+      <link>https://baek9.github.io/en/2018/03/playing-with-json-in-chromium/</link>
+      <pubDate>Sun, 18 Mar 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/03/playing-with-json-in-chromium/</guid>
+      <description>#Chromium #JSON
+As I&amp;rsquo;ve mentioned or will mention in other posts, Chromium itself is a very rich set of libraries. For example, if you use the Thread and GURL classes, you can easily create and manage threads, and you can also handle URLs as you like. There are many other useful classes (which do not need to be parsed to extract only the scheme), and they exist in Chromium&amp;rsquo;s base namespace.</description>
+    </item>
+    
+  </channel>
+</rss>

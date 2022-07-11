@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IntegerOverflow on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/integeroverflow/</link>
+    <description>Recent content in IntegerOverflow on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Oct 2018 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/integeroverflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integer Overflow in V8</title>
+      <link>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</guid>
+      <description>#V8 #IntegerOverflow
+Looking at the recent vulnerabilities, there are not many vulnerabilities related to &amp;lsquo;V8&amp;rsquo;, and it seems that there are many cases where vulnerabilities occur in &amp;lsquo;Blink&amp;rsquo; or &amp;lsquo;Chrome&amp;rsquo; in the end, starting with JavaScript. In the meantime, a recently registered bug caught our attention. PoC (Proof of Concept) that causes integer overflow inside V8 was presented. It was a meaningful analysis to find out about the structure of V8 and what integer overflow is.</description>
+    </item>
+    
+  </channel>
+</rss>

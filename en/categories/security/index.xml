@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security on code(evening);</title>
+    <link>https://baek9.github.io/en/categories/security/</link>
+    <description>Recent content in Security on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Apr 2019 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The principle of HTTPS and up to Self-signed SSL</title>
+      <link>https://baek9.github.io/en/2019/04/the-principle-of-https-and-up-to-self-signed-ssl/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2019/04/the-principle-of-https-and-up-to-self-signed-ssl/</guid>
+      <description>#HTTPS #SSL #PKI
+One of the things I learned from the Chromium analysis is that more JavaScript methods can be used in web pages accessed via https than http. That is, Chrome grants differentiated rights to web pages according to the scheme. ”http://“, ”https://“, “chrome://“ more powerful? method can be called. The chrome scheme is, of course, different from other schemes in terms of functionality and security because it deals with parts related to the operation of Chrome like the settings page of Chrome (chrome://settings)&amp;hellip; Others were quite surprised.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DRM on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/drm/</link>
+    <description>Recent content in DRM on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jan 2018 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/drm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding the DRM device node corresponding to the graphics card</title>
+      <link>https://baek9.github.io/en/2018/01/finding-the-drm-device-node-corresponding-to-the-graphics-card/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/01/finding-the-drm-device-node-corresponding-to-the-graphics-card/</guid>
+      <description>#DRM #DRI #udev
+DRM (Direct Rendering Manager) refers to a device driver for a graphics card supporting DRI (Direct Rendering Infrastructure). I think DRM and DRI should be sorted out next time. In this note, only the method of finding the DRM device node corresponding to the main graphic card is summarized.
+In general, it is safe to say that /dev/dri/card0 is a device node corresponding to the main graphics card.</description>
+    </item>
+    
+  </channel>
+</rss>

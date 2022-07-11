@@ -69,16 +69,6 @@
   </url><url>
     <loc>https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/</loc>
     <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/"
-                />
   </url><url>
     <loc>https://baek9.github.io/posts/</loc>
     <lastmod>2022-07-03T22:00:00+00:00</lastmod>
@@ -137,7 +127,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://baek9.github.io/en/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/"
+                href="https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -147,21 +137,81 @@
   </url><url>
     <loc>https://baek9.github.io/2022/07/%ED%9C%B4%EA%B3%A0hugo%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%81%9C-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2022-07-02T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/07/applying-a-pretty-theme-to-a-blog-created-with-hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/07/%ED%9C%B4%EA%B3%A0hugo%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%81%9C-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/adsense/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/adsense/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/blogger/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/blogger/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/blogger/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/jekyll/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/jekyll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/jekyll/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2022/06/%EB%8B%A4%EC%8B%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator%EB%A1%9C.../</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/06/back-to-the-static-site-generator-ssg.../"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/06/%EB%8B%A4%EC%8B%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator%EB%A1%9C.../"
+                />
   </url><url>
     <loc>https://baek9.github.io/2022/06/%EB%B9%A0%EB%A5%B8-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo%EB%9E%80/</loc>
     <lastmod>2022-06-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/06/the-fastest-static-site-generator-ssg-what-is-hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/06/%EB%B9%A0%EB%A5%B8-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%83%9D%EC%84%B1%EA%B8%B0ssg-static-site-generator-%ED%9C%B4%EA%B3%A0hugo%EB%9E%80/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/containerd/</loc>
     <lastmod>2022-06-14T22:00:00+00:00</lastmod>
@@ -191,16 +241,6 @@
   </url><url>
     <loc>https://baek9.github.io/series/containerd-%EC%8B%AC%EC%B8%B5-%EB%B6%84%EC%84%9D/</loc>
     <lastmod>2022-06-14T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/series/containerd-%EC%8B%AC%EC%B8%B5-%EB%B6%84%EC%84%9D/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/series/containerd-%EC%8B%AC%EC%B8%B5-%EB%B6%84%EC%84%9D/"
-                />
   </url><url>
     <loc>https://baek9.github.io/tags/grpc/</loc>
     <lastmod>2022-06-14T22:00:00+00:00</lastmod>
@@ -220,7 +260,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://baek9.github.io/en/2022/06/grpc%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-containerd%EC%9D%98-%ED%86%B5%EC%8B%A0-%EA%B3%BC%EC%A0%95/"
+                href="https://baek9.github.io/en/2022/06/containerd-communication-process-using-grpc/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -230,134 +270,564 @@
   </url><url>
     <loc>https://baek9.github.io/tags/docker/</loc>
     <lastmod>2022-06-13T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/docker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/docker/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/kubernetes/</loc>
     <lastmod>2022-06-13T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/kubernetes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/kubernetes/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/</loc>
     <lastmod>2022-06-13T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/06/relationships-between-container-related-technologies-and-containerd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</loc>
     <lastmod>2022-06-08T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/06/choosing-a-blog-platform-that-causes-headaches/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/chromium/</loc>
     <lastmod>2020-01-10T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/chromium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/chromium/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/chromium/</loc>
     <lastmod>2020-01-10T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/chromium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/chromium/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/tips/</loc>
     <lastmod>2020-01-10T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/tips/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2020/01/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2020-01-10T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2020/01/contribute-to-chromium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2020/01/%ED%81%AC%EB%A1%9C%EB%AF%B8%EC%9B%80%EC%97%90-%EA%B8%B0%EC%97%AC%ED%95%98%EA%B8%B0/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/ash/</loc>
     <lastmod>2019-08-02T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/ash/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/ash/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/chromeos/</loc>
     <lastmod>2019-08-02T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/chromeos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/chromeos/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/chromeos/</loc>
     <lastmod>2019-08-02T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/chromeos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/chromeos/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2019/08/chromeos%EC%9D%98-ash-shell-%EB%B6%84%EC%84%9D-1/</loc>
     <lastmod>2019-08-02T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2019/08/ash-shell-analysis-on-chromeos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2019/08/chromeos%EC%9D%98-ash-shell-%EB%B6%84%EC%84%9D-1/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2019/08/%ED%81%AC%EB%A1%ACos-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%94%94%EB%B2%84%EA%B9%85-%ED%8C%81/</loc>
     <lastmod>2019-08-02T15:21:14+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2019/08/chrome-os-development-and-debugging-tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2019/08/%ED%81%AC%EB%A1%ACos-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%94%94%EB%B2%84%EA%B9%85-%ED%8C%81/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/https/</loc>
     <lastmod>2019-04-06T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/https/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/https/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/</loc>
     <lastmod>2019-04-06T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2019/04/the-principle-of-https-and-up-to-self-signed-ssl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2019/04/https%EC%9D%98-%EC%9B%90%EB%A6%AC-%EA%B7%B8%EB%A6%AC%EA%B3%A0-self-signed-ssl-%EA%B9%8C%EC%A7%80/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/pki/</loc>
     <lastmod>2019-04-06T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/pki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/pki/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/security/</loc>
     <lastmod>2019-04-06T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/security/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/security/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/ssl/</loc>
     <lastmod>2019-04-06T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/ssl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/ssl/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2018/10/integer-overflow-in-v8/</loc>
     <lastmod>2018-10-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2018/10/integer-overflow-in-v8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2018/10/integer-overflow-in-v8/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/integeroverflow/</loc>
     <lastmod>2018-10-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/integeroverflow/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/integeroverflow/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/javascript/</loc>
     <lastmod>2018-10-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/javascript/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/v8/</loc>
     <lastmod>2018-10-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/v8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/v8/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/v8/</loc>
     <lastmod>2018-10-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/v8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/v8/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/json/</loc>
     <lastmod>2018-03-18T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/json/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/json/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/json/</loc>
     <lastmod>2018-03-18T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/json/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/json/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2018/03/playing-with-json-in-chromium/</loc>
     <lastmod>2018-03-18T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2018/03/playing-with-json-in-chromium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2018/03/playing-with-json-in-chromium/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/tools/</loc>
     <lastmod>2018-01-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/tools/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2018/01/vs-code%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9B%90%EA%B2%A9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1/</loc>
     <lastmod>2018-01-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2018/01/configure-remote-development-environment-using-vs-code/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2018/01/vs-code%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9B%90%EA%B2%A9-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/vscode/</loc>
     <lastmod>2018-01-20T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/vscode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/vscode/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/dri/</loc>
     <lastmod>2018-01-14T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/dri/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/dri/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/drm/</loc>
     <lastmod>2018-01-14T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/drm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/drm/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/graphics/</loc>
     <lastmod>2018-01-14T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/graphics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/graphics/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/udev/</loc>
     <lastmod>2018-01-14T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/udev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/udev/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2018/01/%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%B9%B4%EB%93%9C%EC%97%90-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-drm-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EB%85%B8%EB%93%9C-%EC%B0%BE%EA%B8%B0/</loc>
     <lastmod>2018-01-14T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2018/01/finding-the-drm-device-node-corresponding-to-the-graphics-card/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2018/01/%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%B9%B4%EB%93%9C%EC%97%90-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-drm-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EB%85%B8%EB%93%9C-%EC%B0%BE%EA%B8%B0/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/garbagecollection/</loc>
     <lastmod>2017-11-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/garbagecollection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/garbagecollection/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/javascript/</loc>
     <lastmod>2017-11-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/javascript/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%88%84%EC%88%98/</loc>
     <lastmod>2017-11-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B0%80%EB%B9%84%EC%A7%80%EC%BB%AC%EB%A0%89%EC%85%98%EA%B3%BC-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EB%88%84%EC%88%98/"
+                />
   </url><url>
     <loc>https://baek9.github.io/about_me/</loc>
     <lastmod>2017-11-25T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/tags/prototype/</loc>
     <lastmod>2017-11-25T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/prototype/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/prototype/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%B2%B4%EC%9D%B8/</loc>
     <lastmod>2017-11-25T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2017/11/javascripts-prototype-chain/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2017/11/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85-%EC%B2%B4%EC%9D%B8/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/edisonboard/</loc>
     <lastmod>2014-08-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/edisonboard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/edisonboard/"
+                />
   </url><url>
     <loc>https://baek9.github.io/categories/embedded/</loc>
     <lastmod>2014-08-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/categories/embedded/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/categories/embedded/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/intel/</loc>
     <lastmod>2014-08-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/intel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/intel/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2014/08/%EC%9D%B8%ED%85%94-%EC%97%90%EB%94%94%EC%8A%A8-%EB%B3%B4%EB%93%9C-%EC%B5%9C%EC%B4%88-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2014-08-29T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2014/08/setting-up-the-intel-edison-board-for-the-first-time/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2014/08/%EC%9D%B8%ED%85%94-%EC%97%90%EB%94%94%EC%8A%A8-%EB%B3%B4%EB%93%9C-%EC%B5%9C%EC%B4%88-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0/"
+                />
   </url>
 </urlset>

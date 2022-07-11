@@ -29,5 +29,86 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Chromium</title>
+      <link>https://baek9.github.io/en/categories/chromium/</link>
+      <pubDate>Fri, 10 Jan 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/chromium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChromeOS</title>
+      <link>https://baek9.github.io/en/categories/chromeos/</link>
+      <pubDate>Fri, 02 Aug 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/chromeos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://baek9.github.io/en/categories/security/</link>
+      <pubDate>Sat, 06 Apr 2019 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://baek9.github.io/en/categories/javascript/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>V8</title>
+      <link>https://baek9.github.io/en/categories/v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/v8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>https://baek9.github.io/en/categories/json/</link>
+      <pubDate>Sun, 18 Mar 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://baek9.github.io/en/categories/tools/</link>
+      <pubDate>Sat, 20 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>https://baek9.github.io/en/categories/graphics/</link>
+      <pubDate>Sun, 14 Jan 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded</title>
+      <link>https://baek9.github.io/en/categories/embedded/</link>
+      <pubDate>Fri, 29 Aug 2014 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/categories/embedded/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

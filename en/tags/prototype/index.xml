@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prototype on code(evening);</title>
+    <link>https://baek9.github.io/en/tags/prototype/</link>
+    <description>Recent content in Prototype on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Nov 2017 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/prototype/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript&#39;s prototype chain</title>
+      <link>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</guid>
+      <description>#JavaScript #Prototype
+JavaScript is often referred to as a prototype-based language. Prototype literally means prototype. Every object you create with JavaScript is paired with a prototype, i.e. a prototype object. Using this structure, inheritance, one of the important concepts in Object-Oriented Programming (OOP) using C++, can be easily implemented in JavaScript as well. In JavaScript, this is called a ‘prototype chain’. To understand the prototype chain, you first need to get a feel for the prototype object.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>V8 on code(evening);</title>
+    <link>https://baek9.github.io/en/categories/v8/</link>
+    <description>Recent content in V8 on code(evening);</description>
+    <image>
+      <url>https://baek9.github.io/logo.png</url>
+      <link>https://baek9.github.io/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Oct 2018 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/categories/v8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integer Overflow in V8</title>
+      <link>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</link>
+      <pubDate>Mon, 29 Oct 2018 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2018/10/integer-overflow-in-v8/</guid>
+      <description>#V8 #IntegerOverflow
+Looking at the recent vulnerabilities, there are not many vulnerabilities related to &amp;lsquo;V8&amp;rsquo;, and it seems that there are many cases where vulnerabilities occur in &amp;lsquo;Blink&amp;rsquo; or &amp;lsquo;Chrome&amp;rsquo; in the end, starting with JavaScript. In the meantime, a recently registered bug caught our attention. PoC (Proof of Concept) that causes integer overflow inside V8 was presented. It was a meaningful analysis to find out about the structure of V8 and what integer overflow is.</description>
+    </item>
+    
+    <item>
+      <title>Garbage collection and memory leaks in JavaScript</title>
+      <link>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</link>
+      <pubDate>Wed, 29 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/garbage-collection-and-memory-leaks-in-javascript/</guid>
+      <description>#JavaScript #V8 #GarbageCollection
+V8, a JavaScript engine implemented in Chrome, is known to perform periodic garbage collection. While searching for information related to this, I will try to follow Daniel Khan&amp;rsquo;s writing and summarize my feelings. The article can be read at the link below.
+Understanding Garbage Collection and Hunting Memory Leaks in Node.js
+Resident Set ¶ V8 operates memory with a structure called ‘Resident Set’. Just as the Java Virtual Machine (JVM) divides memory into several segments, it is said that memory is divided into Code, Stack, and Heap areas by the Resident Set structure.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript&#39;s prototype chain</title>
+      <link>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</guid>
+      <description>#JavaScript #Prototype
+JavaScript is often referred to as a prototype-based language. Prototype literally means prototype. Every object you create with JavaScript is paired with a prototype, i.e. a prototype object. Using this structure, inheritance, one of the important concepts in Object-Oriented Programming (OOP) using C++, can be easily implemented in JavaScript as well. In JavaScript, this is called a ‘prototype chain’. To understand the prototype chain, you first need to get a feel for the prototype object.</description>
+    </item>
+    
+  </channel>
+</rss>
