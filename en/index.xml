@@ -172,6 +172,16 @@ Resident Set ¶ V8 operates memory with a structure called ‘Resident Set’. J
     </item>
     
     <item>
+      <title>About Me</title>
+      <link>https://baek9.github.io/en/about_me/</link>
+      <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/about_me/</guid>
+      <description>My name is Taeho Nam. I have both a BS and a MS degree in computer science from Kwangwoon University in Korea. During my BS degree, I was interested in hardware design and testing with Verilog/Quartus/Modelsim and Operating System architecture. Also, during my master’s degree, I mainly studied firmware design of NAND Flash controller and caching methods for improving web browser performance. I’m still working in computer science.
+Nowadays, I’m especially interested in security, graphics and the Web that seem to be irrelevant.</description>
+    </item>
+    
+    <item>
       <title>JavaScript&#39;s prototype chain</title>
       <link>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</link>
       <pubDate>Sat, 25 Nov 2017 22:00:00 +0000</pubDate>

@@ -749,6 +749,19 @@
                 href="https://baek9.github.io/en/tags/javascript/"
                 />
   </url><url>
+    <loc>https://baek9.github.io/en/about_me/</loc>
+    <lastmod>2017-11-25T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/about_me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/about_me/"
+                />
+  </url><url>
     <loc>https://baek9.github.io/en/2017/11/javascripts-prototype-chain/</loc>
     <lastmod>2017-11-25T22:00:00+00:00</lastmod>
     <xhtml:link
