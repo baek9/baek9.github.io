@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jul 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Aug 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/series/hugo%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%9C%EC%9E%91%EA%B8%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Actions를 이용해 Hugo 기반 블로그를 위한 CMS(Contents Management System) 흉내 내기</title>
+      <link>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%ED%9D%89%EB%82%B4-%EB%82%B4%EA%B8%B0/</link>
+      <pubDate>Mon, 22 Aug 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%ED%9D%89%EB%82%B4-%EB%82%B4%EA%B8%B0/</guid>
+      <description>이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째는 이유는 글쓰기가 번거롭다는 점이다. 아래 포스트에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.
+휴고(Hugo)도 마찬가지다. 사전에 휴고가 설치되어 있지 않으면 블로그를 빌드할 수 없다. 물론, 카페에서는 글만 쓰고 블로그는 다음에 업데이트하면 된다.</description>
+    </item>
+    
     <item>
       <title>깃허브(GitHub) &#43; 휴고(Hugo), 블로그 효과적으로 관리하기</title>
       <link>https://baek9.github.io/2022/07/%EA%B9%83%ED%97%88%EB%B8%8Cgithub--%ED%9C%B4%EA%B3%A0hugo-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0/</link>
