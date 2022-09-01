@@ -30,6 +30,16 @@
   </url><url>
     <loc>https://baek9.github.io/tags/cms/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/cms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/cms/"
+                />
   </url><url>
     <loc>https://baek9.github.io/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
@@ -46,9 +56,29 @@
   </url><url>
     <loc>https://baek9.github.io/tags/github-actions/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/github-actions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/github-actions/"
+                />
   </url><url>
     <loc>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/08/build-a-contents-management-system-cms-for-a-hugo-based-blog-using-github-actions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/"
+                />
   </url><url>
     <loc>https://baek9.github.io/tags/hugo/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>

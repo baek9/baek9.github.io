@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GitHub Actions on code(evening); Development Diary</title>
+    <link>https://baek9.github.io/en/tags/github-actions/</link>
+    <description>Recent content in GitHub Actions on code(evening); Development Diary</description>
+    <image>
+      <url>https://baek9.github.io/logo_extended.png</url>
+      <link>https://baek9.github.io/logo_extended.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Aug 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/en/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Contents Management System (CMS) for a Hugo-based Blog using GitHub Actions</title>
+      <link>https://baek9.github.io/en/2022/08/build-a-contents-management-system-cms-for-a-hugo-based-blog-using-github-actions/</link>
+      <pubDate>Mon, 22 Aug 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/en/2022/08/build-a-contents-management-system-cms-for-a-hugo-based-blog-using-github-actions/</guid>
+      <description>I recommend reading this article after reading the article below.
+GitHub + Hugo, effectively managing blogs As I said in the previous article, the second reason I tried to migrate the existing blog to a blogger was cumbersome writing. In the case of Jekyll, to build a blog, you need Ruby and Jekyll installed on Windows, Linux, or Mac. Let&amp;rsquo;s imagine The image of myself sipping coffee in a beautiful and secluded cafe.</description>
+    </item>
+    
+  </channel>
+</rss>

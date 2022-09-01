@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://baek9.github.io/en/categories/blog/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -15,8 +15,21 @@
                 href="https://baek9.github.io/en/categories/blog/"
                 />
   </url><url>
+    <loc>https://baek9.github.io/en/2022/08/build-a-contents-management-system-cms-for-a-hugo-based-blog-using-github-actions/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/08/build-a-contents-management-system-cms-for-a-hugo-based-blog-using-github-actions/"
+                />
+  </url><url>
     <loc>https://baek9.github.io/en/categories/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,8 +41,21 @@
                 href="https://baek9.github.io/en/categories/"
                 />
   </url><url>
+    <loc>https://baek9.github.io/en/tags/cms/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/cms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/cms/"
+                />
+  </url><url>
     <loc>https://baek9.github.io/en/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -42,7 +68,85 @@
                 />
   </url><url>
     <loc>https://baek9.github.io/en/series/creating-a-blog-post-using-hugo/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://baek9.github.io/en/tags/github-actions/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/github-actions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/github-actions/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/en/tags/hugo/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/en/posts/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/en/series/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/series/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/en/tags/ssg/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/ssg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/ssg/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/en/tags/</loc>
+    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/tags/"
+                />
   </url><url>
     <loc>https://baek9.github.io/en/tags/github/</loc>
     <lastmod>2022-07-03T22:00:00+00:00</lastmod>
@@ -68,71 +172,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://baek9.github.io/en/2022/07/github--hugo-managing-your-blog-effectively/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/en/tags/hugo/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/tags/hugo/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/en/posts/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/posts/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/en/series/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/series/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/en/tags/ssg/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/tags/ssg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/tags/ssg/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/en/tags/</loc>
-    <lastmod>2022-07-03T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://baek9.github.io/en/2022/07/applying-a-pretty-theme-to-a-blog-created-with-hugo/</loc>
