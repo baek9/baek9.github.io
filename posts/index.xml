@@ -12,14 +12,25 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Aug 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://baek9.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitHub Actions를 이용해 Hugo 기반 블로그를 위한 CMS(Contents Management System) 흉내 내기</title>
-      <link>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%ED%9D%89%EB%82%B4-%EB%82%B4%EA%B8%B0/</link>
+      <title>GitHub Actions를 이용해 Hugo 기반 블로그를 위한 CMS(Contents Management System) 구축</title>
+      <link>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</link>
       <pubDate>Mon, 22 Aug 2022 22:00:00 +0000</pubDate>
       
-      <guid>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%ED%9D%89%EB%82%B4-%EB%82%B4%EA%B8%B0/</guid>
-      <description>본 글은
-이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째는 이유는 글쓰기가 번거롭다는 점이다. 아래 포스트에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.
-휴고(Hugo)도 마찬가지다. 사전에 휴고가 설치되어 있지 않으면 블로그를 빌드할 수 없다.</description>
+      <guid>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</guid>
+      <description>아래 글을 읽은 후에 본 글을 읽기를 추천합니다.
+깃허브(GitHub) + 휴고(Hugo), 블로그 효과적으로 관리하기 이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째 이유가 번거로운 글쓰기였다. 위 글에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions를 이용해 Hugo 기반 블로그를 위한 CMS(Contents Management System) 구축</title>
+      <link>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</link>
+      <pubDate>Mon, 22 Aug 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</guid>
+      <description>아래 글을 읽은 후에 본 글을 읽기를 추천합니다.
+&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD:posts/220824_GitHub_Actions를_이용해_Hugo_기반_블로그를_위한_CMS_구축/index.md
+깃허브(GitHub) + 휴고(Hugo), 블로그 효과적으로 관리하기 ======= 5766062ae198b142533e3aaeb2a5369f5b127695:posts/220824_GitHub_Actions를_이용해_Hugo_기반_블로그를_위한_CMS_흉내_내기/index.md
+이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째 이유가 번거로운 글쓰기였다. 위 글에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.</description>
     </item>
     
     <item>
@@ -81,15 +92,6 @@
       <description>&amp;ldquo;Dockershim deprecated with the release of Kubernetes 1.24&amp;rdquo; ¶ 위 문장은 더 레지스터(The register)에 실린 기사의 헤드라인이다. 문장을 보고 어떤 생각이 드는가? 나는 컨테이너가 구현하는 기술이 궁금할 뿐이지, 관련 기술로 먹고 사는 것은 아니라서 별 생각은 없었다. 그러나 관련 업계에서는 매우 큰 화두였었구나 하는 것을 최근 알게 되었다. 실제로 쿠버네티스(Kubernetes) 측에서 아래와 같은 글을 기고했을 정도로 말이다.
 &amp;ldquo;Don&amp;rsquo;t Panic: Kubernetes and Docker&amp;rdquo;, Kubernetes Blog
 쿠버네티스의 창시자인 조 베다(Joe Beda)는 위와 같은 트윗을 했다.</description>
-    </item>
-    
-    <item>
-      <title>머리 아픈 블로그 플랫폼 선택기</title>
-      <link>https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</link>
-      <pubDate>Wed, 08 Jun 2022 22:00:00 +0000</pubDate>
-      
-      <guid>https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</guid>
-      <description>정적 사이트 생성기(SSG: Static Site Generator) ¶ 지킬(Jekyll)이라는 도구가 등장하면서 정적 사이트 생성기(SSG: Static Site Generator)가 각광받던 때가 있었다. 나도 지킬과 깃허브 페이지(GitHub Pages)를 이용하여 오래 전에 블로그를 구축했었다. 정적 사이트 생성기는 데이터베이스를 포함해 웹 페이지를 렌더링(Rendering) 하는 데 필요한 백엔드(Backend) 솔루션들을 구축하지 않아도, 잘 알지 못해도 훌륭한 사이트를 만들어 준다는 장점이 있다. 결과물인 정적 사이트는 오로지 HTML(Hyper-Text Markup Language), CSS(Cascading Style Sheet), JavaScript로만 구현되어 오로지 브라우저만 있으면 동작한다.</description>
     </item>
     
     <item>
