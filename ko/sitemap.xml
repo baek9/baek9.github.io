@@ -49,19 +49,6 @@
   </url><url>
     <loc>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://baek9.github.io/en/2022/06/choosing-a-blog-platform-that-causes-headaches/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/"
-                />
-  </url><url>
-    <loc>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</loc>
-    <lastmod>2022-08-22T22:00:00+00:00</lastmod>
   </url><url>
     <loc>https://baek9.github.io/tags/hugo/</loc>
     <lastmod>2022-08-22T22:00:00+00:00</lastmod>
@@ -327,6 +314,19 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://baek9.github.io/2022/06/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88container-%EA%B4%80%EB%A0%A8-%EA%B8%B0%EC%88%A0%EB%93%A4-%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EA%B7%B8%EB%A6%AC%EA%B3%A0-containerd/"
+                />
+  </url><url>
+    <loc>https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/</loc>
+    <lastmod>2022-06-08T22:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://baek9.github.io/en/2022/06/choosing-a-blog-platform-that-causes-headaches/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://baek9.github.io/2022/06/%EB%A8%B8%EB%A6%AC-%EC%95%84%ED%94%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%84%A0%ED%83%9D%EA%B8%B0/"
                 />
   </url><url>
     <loc>https://baek9.github.io/tags/chromium/</loc>

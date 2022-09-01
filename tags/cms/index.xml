@@ -21,17 +21,5 @@
 깃허브(GitHub) + 휴고(Hugo), 블로그 효과적으로 관리하기 이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째 이유가 번거로운 글쓰기였다. 위 글에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.</description>
     </item>
     
-    <item>
-      <title>GitHub Actions를 이용해 Hugo 기반 블로그를 위한 CMS(Contents Management System) 구축</title>
-      <link>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</link>
-      <pubDate>Mon, 22 Aug 2022 22:00:00 +0000</pubDate>
-      
-      <guid>https://baek9.github.io/2022/08/github-actions%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-hugo-%EA%B8%B0%EB%B0%98-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%9C%84%ED%95%9C-cmscontents-management-system-%EA%B5%AC%EC%B6%95/</guid>
-      <description>아래 글을 읽은 후에 본 글을 읽기를 추천합니다.
-&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD:posts/220824_GitHub_Actions를_이용해_Hugo_기반_블로그를_위한_CMS_구축/index.md
-깃허브(GitHub) + 휴고(Hugo), 블로그 효과적으로 관리하기 ======= 5766062ae198b142533e3aaeb2a5369f5b127695:posts/220824_GitHub_Actions를_이용해_Hugo_기반_블로그를_위한_CMS_흉내_내기/index.md
-이전 글에서도 말했지만, 기존의 블로그를 블로거(Blogger)로 이전하려고 했던 두 번째 이유가 번거로운 글쓰기였다. 위 글에서 설명했지만 지킬(Jekyll)의 경우에 블로그를 빌드하기 위해서는 루비(Ruby)와 지킬이 설치된 윈도(Windows)나 리눅스(Linux), 맥(Mac)이 필요하다. 상상해보자. 아름답고 한적한 카페에서 커피를 홀짝이는 나의 모습을. 블로그에 글을 쓰려고 노트북을 꺼냈지만, 루비와 지킬이 깔려있지 않아 당황하는 모습을. 설상가상으로 인터넷이 되지 않아 갖고 있던 핸드폰을 꺼내 테더링(Tethering) 하는 모습을.</description>
-    </item>
-    
   </channel>
 </rss>
